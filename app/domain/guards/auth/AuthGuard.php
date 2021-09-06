@@ -5,7 +5,9 @@ namespace App\Guards;
 
 class AuthGuard{
 
-    function main(){
-        
+    static function main(){
+        if(!isset($_SESSION["user"])){
+            //redirigir al login            
+        }
     }
 }
