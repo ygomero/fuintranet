@@ -6,7 +6,6 @@ class App {
 
     private static $pathGuards = DIR_APP.DS."domain".DS."guards";
     private static $pathControllers = DIR_APP.DS."domain".DS."controllers";
-    private $view = null;
     
     function load_guards($guards = [])
     {
@@ -29,8 +28,5 @@ class App {
         $object = new $class();
         $object::$function();
     }
-
-    function view($view){
-        $view = $view;
-    }
+    
 }

@@ -2186,7 +2186,7 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #3065D0;
+  background-color: #711685;
   border-color: #711685; }
   .btn-primary:hover {
     color: #fff;
@@ -11943,7 +11943,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
         .deznav .metismenu > li > a g [fill] {
           fill: #8088a1; }
       .deznav .metismenu > li:hover > a, .deznav .metismenu > li:focus > a {
-        color: #711685; }
+        color: #143b64; }
         .deznav .metismenu > li:hover > a g [fill], .deznav .metismenu > li:focus > a g [fill] {
           fill: #711685; }
       .deznav .metismenu > li.mm-active > a {
@@ -11977,7 +11977,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
             font-size: 14px; } }
         .deznav .metismenu ul a:hover, .deznav .metismenu ul a:focus, .deznav .metismenu ul a.mm-active {
           text-decoration: none;
-          color: #711685; }
+          color: #143b64; }
     .deznav .metismenu a {
       position: relative;
       display: block;
