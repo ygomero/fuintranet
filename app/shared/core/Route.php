@@ -81,7 +81,7 @@ class Route
                     if(count($route['guards']) > 0){
                         //esto verifica si se debe pasar un guard antes de alguna ruta
                         foreach($route['guards'] as $guard){
-                            //$guard = new AuthGuard();exit;
+                            // $guard = new AuthGuard();exit;
                         }
                     }
 
