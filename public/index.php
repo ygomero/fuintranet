@@ -6,12 +6,16 @@ include('../app/shared/common/defines.php');
 include('../app/shared/core/Route.php');
 include('../app/shared/core/View.php');
 include('../app/shared/core/Session.php');
+include('../app/db/conn.php');
 
 $app = new App();
 $app->load_guards([
     "auth"
 ]);
 
+$app->load_controllers([
+    "modules"
+]);
 
 // Add base route (startpage)
 Route::add('/', function () {
@@ -22,13 +26,20 @@ Route::add('/home', function () {
     echo View::render("home");
 },"get",["auth"]);
 
-Route::add('/modules', function () {
+Route::add('/modules', function () { 
     echo View::render("modules");
 },"get",["auth"]);
 
+Route::add('/usuarios',function(){
+    echo View::render("usuarios");
+},"get",["auth"]);
 
-Route::add('/profile', function () {
-    echo View::render("profile");
+Route::add('/perfiles', function () {
+    echo View::render("perfiles");
+},"get",["auth"]);
+
+Route::add('/bancos', function () {
+    echo View::render("bancos");
 },"get",["auth"]);
 
 Route::add('/login', function () {
