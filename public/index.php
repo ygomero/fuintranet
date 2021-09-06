@@ -39,12 +39,8 @@ Route::add('/profile', function () {
     echo View::render("profile");
 });
 
-
-//test api
-Route::add('/api', function () {
-    //procesar
-    //retornar 
-    echo View::render("profile");
+Route::pathNotFound(function () {
+    echo View::render("404",true);
 });
 
 Route::run('/');*/
