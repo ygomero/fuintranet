@@ -9,13 +9,13 @@ include('../app/shared/core/Session.php');
 // include('../app/db/conn.php');
 include('../app/db/db.php');
 
-// $conn = new SQLSRV_DataBase("fu_consultas", "Fusac2021", "BD_INFORMES", "localhost", 1433);
-// $conn2 = new SQLSRV_DataBase("fu_consultas", "Fusac2021", "LOLFAR9000", "localhost", 1433);
+$conn = new SQLSRV_DataBase("fu_consultas", "Fusac2021", "BD_INFORMES", "192.168.1.5", 1433);
+$conn2 = new SQLSRV_DataBase("fu_consultas", "Fusac2021", "LOLFAR9000", "192.168.1.5", 1433);
 
-// //esta seccion es para probar el query
-// $query = "SELECT * FROM FU_MODULES WHERE LEVEL_MOD=1";
-// $results = $conn->get_results( $query);
-// var_dump($results);exit;
+//esta seccion es para probar el query
+$query = "SELECT * FROM FU_MODULES WHERE LEVEL_MOD=1";
+$results = $conn->get_results( $query);
+//var_dump($results);exit;
 //fin 
 
 $app = new App();
