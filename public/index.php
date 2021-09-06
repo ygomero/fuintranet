@@ -22,6 +22,11 @@ Route::add('/home', function () {
     echo View::render("home");
 },"get",["auth"]);
 
+Route::add('/modules', function () {
+    echo View::render("modules");
+},"get",["auth"]);
+
+
 Route::add('/profile', function () {
     echo View::render("profile");
 },"get",["auth"]);

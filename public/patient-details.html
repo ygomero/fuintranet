@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+<!-- Mirrored from mediqu.dexignzone.com/xhtml/patient-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 14:28:41 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Farmacia Universal</title>
+    <title>Mediqu - Bootstrap Admin Dashboard </title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
-    <link href="vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="vendor/chartist/css/chartist.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+	    <link rel="stylesheet" href="vendor/chartist/css/chartist.min.css">
     <link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-	<link href="./assets/cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+    <link href="vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
 	
+    <link href="css/style.css" rel="stylesheet">
+	
+	  
+
 </head>
-<body data-theme-version="dark">
+<body>
 
     <!--*******************
         Preloader start
@@ -40,7 +44,7 @@
             Nav header start
         ***********************************-->
         <div class="nav-header">
-            <a href="/" class="brand-logo">
+            <a href="index.html" class="brand-logo">
                 <img class="logo-abbr" src="images/logo.png" alt="">
                 <img class="logo-compact" src="images/logo-text.png" alt="">
                 <img class="brand-title" src="images/logo-text.png" alt="">
@@ -567,7 +571,7 @@
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
                             <div class="dashboard_bar">
-                                Dashboard
+                                Patient Details
                             </div>
                         </div>
 
@@ -702,29 +706,23 @@
 				<ul class="metismenu" id="menu">
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-networking"></i>
-							<span class="nav-text">Configuración</span>
+							<span class="nav-text">Dashboard</span>
 						</a>
                         <ul aria-expanded="false">
-							<li><a href="ecom-customers.html">Usuarios</a></li>
-							<li><a href="ecom-customers.html">Perfiles</a></li>
-							<li><a href="ecom-customers.html">Bancos</a></li>
-							<!--li><a href="index.html">Dashboard</a></li>
+							<li><a href="index.html">Dashboard</a></li>
 							<li><a href="doctors.html">Doctors</a></li>
 							<li><a href="doctors-details.html">Doctors Details</a></li>
 							<li><a href="doctors-review.html">Doctors Review</a></li>
-							<li><a href="patient-details.html">Patient Details</a></li-->
+							<li><a href="patient-details.html">Patient Details</a></li>
 						</ul>
 
                     </li>
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 						<i class="flaticon-381-television"></i>
-							<span class="nav-text">Depósitos Bancarios</span>
+							<span class="nav-text">Apps</span>
 						</a>
                         <ul aria-expanded="false">
-							<li><a href="ecom-customers.html">Registro</a></li>
-							<li><a href="ecom-customers.html">Explorador</a></li>
-
-                            <!--li><a href="app-profile.html">Profile</a></li>
+                            <li><a href="app-profile.html">Profile</a></li>
 							<li><a href="post-details.html">Post Details</a></li>
                             <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
                                 <ul aria-expanded="false">
@@ -744,12 +742,12 @@
 									<li><a href="ecom-invoice.html">Invoice</a></li>
 									<li><a href="ecom-customers.html">Customers</a></li>
                                 </ul>
-                            </li-->
+                            </li>
                         </ul>
                     </li>
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-controls-3"></i>
-							<span class="nav-text">Reportes</span>
+							<span class="nav-text">Charts</span>
 						</a>
                         <ul aria-expanded="false">
                             <li><a href="chart-flot.html">Flot</a></li>
@@ -760,7 +758,7 @@
                             <li><a href="chart-peity.html">Peity</a></li>
                         </ul>
                     </li>
-                    <!--li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-internet"></i>
 							<span class="nav-text">Bootstrap</span>
 						</a>
@@ -843,10 +841,16 @@
                             </li>
                             <li><a href="page-lock-screen.html">Lock Screen</a></li>
                         </ul>
-                    </li-->
+                    </li>
                 </ul>
             
-
+				<div class="plus-box">
+					<p>Create new appointment</p>
+				</div>
+				<div class="copyright">
+					<p><strong>Mediqu Hospital Admin Dashboard</strong> © 2021 All Rights Reserved</p>
+					<p>Made with <span class="heart"></span> by DexignZone</p>
+				</div>
 			</div>
         </div>
         <!--**********************************
@@ -857,7 +861,320 @@
             Content body start
         ***********************************-->
         <div class="content-body">
-            <content></content>
+            <!-- row -->
+			<div class="container-fluid">
+                <div class="form-head d-flex mb-md-5 mb-3 align-items-start">
+					<a href="javascript:void(0);" class="btn btn-dark"><i class="flaticon-381-clock mr-2"></i> Edit Profile</a>
+					<a href="javascript:void(0);" class="btn btn-outline-danger ml-auto"><i class="flaticon-381-error"></i> Reject Patient</a>
+					<a href="javascript:void(0);" class="btn btn-success ml-2"><i class="flaticon-381-success-2"></i> Accept Patient</a>
+				</div>
+				
+                <div class="row">
+					<div class="col-xl-8">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="d-flex doctor-info-details mb-sm-5 mb-3">
+											<div class="media align-self-start">
+												<img alt="image" class="rounded" width="130" src="images/avatar/2.jpg">
+												<i class="flaticon-381-heart"></i>
+											</div>
+											<div class="media-body">
+												<h2 class="mb-2">Brian Lucky</h2>
+												<p class="mb-md-2 mb-4">#P-00016</p>
+												<span class="mb-md-0 mb-3 d-block"><i class="flaticon-381-clock"></i> Join Date 21 August 2020, 12:45 AM</span>
+											</div>
+											<div class="text-md-right">
+												<div class="dropdown mb-md-3 mb-2">
+													<div class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+														<i class="flaticon-381-user-7 mr-2"></i> 
+														<span>Cold & Flu</span>
+													</div>
+													<div class="dropdown-menu dropdown-menu-left">
+														<a class="dropdown-item" href="#">A To Z List</a>
+														<a class="dropdown-item" href="#">Z To A List</a>
+													</div>
+												</div>
+												<div class="star-review">
+													<i class="fa fa-star text-orange"></i>
+													<i class="fa fa-star text-orange"></i>
+													<i class="fa fa-star text-orange"></i>
+													<i class="fa fa-star text-orange"></i>
+													<i class="fa fa-star text-gray"></i>
+													<span class="ml-3">238 reviews</span>
+												</div>
+											</div>
+										</div>
+										
+										<div class="doctor-info-content">
+											<h3 class="text-black mb-3">Story About Disease</h3>
+											<p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+											<p class="mb-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi </p>
+										</div>
+									</div>
+									<div class="card-footer border-0 pt-0 text-center">
+										<a href="#" class="btn-link">Read More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="card">
+									<div class="card-header border-0 pb-0">
+										<h4 class="card-title">Assigned Doctor</h4>
+									</div>
+									<div class="card-body">
+										<div class="assigned-doctor owl-carousel">
+											<div class="items">
+												<div class="bootstrap-media">
+													<div class="media mb-4">
+														<img class="mr-3 img-fluid rounded" width="94" src="images/avatar/1.jpg" alt="DexignZone">
+														<div class="media-body">
+															<h4 class="mt-0 mb-1"><a href="doctors-details.html" class="text-black">Dr. Inggrid A.</a></h4>
+															<p class="mb-1">Dentist</p>
+															<div class="star-review fs-14">
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-gray"></i>
+																<i class="fa fa-star text-gray"></i>
+																<span class="ml-3">451 reviews</span>
+															</div>
+														</div>
+													</div>
+													<a href="javascript:void(0);" class="btn btn-outline-dark mr-2">Availability</a>
+													<a href="javascript:void(0);" class="btn btn-danger">+ Assign</a>
+												</div>
+											</div>
+											<div class="items">
+												<div class="bootstrap-media">
+													<div class="media mb-4">
+														<img class="mr-3 img-fluid rounded" width="94" src="images/avatar/2.jpg" alt="DexignZone">
+														<div class="media-body">
+															<h4 class="mt-0 mb-1"><a href="doctors-details.html" class="text-black">Dr. Widan Cheeh</a></h4>
+															<p class="mb-1">Respiratory Specialist</p>
+															<div class="star-review fs-14">
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-gray"></i>
+																<i class="fa fa-star text-gray"></i>
+																<span class="ml-3">451 reviews</span>
+															</div>
+														</div>
+													</div>
+													<a href="javascript:void(0);" class="btn btn-outline-dark mr-2">Availability</a>
+													<a href="javascript:void(0);" class="btn btn-danger">+ Assign</a>
+												</div>
+											</div>
+											<div class="items">
+												<div class="bootstrap-media">
+													<div class="media mb-4">
+														<img class="mr-3 img-fluid rounded" width="94" src="images/avatar/3.jpg" alt="DexignZone">
+														<div class="media-body">
+															<h4 class="mt-0 mb-1"><a href="doctors-details.html" class="text-black">Dr. Samantha</a></h4>
+															<p class="mb-1">Gynecologist</p>
+															<div class="star-review fs-14">
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-gray"></i>
+																<i class="fa fa-star text-gray"></i>
+																<span class="ml-3">451 reviews</span>
+															</div>
+														</div>
+													</div>
+													<a href="javascript:void(0);" class="btn btn-outline-dark mr-2">Availability</a>
+													<a href="javascript:void(0);" class="btn btn-danger">+ Assign</a>
+												</div>
+											</div>
+											<div class="items">
+												<div class="bootstrap-media">
+													<div class="media mb-4">
+														<img class="mr-3 img-fluid rounded" width="94" src="images/avatar/2.jpg" alt="DexignZone">
+														<div class="media-body">
+															<h4 class="mt-0 mb-1"><a href="doctors-details.html" class="text-black">Dr. Widan Cheeh</a></h4>
+															<p class="mb-1">Respiratory Specialist</p>
+															<div class="star-review fs-14">
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-gray"></i>
+																<i class="fa fa-star text-gray"></i>
+																<span class="ml-3">451 reviews</span>
+															</div>
+														</div>
+													</div>
+													<a href="javascript:void(0);" class="btn btn-outline-dark mr-2">Availability</a>
+													<a href="javascript:void(0);" class="btn btn-danger">+ Assign</a>
+												</div>
+											</div>
+											<div class="items">
+												<div class="bootstrap-media">
+													<div class="media mb-4">
+														<img class="mr-3 img-fluid rounded" width="94" src="images/avatar/3.jpg" alt="DexignZone">
+														<div class="media-body">
+															<h4 class="mt-0 mb-1"><a href="doctors-details.html" class="text-black">Dr. Samantha</a></h4>
+															<p class="mb-1">Gynecologist</p>
+															<div class="star-review fs-14">
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-gray"></i>
+																<i class="fa fa-star text-gray"></i>
+																<span class="ml-3">451 reviews</span>
+															</div>
+														</div>
+													</div>
+													<a href="javascript:void(0);" class="btn btn-outline-dark mr-2">Availability</a>
+													<a href="javascript:void(0);" class="btn btn-danger">+ Assign</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="card">
+									<div class="card-header border-0 pb-0">
+										<h4 class="card-title">Disease History</h4>
+									</div>
+									<div class="card-body">
+										<div class="widget-timeline-icon">
+											<ul class="timeline">
+												<li>
+													<div class="icon bg-primary flaticon-381-heart"></div>
+													<a class="timeline-panel text-muted" href="#">
+														<h4 class="mb-2 mt-1">Diabetes</h4>
+														<p class="fs-15 mb-0 ">Sat, 23 Jul 2020, 01:24 PM</p>
+													</a>
+												</li>
+												<li>
+													<div class="icon bg-primary flaticon-381-heart"></div>
+													<a class="timeline-panel text-muted" href="#">
+														<h4 class="mb-2 mt-1">Sleep Problem</h4>
+														<p class="fs-15 mb-0 ">Sat, 23 Jul 2020, 01:24 PM</p>
+													</a>
+												</li>
+												<li>
+													<div class="icon bg-primary flaticon-381-heart"></div>
+													<a class="timeline-panel text-muted" href="#">
+														<h4 class="mb-2 mt-1">Dental Care</h4>
+														<p class="fs-15 mb-0 ">Sat, 23 Jul 2020, 01:24 PM</p>
+													</a>
+												</li>
+												<li>
+													<div class="icon bg-primary flaticon-381-heart"></div>
+													<a class="timeline-panel text-muted" href="#">
+														<h4 class="mb-2 mt-1">Diabetes</h4>
+														<p class="fs-15 mb-0 ">Sat, 23 Jul 2020, 01:24 PM</p>
+													</a>
+												</li>
+											</ul>	
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="card">
+									<div class="card-header border-0 pb-0">
+										<h4 class="card-title">Patient Statistic</h4>
+									</div>
+									<div class="card-body">
+										<div class="widget-timeline-icon">
+											<div class="row align-items-center mx-0">
+												<div class="col-xl-6 col-xxl-12 col-md-12 px-0 mb-3">
+													 <span class="donut" data-peity='{ "fill": ["rgb(32, 159, 132)", "rgba(39, 129, 213, 1)","rgba(255, 44, 83, 1)"]}'>2,5,3</span>
+												</div>	
+												<div class="col-xl-6 col-xxl-12 col-md-12 px-0">
+													<p class="mb-2 d-flex  fs-14">Immunities (24%)
+														<span class="pull-right ml-auto">25</span>
+													</p>
+													<div class="progress mb-3" style="height:8px">
+														<div class="progress-bar bg-info progress-animated" style="width:85%; height:8px;" role="progressbar">
+															<span class="sr-only">60% Complete</span>
+														</div>
+													</div>
+													<p class="mb-2 d-flex  fs-14">Heart Beat (41%)
+														<span class="pull-right ml-auto">12</span>
+													</p>
+													<div class="progress mb-3" style="height:8px">
+														<div class="progress-bar bg-success progress-animated" style="width:90%; height:8px;" role="progressbar">
+															<span class="sr-only">60% Complete</span>
+														</div>
+													</div>
+													<p class="mb-2 d-flex  fs-14">Weigth (15%)
+														<span class="pull-right ml-auto">15</span>
+													</p>
+													<div class="progress" style="height:8px">
+														<div class="progress-bar bg-danger progress-animated" style="width:65%; height:8px;" role="progressbar">
+															<span class="sr-only">60% Complete</span>
+														</div>
+													</div>
+												</div>	
+											</div>	
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="patient-map-area mb-4">
+											<img src="images/map.jpg" alt=""/> 
+											<a href="javascript:void(0);" class="btn btn-danger btn-xs">View in Fullscreen</a>
+											<i class="flaticon-381-location-4"></i>
+										</div>
+										<div class="iconbox">
+											<i class="las la-map-marker-alt"></i>
+											<small>Address</small>
+											<p>795 Folsom Ave, Suite 600 San Francisco, CADGE 94107</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="iconbox">
+											<i class="las la-phone"></i>
+											<small>Phone</small>
+											<p>+12 5123 5512 66</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="iconbox">
+											<i class="las la-envelope-open"></i>
+											<small>Email</small>
+											<p>example@mail.com</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="card bg-secondary">
+									<div class="card-header border-0 pb-0">
+										<h4 class="card-title text-white mt-1">Note for Patient</h4>
+									</div>
+									<div class="card-body text-white">
+										<p class="mb-0 fs-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+            </div>
         </div>
         <!--**********************************
             Content body end
@@ -868,7 +1185,7 @@
         ***********************************-->
         <div class="footer">
             <div class="copyright">
-                <p>Copyright © Designed &amp; Developed by <strong>Farmacia Universal</strong></a>© 2021 All Rights Reserved</p>
+                <p>Copyright © Designed &amp; Developed by <a href="http://dexignzone.com/" target="_blank">DexignZone</a> 2021</p>
             </div>
         </div>
         <!--**********************************
@@ -897,16 +1214,63 @@
 	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
     <script src="js/custom.min.js"></script>
 	<script src="js/deznav-init.js"></script>
-	<!-- Apex Chart -->
-	<script src="vendor/apexchart/apexchart.js"></script>
+	<script src="vendor/owl-carousel/owl.carousel.js"></script>
 	
+	<!-- Chart piety plugin files -->
+	<script src="vendor/peity/jquery.peity.min.js"></script>
+	    <script src="js/plugins-init/piety-init.js"></script>
 	
-	<!-- Dashboard 1 -->
-	<script src="js/dashboard/dashboard-1.js"></script>
-	
+	<script>
+		$("span.donut").peity("donut", {
+			width: "180",
+			height: "180"
+		});
+		
+		function assignedDoctor()
+		{
+		
+			/*  testimonial one function by = owl.carousel.js */
+			jQuery('.assigned-doctor').owlCarousel({
+				loop:false,
+				margin:30,
+				nav:true,
+				autoplaySpeed: 3000,
+				navSpeed: 3000,
+				paginationSpeed: 3000,
+				slideSpeed: 3000,
+				smartSpeed: 3000,
+				autoplay: false,
+				dots: false,
+				navText: ['<i class="fa fa-caret-left"></i>', '<i class="fa fa-caret-right"></i>'],
+				responsive:{
+					0:{
+						items:1
+					},
+					
+					480:{
+						items:1
+					},			
+					
+					767:{
+						items:2
+					},
+					1750:{
+						items:3
+					}
+				}
+			})
+		}
+		
+		jQuery(window).on('load',function(){
+			setTimeout(function(){
+				assignedDoctor();
+			}, 1000); 
+		});
+		
+	</script>
 	
     <script src="js/styleSwitcher.js"></script>
 </body>
 
-
+<!-- Mirrored from mediqu.dexignzone.com/xhtml/patient-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 14:28:43 GMT -->
 </html>

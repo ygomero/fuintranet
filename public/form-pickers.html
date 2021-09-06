@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+<!-- Mirrored from mediqu.dexignzone.com/xhtml/form-pickers.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 14:29:34 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Farmacia Universal</title>
+    <title>Mediqu - Bootstrap Admin Dashboard </title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
-    <link href="vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="vendor/chartist/css/chartist.min.css">
-    <link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Daterange picker -->
+    <link href="vendor/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Clockpicker -->
+    <link href="vendor/clockpicker/css/bootstrap-clockpicker.min.css" rel="stylesheet">
+    <!-- asColorpicker -->
+    <link href="vendor/jquery-asColorPicker/css/asColorPicker.min.css" rel="stylesheet">
+    <!-- Material color picker -->
+    <link href="vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+    <!-- Pick date -->
+    <link rel="stylesheet" href="vendor/pickadate/themes/default.css">
+    <link rel="stylesheet" href="vendor/pickadate/themes/default.date.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    	<link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-	<link href="./assets/cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
-	
+
 </head>
-<body data-theme-version="dark">
+
+<body>
 
     <!--*******************
         Preloader start
@@ -31,6 +44,7 @@
         Preloader end
     ********************-->
 
+
     <!--**********************************
         Main wrapper start
     ***********************************-->
@@ -40,7 +54,7 @@
             Nav header start
         ***********************************-->
         <div class="nav-header">
-            <a href="/" class="brand-logo">
+            <a href="index.html" class="brand-logo">
                 <img class="logo-abbr" src="images/logo.png" alt="">
                 <img class="logo-compact" src="images/logo-text.png" alt="">
                 <img class="brand-title" src="images/logo-text.png" alt="">
@@ -557,8 +571,11 @@
 		<!--**********************************
             Chat box End
         ***********************************-->
+
+
 		
-		<!--**********************************
+		
+        <!--**********************************
             Header start
         ***********************************-->
         <div class="header">
@@ -567,7 +584,7 @@
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
                             <div class="dashboard_bar">
-                                Dashboard
+                                Form Pickers
                             </div>
                         </div>
 
@@ -702,29 +719,23 @@
 				<ul class="metismenu" id="menu">
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-networking"></i>
-							<span class="nav-text">Configuración</span>
+							<span class="nav-text">Dashboard</span>
 						</a>
                         <ul aria-expanded="false">
-							<li><a href="ecom-customers.html">Usuarios</a></li>
-							<li><a href="ecom-customers.html">Perfiles</a></li>
-							<li><a href="ecom-customers.html">Bancos</a></li>
-							<!--li><a href="index.html">Dashboard</a></li>
+							<li><a href="index.html">Dashboard</a></li>
 							<li><a href="doctors.html">Doctors</a></li>
 							<li><a href="doctors-details.html">Doctors Details</a></li>
 							<li><a href="doctors-review.html">Doctors Review</a></li>
-							<li><a href="patient-details.html">Patient Details</a></li-->
+							<li><a href="patient-details.html">Patient Details</a></li>
 						</ul>
 
                     </li>
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 						<i class="flaticon-381-television"></i>
-							<span class="nav-text">Depósitos Bancarios</span>
+							<span class="nav-text">Apps</span>
 						</a>
                         <ul aria-expanded="false">
-							<li><a href="ecom-customers.html">Registro</a></li>
-							<li><a href="ecom-customers.html">Explorador</a></li>
-
-                            <!--li><a href="app-profile.html">Profile</a></li>
+                            <li><a href="app-profile.html">Profile</a></li>
 							<li><a href="post-details.html">Post Details</a></li>
                             <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
                                 <ul aria-expanded="false">
@@ -744,12 +755,12 @@
 									<li><a href="ecom-invoice.html">Invoice</a></li>
 									<li><a href="ecom-customers.html">Customers</a></li>
                                 </ul>
-                            </li-->
+                            </li>
                         </ul>
                     </li>
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-controls-3"></i>
-							<span class="nav-text">Reportes</span>
+							<span class="nav-text">Charts</span>
 						</a>
                         <ul aria-expanded="false">
                             <li><a href="chart-flot.html">Flot</a></li>
@@ -760,7 +771,7 @@
                             <li><a href="chart-peity.html">Peity</a></li>
                         </ul>
                     </li>
-                    <!--li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-internet"></i>
 							<span class="nav-text">Bootstrap</span>
 						</a>
@@ -843,39 +854,205 @@
                             </li>
                             <li><a href="page-lock-screen.html">Lock Screen</a></li>
                         </ul>
-                    </li-->
+                    </li>
                 </ul>
             
-
+				<div class="plus-box">
+					<p>Create new appointment</p>
+				</div>
+				<div class="copyright">
+					<p><strong>Mediqu Hospital Admin Dashboard</strong> © 2021 All Rights Reserved</p>
+					<p>Made with <span class="heart"></span> by DexignZone</p>
+				</div>
 			</div>
         </div>
         <!--**********************************
             Sidebar end
         ***********************************-->
-		
-		<!--**********************************
+
+        <!--**********************************
             Content body start
         ***********************************-->
         <div class="content-body">
-            <content></content>
+            <div class="container-fluid">
+                <div class="row page-titles mx-0">
+                    <div class="col-sm-6 p-md-0">
+                        <div class="welcome-text">
+                            <h4>Hi, welcome back!</h4>
+                            <span>Pickers</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Form</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Pickers</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="row">
+                    <div class="col-xl-9">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Date Picker</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-xl-4 mb-3">
+                                        <div class="example">
+                                            <p class="mb-1">Date Range Pick</p>
+                                            <input class="form-control input-daterange-datepicker" type="text" name="daterange" value="01/01/2015 - 01/31/2015">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 mb-3">
+                                        <div class="example">
+                                            <p class="mb-1">Date Range With Time</p>
+                                            <input type="text" class="form-control input-daterange-timepicker" name="daterange" value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="example">
+                                            <p class="mb-1">Limit Selectable Dates</p>
+                                            <input class="form-control input-limit-datepicker" type="text" name="daterange" value="06/01/2015 - 06/07/2015">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <!-- Card -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Pick-Date picker</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-1">Default picker</p>
+                                <input name="datepicker" class="datepicker-default form-control" id="datepicker">
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Date picker</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6 col-xl-3 col-xxl-6 mb-3">
+                                        <label>Default Clock Picker</label>
+                                        <div class="input-group clockpicker">
+                                            <input type="text" class="form-control" value="09:30"> <span class="input-group-append"><span class="input-group-text"><i
+                                                        class="fa fa-clock-o"></i></span></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-3 col-xxl-6 mb-3">
+                                        <label>Auto close Clock Picker</label>
+                                        <div class="input-group clockpicker" data-placement="bottom" data-align="top" data-autoclose="true">
+                                            <input type="text" class="form-control" value="13:14"> <span class="input-group-append"><span class="input-group-text"><i
+                                                        class="fa fa-clock-o"></i></span></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-3 col-xxl-6 mb-3">
+                                        <label>Now time</label>
+                                        <div class="input-group">
+                                            <input class="form-control" id="single-input" value="" placeholder="Now">
+                                            <div class="input-group-append">
+												<button type="button" id="check-minutes" class="btn waves-effect waves-light btn-ft btn-success">Check the minutes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-3 col-xxl-6">
+                                        <label>Left Placement</label>
+                                        <div class="input-group clockpicker" data-placement="left" data-align="top" data-autoclose="true">
+                                            <input type="text" class="form-control" value="13:14"> 
+											<span class="input-group-append">
+												<span class="input-group-text"><i class="fa fa-clock-o"></i></span>
+											</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Material Date picker</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row form-material">
+                                    <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
+                                        <label>Default Material Date Picker</label>
+                                        <input type="text" class="form-control" placeholder="2017-06-04" id="mdate">
+                                    </div>
+                                    <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
+                                        <label>Default Material Date Timepicker</label>
+                                        <input type="text" id="date-format" class="form-control" placeholder="Saturday 24 June 2017 - 21:44">
+                                    </div>
+                                    <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
+                                        <label>Time Picker</label>
+                                        <input class="form-control" id="timepicker" placeholder="Check time">
+                                    </div>
+                                    <div class="col-xl-3 col-xxl-6 col-md-6">
+                                        <label>Min Date set</label>
+                                        <input type="text" class="form-control" placeholder="set min date" id="min-date">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Color Picker</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-6 mb-3">
+                                        <div class="example">
+                                            <p class="mb-1">Simple mode</p>
+                                            <input type="text" class="as_colorpicker form-control" value="#7ab2fa">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-6 mb-3">
+                                        <div class="example">
+                                            <p class="mb-1">Complex mode</p>
+                                            <input type="text" class="complex-colorpicker form-control" value="#fa7a7a">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-6 mb-3">
+                                        <div class="example">
+                                            <p class="mb-1">Gradiant mode</p>
+                                            <input type="text" class="gradient-colorpicker form-control" value="#bee0ab">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--**********************************
             Content body end
         ***********************************-->
+
 
         <!--**********************************
             Footer start
         ***********************************-->
         <div class="footer">
             <div class="copyright">
-                <p>Copyright © Designed &amp; Developed by <strong>Farmacia Universal</strong></a>© 2021 All Rights Reserved</p>
+                <p>Copyright © Designed &amp; Developed by <a href="http://dexignzone.com/" target="_blank">DexignZone</a> 2021</p>
             </div>
         </div>
         <!--**********************************
             Footer end
         ***********************************-->
 
-		<!--**********************************
+        <!--**********************************
            Support ticket button start
         ***********************************-->
 
@@ -883,7 +1060,7 @@
            Support ticket button end
         ***********************************-->
 
-
+        
     </div>
     <!--**********************************
         Main wrapper end
@@ -895,18 +1072,48 @@
     <!-- Required vendors -->
     <script src="vendor/global/global.min.js"></script>
 	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="vendor/chart.js/Chart.bundle.min.js"></script>
     <script src="js/custom.min.js"></script>
 	<script src="js/deznav-init.js"></script>
 	<!-- Apex Chart -->
 	<script src="vendor/apexchart/apexchart.js"></script>
-	
-	
-	<!-- Dashboard 1 -->
-	<script src="js/dashboard/dashboard-1.js"></script>
-	
-	
+    
+
+
+    <!-- Daterangepicker -->
+    <!-- momment js is must -->
+    <script src="vendor/moment/moment.min.js"></script>
+    <script src="vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- clockpicker -->
+    <script src="vendor/clockpicker/js/bootstrap-clockpicker.min.js"></script>
+    <!-- asColorPicker -->
+    <script src="vendor/jquery-asColor/jquery-asColor.min.js"></script>
+    <script src="vendor/jquery-asGradient/jquery-asGradient.min.js"></script>
+    <script src="vendor/jquery-asColorPicker/js/jquery-asColorPicker.min.js"></script>
+    <!-- Material color picker -->
+    <script src="vendor/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+    <!-- pickdate -->
+    <script src="vendor/pickadate/picker.js"></script>
+    <script src="vendor/pickadate/picker.time.js"></script>
+    <script src="vendor/pickadate/picker.date.js"></script>
+
+
+
+    <!-- Daterangepicker -->
+    <script src="js/plugins-init/bs-daterange-picker-init.js"></script>
+    <!-- Clockpicker init -->
+    <script src="js/plugins-init/clock-picker-init.js"></script>
+    <!-- asColorPicker init -->
+    <script src="js/plugins-init/jquery-asColorPicker.init.js"></script>
+    <!-- Material color picker init -->
+    <script src="js/plugins-init/material-date-picker-init.js"></script>
+    <!-- Pickdate -->
+    <script src="js/plugins-init/pickadate-init.js"></script>
+
+
+
     <script src="js/styleSwitcher.js"></script>
 </body>
 
-
+<!-- Mirrored from mediqu.dexignzone.com/xhtml/form-pickers.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 14:29:44 GMT -->
 </html>
