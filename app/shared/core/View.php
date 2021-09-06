@@ -14,6 +14,7 @@ class View
             $main = file_get_contents(self::$path_main);
             $content = file_get_contents(self::$path_views.DS.$view.DS.'main.html');
             $main = str_replace("<content></content>",$content,$main);
+            $main = str_replace("<module-name></module-name>",ucfirst($view),$main);
             return $main;
         }
     }
