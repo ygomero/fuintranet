@@ -1,18 +1,21 @@
 <?php
 
+use App\Guards\AuthGuard;
 class Route
 {
 
     private static $routes = array();
     private static $pathNotFound = null;
     private static $methodNotAllowed = null;
+    private static $pathGuards = DIR_APP.DS."domain".DS."guards";
 
-    public static function add($expression, $function, $method = 'get')
+    public static function add($expression, $function, $method = 'get', $guards = [])
     {
         array_push(self::$routes, array(
             'expression' => $expression,
             'function' => $function,
-            'method' => $method
+            'method' => $method,
+            'guards'=>$guards
         ));
     }
 
@@ -28,7 +31,6 @@ class Route
 
     public static function run($basepath = '/')
     {
-
         // Parse current url
         $parsed_url = parse_url($_SERVER['REQUEST_URI']); //Parse Uri
 
@@ -74,6 +76,13 @@ class Route
 
                     if ($basepath != '' && $basepath != '/') {
                         array_shift($matches); // Remove basepath
+                    }
+
+                    if(count($route['guards']) > 0){
+                        //esto verifica si se debe pasar un guard antes de alguna ruta
+                        foreach($route['guards'] as $guard){
+                            //$guard = new AuthGuard();exit;
+                        }
                     }
 
                     call_user_func_array($route['function'], $matches);
