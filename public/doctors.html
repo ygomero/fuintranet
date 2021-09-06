@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+<!-- Mirrored from mediqu.dexignzone.com/xhtml/doctors.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 14:28:37 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Farmacia Universal</title>
+    <title>Mediqu - Bootstrap Admin Dashboard </title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
     <link href="vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="vendor/chartist/css/chartist.min.css">
     <link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-	<link href="./assets/cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
-	
+	<link href="../../cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+
 </head>
-<body data-theme-version="dark">
+<body>
 
     <!--*******************
         Preloader start
@@ -40,7 +42,7 @@
             Nav header start
         ***********************************-->
         <div class="nav-header">
-            <a href="/" class="brand-logo">
+            <a href="index.html" class="brand-logo">
                 <img class="logo-abbr" src="images/logo.png" alt="">
                 <img class="logo-compact" src="images/logo-text.png" alt="">
                 <img class="brand-title" src="images/logo-text.png" alt="">
@@ -567,7 +569,7 @@
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
                             <div class="dashboard_bar">
-                                Dashboard
+                                Doctors
                             </div>
                         </div>
 
@@ -702,29 +704,23 @@
 				<ul class="metismenu" id="menu">
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-networking"></i>
-							<span class="nav-text">Configuración</span>
+							<span class="nav-text">Dashboard</span>
 						</a>
                         <ul aria-expanded="false">
-							<li><a href="ecom-customers.html">Usuarios</a></li>
-							<li><a href="ecom-customers.html">Perfiles</a></li>
-							<li><a href="ecom-customers.html">Bancos</a></li>
-							<!--li><a href="index.html">Dashboard</a></li>
+							<li><a href="index.html">Dashboard</a></li>
 							<li><a href="doctors.html">Doctors</a></li>
 							<li><a href="doctors-details.html">Doctors Details</a></li>
 							<li><a href="doctors-review.html">Doctors Review</a></li>
-							<li><a href="patient-details.html">Patient Details</a></li-->
+							<li><a href="patient-details.html">Patient Details</a></li>
 						</ul>
 
                     </li>
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 						<i class="flaticon-381-television"></i>
-							<span class="nav-text">Depósitos Bancarios</span>
+							<span class="nav-text">Apps</span>
 						</a>
                         <ul aria-expanded="false">
-							<li><a href="ecom-customers.html">Registro</a></li>
-							<li><a href="ecom-customers.html">Explorador</a></li>
-
-                            <!--li><a href="app-profile.html">Profile</a></li>
+                            <li><a href="app-profile.html">Profile</a></li>
 							<li><a href="post-details.html">Post Details</a></li>
                             <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
                                 <ul aria-expanded="false">
@@ -744,12 +740,12 @@
 									<li><a href="ecom-invoice.html">Invoice</a></li>
 									<li><a href="ecom-customers.html">Customers</a></li>
                                 </ul>
-                            </li-->
+                            </li>
                         </ul>
                     </li>
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-controls-3"></i>
-							<span class="nav-text">Reportes</span>
+							<span class="nav-text">Charts</span>
 						</a>
                         <ul aria-expanded="false">
                             <li><a href="chart-flot.html">Flot</a></li>
@@ -760,7 +756,7 @@
                             <li><a href="chart-peity.html">Peity</a></li>
                         </ul>
                     </li>
-                    <!--li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-internet"></i>
 							<span class="nav-text">Bootstrap</span>
 						</a>
@@ -843,10 +839,16 @@
                             </li>
                             <li><a href="page-lock-screen.html">Lock Screen</a></li>
                         </ul>
-                    </li-->
+                    </li>
                 </ul>
             
-
+				<div class="plus-box">
+					<p>Create new appointment</p>
+				</div>
+				<div class="copyright">
+					<p><strong>Mediqu Hospital Admin Dashboard</strong> © 2021 All Rights Reserved</p>
+					<p>Made with <span class="heart"></span> by DexignZone</p>
+				</div>
 			</div>
         </div>
         <!--**********************************
@@ -857,7 +859,356 @@
             Content body start
         ***********************************-->
         <div class="content-body">
-            <content></content>
+            <!-- row -->
+			<div class="container-fluid">
+                <div class="form-head d-flex mb-3  mb-lg-5   align-items-start">
+					<a href="javascript:void(0)" class="btn btn-danger" data-toggle="modal" data-target="#addDoctorModal">+New Doctor</a>
+					<div class="input-group search-area ml-auto d-inline-flex">
+						<input type="text" class="form-control" placeholder="Search here">
+						<div class="input-group-append">
+							<a href="javascript:void(0)" class="input-group-text"><i class="flaticon-381-search-2"></i></a>
+						</div>
+					</div>
+					<div class="dropdown ml-3 d-inline-block">
+						<div class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown">
+							<i class="flaticon-381-controls-3 mr-2"></i> Filter
+						</div>
+						<div class="dropdown-menu dropdown-menu-left">
+							<a class="dropdown-item" href="#">A To Z List</a>
+							<a class="dropdown-item" href="#">Z To A List</a>
+						</div>
+					</div>
+					<select class="form-control style-2 ml-3 default-select ">
+						<option>Newest</option>
+						<option>Old</option>
+					</select>
+					<a href="javascript:void(0);" class="btn btn-outline-primary ml-3"><i class="flaticon-381-menu-1 mr-0"></i></a>
+					<a href="javascript:void(0);" class="btn btn-light ml-3"><i class="flaticon-381-pad mr-0"></i></a>
+				</div>
+				<!-- Add Doctor -->
+				<div class="modal fade" id="addDoctorModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Add Doctor</h5>
+								<button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="form-group">
+										<label class="text-black font-w500">Doctor Name</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="form-group">
+										<label class="text-black font-w500">Doctor ID</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="form-group">
+										<label class="text-black font-w500">Specialist</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="form-group">
+										<label class="text-black font-w500">Appointment Date</label>
+										<input type="date" class="form-control">
+									</div>
+									<div class="form-group">
+										<button type="button" class="btn btn-primary">CREATE</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="row">
+					<div class="col-xl-12">
+						<div id="accordion-one" class="accordion doctor-list ">
+							<div class="accordion__item">
+								<div class="accordion__header rounded-lg" data-toggle="collapse" data-target="#default_collapseOne">
+									<span class="accordion__header-alphabet">A</span>
+									<span class="accordion__header-line flex-grow-1"></span>
+									<span class="accordion__header--text">5 Doctors</span>
+									<span class="accordion__header--indicator style_two"></span>
+								</div>
+								<div id="default_collapseOne" class="collapse accordion__body show" data-parent="#accordion-one">
+										<div class="widget-media best-doctor pt-4">
+											<div class="timeline row">
+												<div class="col-lg-6">
+													<div class="timeline-panel bg-white p-4 mb-4">
+														<div class="media mr-4">
+															<img alt="image" width="90" src="images/avatar/1.jpg">
+														</div>
+														<div class="media-body">
+															<a href="doctors-details.html"><h4 class="mb-2">Dr. Samantha Queque</h4></a>
+															<p class="mb-2 text-primary">Gynecologist</p>
+															<div class="star-review">
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-gray"></i>
+																<i class="fa fa-star text-gray"></i>
+																<span class="ml-3">451 reviews</span>
+															</div>
+														</div>
+														<div class="social-media">
+															<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-instagram btn-sm"></a>
+															<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-twitter btn-sm"></a>
+															<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-facebook btn-sm"></a>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="timeline-panel active bg-white p-4  mb-4" >
+														<div class="media mr-4">
+															<img alt="image" width="90" src="images/avatar/2.jpg">
+														</div>
+														<div class="media-body">
+															<a href="doctors-details.html"><h4 class="mb-2">Dr. Abdul Aziz Lazis</h4></a>
+															<p class="mb-2 text-primary">Physical Therapy</p>
+															<div class="star-review">
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-gray"></i>
+																<span class="ml-3">238 reviews</span>
+															</div>
+														</div>
+														<div class="social-media">
+															<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-instagram btn-sm"></a>
+															<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-twitter btn-sm"></a>
+															<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-facebook btn-sm"></a>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="timeline-panel bg-white p-4 mb-4">
+														<div class="media mr-4">
+															<img alt="image" width="90" src="images/avatar/3.jpg">
+														</div>
+														<div class="media-body">
+															<a href="doctors-details.html"><h4 class="mb-2">Dr. Samuel Jr.</h4></a>
+															<p class="mb-2 text-primary">Dentist</p>
+															<div class="star-review">
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-gray"></i>
+																<i class="fa fa-star text-gray"></i>
+																<span class="ml-3">300 reviews</span>
+															</div>
+														</div>
+														<div class="social-media">
+															<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-instagram btn-sm"></a>
+															<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-twitter btn-sm"></a>
+															<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-facebook btn-sm"></a>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="timeline-panel bg-white p-4 mb-4">
+														<div class="media mr-4">
+															<img alt="image" width="90" src="images/avatar/4.jpg">
+														</div>
+														<div class="media-body">
+															<a href="doctors-details.html"><h4 class="mb-2">Dr. Alex Siauw</h4></a>
+															<p class="mb-2 text-primary">Physical Therapy</p>
+															<div class="star-review">
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-gray"></i>
+																<i class="fa fa-star text-gray"></i>
+																<span class="ml-3">451 reviews</span>
+															</div>
+														</div>
+														<div class="social-media">
+															<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-instagram btn-sm"></a>
+															<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-twitter btn-sm"></a>
+															<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-facebook btn-sm"></a>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="timeline-panel bg-white p-4 mb-4">
+														<div class="media mr-4">
+															<img alt="image" width="90" src="images/avatar/5.jpg">
+														</div>
+														<div class="media-body">
+															<a href="doctors-details.html"><h4 class="mb-2">Dr. Jennifer Ruby</h4></a>
+															<p class="mb-2 text-primary">Nursingc</p>
+															<div class="star-review">
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<i class="fa fa-star text-orange"></i>
+																<span class="ml-3">700 reviews</span>
+															</div>
+														</div>
+														<div class="social-media">
+															<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-instagram btn-sm"></a>
+															<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-twitter btn-sm"></a>
+															<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-facebook btn-sm"></a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<div class="accordion__header rounded-lg" data-toggle="collapse" data-target="#default_collapseTwo">
+									<span class="accordion__header-alphabet">B</span>
+									<span class="accordion__header-line flex-grow-1"></span>
+									<span class="accordion__header--text">3 Doctors</span>
+									<span class="accordion__header--indicator style_two"></span>
+								</div>
+								<div id="default_collapseTwo" class="collapse accordion__body" data-parent="#accordion-one">
+									<div class="widget-media best-doctor pt-4">
+										<div class="timeline row">
+											<div class="col-lg-6">
+												<div class="timeline-panel bg-white p-4 mb-4">
+													<div class="media mr-4">
+														<img alt="image" width="90" src="images/avatar/1.jpg">
+													</div>
+													<div class="media-body">
+														<a href="doctors-details.html"><h4 class="mb-2">Dr. Samantha Queque</h4></a>
+														<p class="mb-2 text-primary">Gynecologist</p>
+														<div class="star-review">
+															<i class="fa fa-star text-orange"></i>
+															<i class="fa fa-star text-orange"></i>
+															<i class="fa fa-star text-orange"></i>
+															<i class="fa fa-star text-gray"></i>
+															<i class="fa fa-star text-gray"></i>
+															<span class="ml-3">451 reviews</span>
+														</div>
+													</div>
+													<div class="social-media">
+														<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-instagram btn-sm"></a>
+														<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-twitter btn-sm"></a>
+														<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-facebook btn-sm"></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="timeline-panel active bg-white p-4  mb-4" >
+													<div class="media mr-4">
+														<img alt="image" width="90" src="images/avatar/2.jpg">
+													</div>
+													<div class="media-body">
+														<a href="doctors-details.html"><h4 class="mb-2">Dr. Abdul Aziz Lazis</h4></a>
+														<p class="mb-2 text-primary">Physical Therapy</p>
+														<div class="star-review">
+															<i class="fa fa-star text-orange"></i>
+															<i class="fa fa-star text-orange"></i>
+															<i class="fa fa-star text-orange"></i>
+															<i class="fa fa-star text-orange"></i>
+															<i class="fa fa-star text-gray"></i>
+															<span class="ml-3">238 reviews</span>
+														</div>
+													</div>
+													<div class="social-media">
+														<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-instagram btn-sm"></a>
+														<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-twitter btn-sm"></a>
+														<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-facebook btn-sm"></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="timeline-panel bg-white p-4 mb-4">
+													<div class="media mr-4">
+														<img alt="image" width="90" src="images/avatar/3.jpg">
+													</div>
+													<div class="media-body">
+														<a href="doctors-details.html"><h4 class="mb-2">Dr. Samuel Jr.</h4></a>
+														<p class="mb-2 text-primary">Dentist</p>
+														<div class="star-review">
+															<i class="fa fa-star text-orange"></i>
+															<i class="fa fa-star text-orange"></i>
+															<i class="fa fa-star text-orange"></i>
+															<i class="fa fa-star text-gray"></i>
+															<i class="fa fa-star text-gray"></i>
+															<span class="ml-3">300 reviews</span>
+														</div>
+													</div>
+													<div class="social-media">
+														<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-instagram btn-sm"></a>
+														<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-twitter btn-sm"></a>
+														<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-facebook btn-sm"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<div class="accordion__header rounded-lg" data-toggle="collapse" data-target="#default_collapseThree">
+									<span class="accordion__header-alphabet">C</span>
+									<span class="accordion__header-line flex-grow-1"></span>
+									<span class="accordion__header--text">2 Doctors</span>
+									<span class="accordion__header--indicator style_two"></span>
+								</div>
+								<div id="default_collapseThree" class="collapse accordion__body" data-parent="#accordion-one">
+									<div class="widget-media best-doctor pt-4">
+										<div class="timeline row">
+											<div class="col-lg-6">
+												<div class="timeline-panel active bg-white p-4  mb-4" >
+													<div class="media mr-4">
+														<img alt="image" width="90" src="images/avatar/2.jpg">
+													</div>
+													<div class="media-body">
+														<a href="doctors-details.html"><h4 class="mb-2">Dr. Abdul Aziz Lazis</h4></a>
+														<p class="mb-2 text-primary">Physical Therapy</p>
+														<div class="star-review">
+															<i class="fa fa-star text-orange"></i>
+															<i class="fa fa-star text-orange"></i>
+															<i class="fa fa-star text-orange"></i>
+															<i class="fa fa-star text-orange"></i>
+															<i class="fa fa-star text-gray"></i>
+															<span class="ml-3">238 reviews</span>
+														</div>
+													</div>
+													<div class="social-media">
+														<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-instagram btn-sm"></a>
+														<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-twitter btn-sm"></a>
+														<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-facebook btn-sm"></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="timeline-panel bg-white p-4 mb-4">
+													<div class="media mr-4">
+														<img alt="image" width="90" src="images/avatar/3.jpg">
+													</div>
+													<div class="media-body">
+														<a href="doctors-details.html"><h4 class="mb-2">Dr. Samuel Jr.</h4></a>
+														<p class="mb-2 text-primary">Dentist</p>
+														<div class="star-review">
+															<i class="fa fa-star text-orange"></i>
+															<i class="fa fa-star text-orange"></i>
+															<i class="fa fa-star text-orange"></i>
+															<i class="fa fa-star text-gray"></i>
+															<i class="fa fa-star text-gray"></i>
+															<span class="ml-3">300 reviews</span>
+														</div>
+													</div>
+													<div class="social-media">
+														<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-instagram btn-sm"></a>
+														<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-twitter btn-sm"></a>
+														<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fa fa-facebook btn-sm"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
         </div>
         <!--**********************************
             Content body end
@@ -868,7 +1219,7 @@
         ***********************************-->
         <div class="footer">
             <div class="copyright">
-                <p>Copyright © Designed &amp; Developed by <strong>Farmacia Universal</strong></a>© 2021 All Rights Reserved</p>
+                <p>Copyright © Designed &amp; Developed by <a href="http://dexignzone.com/" target="_blank">DexignZone</a> 2021</p>
             </div>
         </div>
         <!--**********************************
@@ -895,18 +1246,23 @@
     <!-- Required vendors -->
     <script src="vendor/global/global.min.js"></script>
 	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="vendor/chart.js/Chart.bundle.min.js"></script>
     <script src="js/custom.min.js"></script>
 	<script src="js/deznav-init.js"></script>
 	<!-- Apex Chart -->
 	<script src="vendor/apexchart/apexchart.js"></script>
 	
+    <!-- Vectormap -->
+	<!-- Chart piety plugin files -->
+    <script src="vendor/peity/jquery.peity.min.js"></script>
 	
-	<!-- Dashboard 1 -->
-	<script src="js/dashboard/dashboard-1.js"></script>
+    <!-- Chartist -->
+    <script src="vendor/chartist/js/chartist.min.js"></script>
+	
 	
 	
     <script src="js/styleSwitcher.js"></script>
 </body>
 
-
+<!-- Mirrored from mediqu.dexignzone.com/xhtml/doctors.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 14:28:38 GMT -->
 </html>

@@ -2186,7 +2186,7 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #711685;
+  background-color: #3065D0;
   border-color: #711685; }
   .btn-primary:hover {
     color: #fff;
@@ -11948,7 +11948,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
           fill: #711685; }
       .deznav .metismenu > li.mm-active > a {
         color: #fff;
-        background: #711685;
+        background: linear-gradient(to bottom right, #2b5bbd, #711685) ;
         box-shadow: 0 12px 15px 0 rgba(113, 22, 133, 0.13); }
         .deznav .metismenu > li.mm-active > a i {
           color: #fff; }
