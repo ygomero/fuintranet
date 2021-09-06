@@ -81,10 +81,8 @@ class Route
                     if(count($route['guards']) > 0){
                         //esto verifica si se debe pasar un guard antes de alguna ruta
                         foreach($route['guards'] as $guard){
-                            //TODO: modificar esto
-                            if($guard == "auth"){
-                                AuthGuard::main();
-                            }
+                            $class = 'App\Guards\\'.ucfirst($guard).'Guard';
+                            $class::main();
                         }
                     }
 
