@@ -18,7 +18,7 @@ class App {
     }
 
     function addQuerys($querys){
-        $this->$querys = $querys;
+        $this->querys = $querys;
     }
 
     function load_guard($guard){

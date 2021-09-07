@@ -10,7 +10,7 @@ class View{
         self::$app = $app;
     }
 
-    function render($view,$alone = false){
+    static function render($view,$alone = false){
         if($alone){
             $content = file_get_contents(DIR_VIEWS.DS.$view.DS.'main.html');
             echo $content;exit;
