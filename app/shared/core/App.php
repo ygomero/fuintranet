@@ -15,12 +15,17 @@ class App {
     //   require_once(self::$pathControllers.DS.'BaseController.php');
         require_once(self::$pathControllers.DS.'LayoutController.php');
         require_once(self::$pathControllers.DS.'ModulesController.php');
+        require_once(self::$pathControllers.DS.'UsersController.php');
     }
 
     function addQuerys($querys){
         $this->querys = $querys;
     }
 
+    function getQuery($name){
+        return $this->querys[$name];
+    }
+    
     function load_guard($guard){
         if(file_exists(self::$pathGuards.DS.ucfirst($guard).'Guard.php')){
             require_once(self::$pathGuards.DS.ucfirst($guard).'Guard.php');
@@ -71,9 +76,11 @@ class App {
     {
         $this->methodNotAllowed = $function;
     }
+    
+    
 
     function process($basepath = '/'){
-
+        $module = '';
         // Parse current url
         $parsed_url = parse_url($_SERVER['REQUEST_URI']); //Parse Uri
 

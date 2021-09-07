@@ -18,6 +18,7 @@ class View{
         else{
             $main = file_get_contents(DIR_LAYOUT.DS."index.html");
             $content = file_get_contents(DIR_VIEWS.DS.$view.DS.'main.html');
+            $main = str_replace("<content></content>",$content,$main);
             $main = str_replace("<module-name></module-name>",ucfirst($view),$main);
             $layoutCrtl = new LayoutController(self::$app);
             $main = str_replace("<app-sidebar></app-sidebar>",$layoutCrtl->getSideBar(),$main);
