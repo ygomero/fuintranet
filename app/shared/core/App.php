@@ -19,12 +19,26 @@ class App {
         "navbar"
     ];
 
+    private static $connections = [];
+
     function __construct() {
         $this->load_guards(self::$guards);
         $this->load_controllers(self::$controllers);
         $this->load_layout(self::$layout);
     }
 
+    function addConnection($name,$conn){
+        self::$connections[$name] = $conn;
+    }
+
+    function getConnection($name){
+        if(isset(self::$connections[$name])){
+            return self::$connections[$name];
+        }
+        else{
+            return false;
+        }
+    }
     
     function load_guards($guards = [])
     {
