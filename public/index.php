@@ -1,59 +1,23 @@
 <?php
-
-// Include  class
-include('../app/shared/core/App.php');
+// Usaría require siempre que el código sea importante (Funciones reutilizables de PHP, configuraciones…), 
+//mientras que include lo usaría en casos en los que el código no es vital para la ejecución del script (cabeceras y pies HTML o similares).
 include('../app/shared/common/defines.php');
-include('../app/shared/core/Route.php');
-include('../app/shared/core/View.php');
-include('../app/shared/core/Session.php');
-// include('../app/db/conn.php');
-include('../app/db/db.php');
-
-// $conn = new SQLSRV_DataBase("fu_consultas", "Fusac2021", "BD_INFORMES", "192.168.1.5", 1433);
-// $conn2 = new SQLSRV_DataBase("fu_consultas", "Fusac2021", "LOLFAR9000", "192.168.1.5", 1433);
-
-//esta seccion es para probar el query
-// $query = "SELECT * FROM FU_MODULES WHERE LEVEL_MOD=1";
-// $results = $conn->get_results( $query);
-//var_dump($results);exit;
-//fin 
+require('../app/shared/core/Session.php');
+require('../app/shared/core/View.php');
+require('../app/shared/core/App.php');
+require('../app/web/routes.php');
+require('../app/shared/core/Route.php');
+require('../app/db/conn.php');
+require('../app/db/query.php');
 
 $app = new App();
-// $app->addConnection($conn);
-// $app->addConnection($conn2);
-
-// Add base route (startpage)
-Route::add('/', function () {
-    echo View::render("home");
-},"get",["auth"]);
-
-Route::add('/home', function () {
-    echo View::render("home");
-},"get",["auth"]);
-
-Route::add('/modules', function () { 
-    echo View::render("modules");
-},"get",["auth"]);
-
-Route::add('/usuarios',function(){
-    echo View::render("usuarios");
-},"get",["auth"]);
-
-Route::add('/perfiles', function () {
-    echo View::render("perfiles");
-},"get",["auth"]);
-
-Route::add('/bancos', function () {
-    echo View::render("bancos");
-},"get",["auth"]);
-
-Route::add('/login', function () {
-    echo View::render("login",true);
+$app->addConnection("conn1",$conn);
+$app->addConnection("conn2",$conn2);
+$app->addRoutes($routes);
+$app->pathNotFound(function () {
+    View::render("404",true);
 });
+$app->addQuerys($querys);
 
-//pagina que se mostrará cuando no se encuentra ninguna ruta
-Route::pathNotFound(function () {
-    echo View::render("404",true);
-});
-
-Route::run('/');
+View::setApp($app);
+$app->process();

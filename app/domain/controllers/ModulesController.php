@@ -4,9 +4,18 @@ namespace App\Controllers;
 
 class ModulesController
 {
+    public $app = null;
 
-    static function getModules()
+    function __construct($app)
     {
+        $this->app = $app;
+    }
+
+    function getModules()
+    {
+        $conn = $this->app->getConnection("conn1");
+        $results = $conn->get_results($this->app->getQuery("modulesGetAll"));
+
         $modules = [
             [
                 "name" => "Configuracion",

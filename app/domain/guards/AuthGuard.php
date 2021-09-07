@@ -7,7 +7,8 @@ class AuthGuard{
 
     static function main(){
         if(!isset($_SESSION["user"])){
-            //redirigir al login            
+            //redirigir al login 
+            redirect("login");     
         }
     }
 }
