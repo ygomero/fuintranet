@@ -34,6 +34,14 @@ $routes =  [
         ]
     ),
     array(
+        'path' => "/perfil/nuevo",
+        'controller' => "perfil-nuevo",
+        'method' => "GET",
+        'guards' => [
+            "auth"
+        ]
+    ),
+    array(
         'path' => "/perfil",
         'controller' => "perfiles",
         'method' => "GET",

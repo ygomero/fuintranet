@@ -4,16 +4,22 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="card">
-                <div class="card-header">
-                    <h4 class="card-title">Información Personal</h4>
-                </div>
                 <div class="card-body">
                     <div class="form-validation">
                         <form class="form-valide" action="#" method="post">
                             <div class="row">
                                 <div class="col-xl-6">
                                     <div class="form-group row">
-                                        <label class="col-lg-4 col-form-label" for="val-skill">Tipo de Documento
+                                        <label class="col-lg-4 col-form-label" for="val-currency">Nombre Perfil
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="col-lg-6">
+                                            <input type="text" class="form-control" id="val-currency" name="val-currency" placeholder="Ingrese Perfil">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group row">
+                                        <label class="col-lg-4 col-form-label" for="val-skill">Módulo
                                             <span class="text-danger">*</span>
                                         </label>
                                         <div class="col-lg-6">
@@ -33,48 +39,14 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="form-group row">
-                                        <label class="col-lg-4 col-form-label" for="val-currency">Nro Doc
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="val-currency" name="val-currency" placeholder="99999999">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-lg-4 col-form-label" for="val-website">N° Contacto
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="val-website" name="val-website" placeholder="987654321">
-                                        </div>
-                                    </div>
-
                                 </div>
                                 <div class="col-xl-6">
                                     <div class="form-group row">
-                                        <label class="col-lg-4 col-form-label" for="val-username">Apellido Paterno
+                                        <label class="col-lg-4 col-form-label" for="val-username">Descripción
                                             <span class="text-danger">*</span>
                                         </label>
                                         <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="val-username" name="val-username" placeholder="Ingrese apellido paterno">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-lg-4 col-form-label" for="val-email">Apellido Materno <span
-                                                class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="val-email" name="val-email" placeholder="Ingrese apellido materno">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="form-group row">
-                                        <label class="col-lg-4 col-form-label" for="val-phoneus">Nombres
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="val-phoneus" name="val-phoneus" placeholder="Ingrese nombre">
+                                            <input type="text" class="form-control" id="val-username" name="val-username" placeholder="Descripción">
                                         </div>
                                     </div>
                                 </div>
@@ -142,27 +114,6 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-lg-4 col-form-label" for="val-skill">Área
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-lg-6">
-                                            <select class="form-control default-select" id="val-skill" name="val-skill">
-                                                <option value="">Seleccione</option>
-                                                <option value="html">HTML</option>
-                                                <option value="css">CSS</option>
-                                                <option value="javascript">JavaScript</option>
-                                                <option value="angular">Angular</option>
-                                                <option value="angular">React</option>
-                                                <option value="vuejs">Vue.js</option>
-                                                <option value="ruby">Ruby</option>
-                                                <option value="php">PHP</option>
-                                                <option value="asp">ASP.NET</option>
-                                                <option value="python">Python</option>
-                                                <option value="mysql">MySQL</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
                                         <label class="col-lg-4 col-form-label" for="val-website">Cargo
                                             <span class="text-danger">*</span>
                                         </label>
@@ -170,7 +121,6 @@
                                             <input type="text" class="form-control" id="val-website" name="val-website" placeholder="Ingrese cargo">
                                         </div>
                                     </div>
-
                                     <div class="form-group row">
                                         <label class="col-lg-4 col-form-label"><a
                                                 href="javascript:void()">Estado</a> <span
