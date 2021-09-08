@@ -86,6 +86,18 @@ $routes =  [
         'fullpage'=>false
     ),
     array(
+        'path' => "/api/users/register",
+        'controller' => "users",
+        'method' => "GET",
+        'fullpage'=>false
+    ),
+    array(
+        'path' => "/api/users/documentos",
+        'controller' => "users",
+        'method' => "GET",
+        'fullpage'=>false
+    ),
+    array(
         'path' => "/api/users",
         'controller' => "users",
         'method' => "GET",
