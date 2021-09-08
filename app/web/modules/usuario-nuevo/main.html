@@ -1,203 +1,306 @@
 <div class="container-fluid">
-
-    <!-- row -->
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="card">
-                <div class="card-header">
-                    <h4 class="card-title">Información Personal</h4>
-                </div>
-                <div class="card-body">
-                    <div class="form-validation">
-                        <form class="form-valide" action="#" method="post">
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="form-group row">
-                                        <label class="col-lg-4 col-form-label" for="val-skill">Tipo de Documento
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-lg-6">
-                                            <select class="form-control default-select" id="val-skill" name="val-skill">
-                                                <option value="">Seleccione</option>
-                                                <option value="html">HTML</option>
-                                                <option value="css">CSS</option>
-                                                <option value="javascript">JavaScript</option>
-                                                <option value="angular">Angular</option>
-                                                <option value="angular">React</option>
-                                                <option value="vuejs">Vue.js</option>
-                                                <option value="ruby">Ruby</option>
-                                                <option value="php">PHP</option>
-                                                <option value="asp">ASP.NET</option>
-                                                <option value="python">Python</option>
-                                                <option value="mysql">MySQL</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-lg-4 col-form-label" for="val-currency">Nro Doc
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="val-currency" name="val-currency" placeholder="99999999">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-lg-4 col-form-label" for="val-website">N° Contacto
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="val-website" name="val-website" placeholder="987654321">
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="form-group row">
-                                        <label class="col-lg-4 col-form-label" for="val-username">Apellido Paterno
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="val-username" name="val-username" placeholder="Ingrese apellido paterno">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-lg-4 col-form-label" for="val-email">Apellido Materno <span
-                                                class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="val-email" name="val-email" placeholder="Ingrese apellido materno">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="form-group row">
-                                        <label class="col-lg-4 col-form-label" for="val-phoneus">Nombres
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="val-phoneus" name="val-phoneus" placeholder="Ingrese nombre">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+  <!-- row -->
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Información Personal</h4>
+        </div>
+        <div class="card-body">
+          <div class="form-validation">
+            <form class="form-valide" action="/api/login" method="post" id="formUsuarioNuevo">
+              <div class="row">
+                <div class="col-xl-6">
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-skill"
+                      >Tipo de Documento
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <select
+                        class="form-control default-select"
+                        id="select_tipo_documento"
+                        name="tipo_documento"
+                      >
+                        <option value="" id="default_tipo_documento">
+                          Seleccione
+                        </option>
+                      </select>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-12">
-            <div class="card">
-                <div class="card-header">
-                    <h4 class="card-title">Información Usuario</h4>
-                </div>
-                <div class="card-body">
-                    <div class="form-validation">
-                        <form class="form-valide" action="#" method="post">
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="form-group row">
-                                        <label class="col-lg-4 col-form-label" for="val-username">Username
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="val-username" name="val-username" placeholder="Ingrese usuario..">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-lg-4 col-form-label" for="val-password">Password
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-lg-6">
-                                            <input type="password" class="form-control" id="val-password" name="val-password" placeholder="Ingrese Password">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-lg-4 col-form-label" for="val-confirm-password">Confirmar Password <span
-                                                class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-lg-6">
-                                            <input type="password" class="form-control" id="val-confirm-password" name="val-confirm-password" placeholder="Confirme password">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="form-group row">
-                                        <label class="col-lg-4 col-form-label" for="val-skill">Perfil
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-lg-6">
-                                            <select class="form-control default-select" id="val-skill" name="val-skill">
-                                                <option value="">Seleccione</option>
-                                                <option value="html">HTML</option>
-                                                <option value="css">CSS</option>
-                                                <option value="javascript">JavaScript</option>
-                                                <option value="angular">Angular</option>
-                                                <option value="angular">React</option>
-                                                <option value="vuejs">Vue.js</option>
-                                                <option value="ruby">Ruby</option>
-                                                <option value="php">PHP</option>
-                                                <option value="asp">ASP.NET</option>
-                                                <option value="python">Python</option>
-                                                <option value="mysql">MySQL</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-lg-4 col-form-label" for="val-skill">Área
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-lg-6">
-                                            <select class="form-control default-select" id="val-skill" name="val-skill">
-                                                <option value="">Seleccione</option>
-                                                <option value="html">HTML</option>
-                                                <option value="css">CSS</option>
-                                                <option value="javascript">JavaScript</option>
-                                                <option value="angular">Angular</option>
-                                                <option value="angular">React</option>
-                                                <option value="vuejs">Vue.js</option>
-                                                <option value="ruby">Ruby</option>
-                                                <option value="php">PHP</option>
-                                                <option value="asp">ASP.NET</option>
-                                                <option value="python">Python</option>
-                                                <option value="mysql">MySQL</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-lg-4 col-form-label" for="val-website">Cargo
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="val-website" name="val-website" placeholder="Ingrese cargo">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label class="col-lg-4 col-form-label"><a
-                                                href="javascript:void()">Estado</a> <span
-                                                class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-lg-8">
-                                            <label class="css-control css-control-primary css-checkbox" for="val-terms">
-                                                <input type="checkbox" class="css-control-input mr-2"
-                                                    id="val-terms" name="val-terms" value="1">
-                                                <span class="css-control-indicator"></span> Habilitado </label>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </form>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-currency"
+                      >Nro Doc
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="val-currency"
+                        name="val-currency"
+                        placeholder="99999999"
+                      />
                     </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-website"
+                      >N° Contacto
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="val-website"
+                        name="val-website"
+                        placeholder="987654321"
+                      />
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-lg-12">
-            <div class="form-group row">
-                <div class="col-lg-8 ml-auto">
-                    <button type="submit" class="btn btn-primary">Guardar</button>
-                    <button type="submit" class="btn btn-light">Cancelar</button>
+                <div class="col-xl-6">
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-username"
+                      >Apellido Paterno
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="val-username"
+                        name="val-username"
+                        placeholder="Ingrese apellido paterno"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-email"
+                      >Apellido Materno <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="val-email"
+                        name="val-email"
+                        placeholder="Ingrese apellido materno"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-phoneus"
+                      >Nombres
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="val-phoneus"
+                        name="val-phoneus"
+                        placeholder="Ingrese nombre"
+                      />
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Información Usuario</h4>
+        </div>
+        <div class="card-body">
+          <div class="form-validation">
+            <form class="form-valide" action="#" method="post">
+              <div class="row">
+                <div class="col-xl-6">
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-username"
+                      >Username
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="val-username"
+                        name="val-username"
+                        placeholder="Ingrese usuario.."
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-password"
+                      >Password
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="val-password"
+                        name="val-password"
+                        placeholder="Ingrese Password"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label
+                      class="col-lg-4 col-form-label"
+                      for="val-confirm-password"
+                      >Confirmar Password <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="val-confirm-password"
+                        name="val-confirm-password"
+                        placeholder="Confirme password"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-skill"
+                      >Perfil
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <select
+                        class="form-control default-select"
+                        id="val-skill"
+                        name="val-skill"
+                      >
+                        <option value="">Seleccione</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="angular">Angular</option>
+                        <option value="angular">React</option>
+                        <option value="vuejs">Vue.js</option>
+                        <option value="ruby">Ruby</option>
+                        <option value="php">PHP</option>
+                        <option value="asp">ASP.NET</option>
+                        <option value="python">Python</option>
+                        <option value="mysql">MySQL</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-skill"
+                      >Área
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <select
+                        class="form-control default-select"
+                        id="val-skill"
+                        name="val-skill"
+                      >
+                        <option value="">Seleccione</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="angular">Angular</option>
+                        <option value="angular">React</option>
+                        <option value="vuejs">Vue.js</option>
+                        <option value="ruby">Ruby</option>
+                        <option value="php">PHP</option>
+                        <option value="asp">ASP.NET</option>
+                        <option value="python">Python</option>
+                        <option value="mysql">MySQL</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-website"
+                      >Cargo
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="val-website"
+                        name="val-website"
+                        placeholder="Ingrese cargo"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label"
+                      ><a href="javascript:void()">Estado</a>
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-8">
+                      <label
+                        class="css-control css-control-primary css-checkbox"
+                        for="val-terms"
+                      >
+                        <input
+                          type="checkbox"
+                          class="css-control-input mr-2"
+                          id="val-terms"
+                          name="val-terms"
+                          value="1"
+                        />
+                        <span class="css-control-indicator"></span> Habilitado
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="form-group row">
+        <div class="col-lg-8 ml-auto">
+          <button type="submit" class="btn btn-primary" id="guardar_usuario">Guardar</button>
+          <button type="submit" class="btn btn-light">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    loadSelectTipoDocumento();
+    $("#guardar_usuario").click((e)=>{
+        e.preventDefault();
+        $.ajax({
+            url: '/api/login',
+            type: 'post',
+            data:$('#formUsuarioNuevo').serialize(),
+            success:function(){
+            }
+        });
+    })
+  });
+
+  function loadSelectTipoDocumento(){
+    $.ajax({
+      url: "/api/users",
+      type: "GET",
+      dataType: "JSON",
+    }).done(function (res) {
+        res.forEach(element => {
+            $( "#select_tipo_documento" ).append(  `<option value='${element.value}'> ${element.name} </option>` );
+        });
+    });
+  }
+</script>
