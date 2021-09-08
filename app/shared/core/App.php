@@ -137,14 +137,19 @@ class App {
                     call_user_func_array($this->pathNotFound, array($path));
                 }
             }
+            return;
         }
 
         //modulo api es para peticiones ajax
         if($module === "api"){
-            // $base = new App\Controllers\BaseController($this);
+            $function = "main";
+            if(isset($parts[3])){
+                $function = $parts[3];
+            }
+
             $class = 'App\Controllers\\'.ucfirst($this->currentModule["controller"]).'Controller';
             $object = new $class($this);
-            $response = $object->main();
+            $response = $object->$function();
             echo json_encode($response);exit;
         }
         else{
