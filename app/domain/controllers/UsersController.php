@@ -32,10 +32,23 @@ class UsersController
         return $users;
     }
 
-    function register(){
+    function documentos(){
+        //$tipoDoc=$_POST["val-nroDocumento"];
+        $conn = $this->app->getConnection("conn1");
+        $results = $conn->get_results($this->app->getQuery("tipoDocSelectAll"));
+        $tipoDoc = [];
+        
+        foreach($results as $item){
+            $tipoDoc [] =[
+                "value"=>$item->COD_TD,                
+                "name"=>$item->SHORT_DESCRIPTION,                
+            ];
+        }
 
+        return $tipoDoc;
+        
     }
-
+        
     function update(){
         
     }
