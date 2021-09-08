@@ -31,4 +31,13 @@ class UsersController
            
         return $users;
     }
+
+    function register(){
+
+    }
+
+    function update(){
+        
+    }
+
 }
