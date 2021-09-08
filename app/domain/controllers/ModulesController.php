@@ -46,7 +46,7 @@ class ModulesController
             //primer nivel
             $module1 = [
                 "name"=>UTF8_DECODE($item1->NAME_MOD),
-                "route"=>$item1->NAME_MOD,
+                "route"=>"/".$item1->NAME_MOD,
                 "childs"=>[],
             ];
             
@@ -57,7 +57,7 @@ class ModulesController
                 if(substr($item2->MOD_ID, 0, 2) === $item1->MOD_ID){
                     $module2 =[
                         "name"=>$item2->NAME_MOD,
-                        "route"=>strtolower($item2->NAME_MOD),
+                        "route"=>"/".strtolower($item2->NAME_MOD),
                         "childs"=>[],
                     ];
                     $module1["childs"][] = $module2;

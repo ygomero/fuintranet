@@ -26,8 +26,8 @@ $routes =  [
         ]
     ),
     array(
-        'path' => "/usuarios/nuevoUsuario.html",
-        'controller' => "nuevoUsuario",
+        'path' => "/usuarios/nuevo",
+        'controller' => "usuario-nuevo",
         'method' => "GET",
         'guards' => [
             "auth"
@@ -80,6 +80,19 @@ $routes =  [
     array(
         'path' => "/api/users",
         'controller' => "users",
+        'method' => "GET",
+        'fullpage'=>false
+    ),
+
+    array(
+        'path' => "/api/profile",
+        'controller' => "profile",
+        'method' => "GET",
+        'fullpage'=>false
+    ),
+    array(
+        'path' => "/api/banks",
+        'controller' => "banks",
         'method' => "GET",
         'fullpage'=>false
     ),

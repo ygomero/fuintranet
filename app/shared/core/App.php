@@ -16,6 +16,8 @@ class App {
         require_once(self::$pathControllers.DS.'LayoutController.php');
         require_once(self::$pathControllers.DS.'ModulesController.php');
         require_once(self::$pathControllers.DS.'UsersController.php');
+        require_once(self::$pathControllers.DS.'ProfileController.php');
+        require_once(self::$pathControllers.DS.'BanksController.php');
     }
 
     function addQuerys($querys){
@@ -143,7 +145,7 @@ class App {
             $class = 'App\Controllers\\'.ucfirst($this->currentModule["controller"]).'Controller';
             $object = new $class($this);
             $response = $object->main();
-            echo $response;exit;
+            echo json_encode($response);exit;
         }
         else{
             if(isset($this->currentModule["guards"])){

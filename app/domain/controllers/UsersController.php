@@ -16,10 +16,19 @@ class UsersController
     {
         $conn = $this->app->getConnection("conn1");
         $results = $conn->get_results($this->app->getQuery("usersSelectAll"));
-
-        
         $users = [];
-               
-        return json_encode($results);
+        foreach($results as $item){
+            $users[] = [
+                "0"=>"",
+                "1"=>$item->USER_NAMES,
+                "2"=>$item->NOMBRE,
+                "3"=>$item->NR_DOC,
+                "4"=>$item->PROFILE_ID,
+                "5"=>$item->WORKSTATION,
+                "6"=>$item->STATUS_USER,
+            ];
+        }
+           
+        return $users;
     }
 }
