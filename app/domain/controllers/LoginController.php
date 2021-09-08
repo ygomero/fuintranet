@@ -17,8 +17,13 @@ class LoginController{
         $user = new stdClass();
         $user->name = "Yadira";
         $_SESSION["user"] = $user;
+        $response = ["status"=>"ok"];
+        return $response;
+    }
 
-        $response = json_encode(["status"=>"ok"]);
+    function logout(){
+        unset($_SESSION["user"]);
+        $response = ["status"=>"ok"];
         return $response;
     }
 }
