@@ -17,28 +17,21 @@
                       <span class="text-danger">*</span>
                     </label>
                     <div class="col-lg-6">
-                      <select
-                        class="form-control default-select"
-                        id="select_tipo_documento"
-                        name="tipo_documento"
-                      >
-                        <option value="">
-                          Seleccione
-                        </option>
+                      <select class="form-control default-select" id="select_tipo_documento" name="val_tipoDocumento">
+                        <option value="">Seleccione</option>
                       </select>
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label class="col-lg-4 col-form-label" for="val-currency"
-                      >Nro Doc
+                    <label class="col-lg-4 col-form-label" for="val-currency">Nro Doc
                       <span class="text-danger">*</span>
                     </label>
                     <div class="col-lg-6">
                       <input
                         type="text"
                         class="form-control"
-                        id="val-currency"
-                        name="val-currency"
+                        id="val-nroDoc"
+                        name="val-nroDoc"
                         placeholder="99999999"
                       />
                     </div>
@@ -52,8 +45,8 @@
                       <input
                         type="text"
                         class="form-control"
-                        id="val-website"
-                        name="val-website"
+                        id="val-nroContacto"
+                        name="val-nroContacto"
                         placeholder="987654321"
                       />
                     </div>
@@ -61,7 +54,7 @@
                 </div>
                 <div class="col-xl-6">
                   <div class="form-group row">
-                    <label class="col-lg-4 col-form-label" for="val-username"
+                    <label class="col-lg-4 col-form-label" for="val-apePat"
                       >Apellido Paterno
                       <span class="text-danger">*</span>
                     </label>
@@ -69,8 +62,8 @@
                       <input
                         type="text"
                         class="form-control"
-                        id="val-username"
-                        name="val-username"
+                        id="val-apePat"
+                        name="val-apePat"
                         placeholder="Ingrese apellido paterno"
                       />
                     </div>
@@ -83,8 +76,8 @@
                       <input
                         type="text"
                         class="form-control"
-                        id="val-email"
-                        name="val-email"
+                        id="val-apeMat"
+                        name="val-apeMat"
                         placeholder="Ingrese apellido materno"
                       />
                     </div>
@@ -99,8 +92,8 @@
                       <input
                         type="text"
                         class="form-control"
-                        id="val-phoneus"
-                        name="val-phoneus"
+                        id="val-names"
+                        name="val-names"
                         placeholder="Ingrese nombre"
                       />
                     </div>
@@ -143,13 +136,7 @@
                       <span class="text-danger">*</span>
                     </label>
                     <div class="col-lg-6">
-                      <input
-                        type="password"
-                        class="form-control"
-                        id="val-password"
-                        name="val-password"
-                        placeholder="Ingrese Password"
-                      />
+                      <input type="password" class="form-control" id="val-password" name="val-password" placeholder="Ingrese Password" />
                     </div>
                   </div>
                   <div class="form-group row">
@@ -176,49 +163,18 @@
                       <span class="text-danger">*</span>
                     </label>
                     <div class="col-lg-6">
-                      <select
-                        class="form-control default-select"
-                        id="val-skill"
-                        name="val-skill"
-                      >
+                      <select class="form-control default-select" id="select_tipo_perfil" name="val-perfil">
                         <option value="">Seleccione</option>
-                        <option value="html">HTML</option>
-                        <option value="css">CSS</option>
-                        <option value="javascript">JavaScript</option>
-                        <option value="angular">Angular</option>
-                        <option value="angular">React</option>
-                        <option value="vuejs">Vue.js</option>
-                        <option value="ruby">Ruby</option>
-                        <option value="php">PHP</option>
-                        <option value="asp">ASP.NET</option>
-                        <option value="python">Python</option>
-                        <option value="mysql">MySQL</option>
                       </select>
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label class="col-lg-4 col-form-label" for="val-skill"
-                      >Área
+                    <label class="col-lg-4 col-form-label" for="val-skill" >Área
                       <span class="text-danger">*</span>
                     </label>
                     <div class="col-lg-6">
-                      <select
-                        class="form-control default-select"
-                        id="val-skill"
-                        name="val-skill"
-                      >
+                      <select class="form-control default-select" id="select_tipo_area" name="val-area">
                         <option value="">Seleccione</option>
-                        <option value="html">HTML</option>
-                        <option value="css">CSS</option>
-                        <option value="javascript">JavaScript</option>
-                        <option value="angular">Angular</option>
-                        <option value="angular">React</option>
-                        <option value="vuejs">Vue.js</option>
-                        <option value="ruby">Ruby</option>
-                        <option value="php">PHP</option>
-                        <option value="asp">ASP.NET</option>
-                        <option value="python">Python</option>
-                        <option value="mysql">MySQL</option>
                       </select>
                     </div>
                   </div>
@@ -279,11 +235,12 @@
 
 <script type="text/javascript">
   document.addEventListener("DOMContentLoaded", function () {
-    loadSelectTipoDocumento();
+    loadSelectTipoDocumento(),loadSelectPerfil(),loadSelectArea();
+    
     $("#guardar_usuario").click((e)=>{
         e.preventDefault();
         $.ajax({
-            url: '/api/login',
+            url: '/api/users/register',
             type: 'post',
             data:$('#formUsuarioNuevo').serialize(),
             success:function(){
@@ -294,7 +251,7 @@
 
   function loadSelectTipoDocumento(){
     $.ajax({
-      url: "/api/users",
+      url: "/api/users/documentos",
       type: "GET",
       dataType: "JSON",
     }).done(function (res) {
@@ -303,4 +260,30 @@
         });
     });
   }
+
+  
+  function loadSelectPerfil(){
+    $.ajax({
+      url: "/api/users/perfil",
+      type: "GET",
+      dataType: "JSON",
+    }).done(function (res) {
+        res.forEach(element => {
+            $( "#select_tipo_perfil" ).append(  `<option value='${element.value}'> ${element.name} </option>` );
+        });
+    });
+  }
+
+  function loadSelectArea(){
+    $.ajax({
+      url: "/api/users/area",
+      type: "GET",
+      dataType: "JSON",
+    }).done(function (res) {
+        res.forEach(element => {
+            $( "#select_tipo_area" ).append(  `<option value='${element.value}'> ${element.name} </option>` );
+        });
+    });
+  }
+
 </script>
