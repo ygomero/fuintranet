@@ -23,19 +23,8 @@
                                             <span class="text-danger">*</span>
                                         </label>
                                         <div class="col-lg-6">
-                                            <select class="form-control default-select" id="val-skill" name="val-skill">
+                                            <select class="form-control default-select" id="select_modulo" name="val_modulo">
                                                 <option value="">Seleccione</option>
-                                                <option value="html">HTML</option>
-                                                <option value="css">CSS</option>
-                                                <option value="javascript">JavaScript</option>
-                                                <option value="angular">Angular</option>
-                                                <option value="angular">React</option>
-                                                <option value="vuejs">Vue.js</option>
-                                                <option value="ruby">Ruby</option>
-                                                <option value="php">PHP</option>
-                                                <option value="asp">ASP.NET</option>
-                                                <option value="python">Python</option>
-                                                <option value="mysql">MySQL</option>
                                             </select>
                                         </div>
                                     </div>
@@ -132,3 +121,23 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+      loadSelectModulo();
+    });
+   
+    function loadSelectModulo(){
+      $.ajax({
+        url: "/api/profile/modulos",
+        type: "GET",
+        dataType: "JSON",
+      }).done(function (res) {
+          res.forEach(element => {
+              $( "#select_modulo" ).append(  `<option value='${element.value}'> ${element.name} </option>` );
+          });
+      });
+
+    }
+  
+  </script>
