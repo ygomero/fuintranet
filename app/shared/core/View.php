@@ -20,6 +20,12 @@ class View{
             $content = file_get_contents(DIR_VIEWS.DS.$view.DS.'main.html');
             $main = str_replace("<content></content>",$content,$main);
             $main = str_replace("<module-name></module-name>",ucfirst($view),$main);
+
+            if(file_exists(DIR_VIEWS.DS.$view.DS.'scripts.html')){
+                $js = file_get_contents(DIR_VIEWS.DS.$view.DS.'scripts.html');
+                $main = str_replace("<extra-js></extra-js>",$js,$main);
+            }
+
             $layoutCrtl = new LayoutController(self::$app);
             $main = str_replace("<app-sidebar></app-sidebar>",$layoutCrtl->getSideBar(),$main);
             echo $main;exit;

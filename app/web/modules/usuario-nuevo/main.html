@@ -226,7 +226,7 @@
       <div class="form-group row">
         <div class="col-lg-8 ml-auto">
           <button type="submit" class="btn btn-primary" id="guardar_usuario">Guardar</button>
-          <button type="submit" class="btn btn-light">Cancelar</button>
+          <button type="submit" class="btn btn-light"  id="nuevo_usuario_cancelar">Cancelar</button>
         </div>
       </div>
     </div>
@@ -243,10 +243,20 @@
             url: '/api/users/register',
             type: 'post',
             data:$('#formUsuarioNuevo').serialize(),
-            success:function(){
+            dataType:"JSON",
+            success:function(res){
+              if(res.status == 'fail'){
+                swal("Error", res.msg, "error");
+              }
             }
         });
     })
+
+    $("#nuevo_usuario_cancelar").click((e)=>{
+      e.preventDefault();
+      window.location.href = "/usuarios";
+    })
+
   });
 
   function loadSelectTipoDocumento(){

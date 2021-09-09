@@ -86,9 +86,15 @@ $routes =  [
         'fullpage'=>false
     ),
     array(
+        'path' => "/api/login/logout",
+        'controller' => "login",
+        'method' => "POST",
+        'fullpage'=>false
+    ),
+    array(
         'path' => "/api/users/register",
         'controller' => "users",
-        'method' => "GET",
+        'method' => "POST",
         'fullpage'=>false
     ),
     array(
