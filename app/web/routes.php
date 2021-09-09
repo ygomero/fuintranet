@@ -129,6 +129,12 @@ $routes =  [
         'fullpage'=>false
     ),
     array(
+        'path' => "/api/profile/modulos",
+        'controller' => "profile",
+        'method' => "GET",
+        'fullpage'=>false
+    ),
+    array(
         'path' => "/api/banks",
         'controller' => "banks",
         'method' => "GET",
