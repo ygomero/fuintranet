@@ -15,10 +15,10 @@ class App {
     //   require_once(self::$pathControllers.DS.'BaseController.php');
         require_once(self::$pathControllers.DS.'LayoutController.php');
         require_once(self::$pathControllers.DS.'ModulesController.php');
-        require_once(self::$pathControllers.DS.'UsersController.php');
+        /*require_once(self::$pathControllers.DS.'UsersController.php');
         require_once(self::$pathControllers.DS.'ProfileController.php');
         require_once(self::$pathControllers.DS.'BanksController.php');
-        require_once(self::$pathControllers.DS.'DepositosController.php');
+        require_once(self::$pathControllers.DS.'DepositosController.php');*/
     }
 
     function addQuerys($querys){

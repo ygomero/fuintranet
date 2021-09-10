@@ -7,5 +7,6 @@ $querys = [
     "banksSelectAll"    => "SELECT * FROM FU_BANK_ACCOUNT B
                             INNER JOIN FU_COMPANY C ON C.COMPANY_ID = B.COMPANY_ID",
     "tipoDocSelectAll"  => "SELECT * FROM FU_TIPO_DOC",
-    "areaSelectAll"     => "SELECT * FROM FU_AREA"
+    "areaSelectAll"     => "SELECT * FROM FU_AREA",
+    "depositosSelectAll"=> "SELECT * FROM FU_DEPOSIT"
 ];      
