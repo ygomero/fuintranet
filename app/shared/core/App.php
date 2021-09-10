@@ -18,6 +18,7 @@ class App {
         require_once(self::$pathControllers.DS.'UsersController.php');
         require_once(self::$pathControllers.DS.'ProfileController.php');
         require_once(self::$pathControllers.DS.'BanksController.php');
+        require_once(self::$pathControllers.DS.'DepositosController.php');
     }
 
     function addQuerys($querys){

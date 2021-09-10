@@ -140,4 +140,10 @@ $routes =  [
         'method' => "GET",
         'fullpage'=>false
     ),
+    array(
+        'path' => "/api/depositos/bancos",
+        'controller' => "depositos",
+        'method' => "GET",
+        'fullpage'=>false
+    ),
 ];
