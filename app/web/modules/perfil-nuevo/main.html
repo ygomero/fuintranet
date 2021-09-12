@@ -136,6 +136,7 @@
           res.forEach(element => {
               $( "#select_modulo" ).append(  `<option value='${element.value}'> ${element.name} </option>` );
           });
+          $("#select_modulo").selectpicker('refresh')
       });
 
     }

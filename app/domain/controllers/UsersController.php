@@ -83,7 +83,7 @@ class UsersController
     function register()
     {
         //validar datos requeridos antes de procesar, tambien validar en el front
-        if(!isset($_POST["val_tipoDocumento"]) || !$_POST["val_tipoDocumento"]) return responseError("Tipo de documento es requerido");
+        if(!isset($_POST["val-tipoDocumento"]) || !$_POST["val-tipoDocumento"]) return responseError("Tipo de documento es requerido");
         if(!isset($_POST["val-nroDoc"]) || !$_POST["val-nroDoc"]) return responseError("Nro de documento es requerido");
         if(!isset($_POST["val-nroContacto"]) || !$_POST["val-nroContacto"]) return responseError("Nro de contacto es requerido");
         if(!isset($_POST["val-apePat"]) || !$_POST["val-apePat"]) return responseError("Apellido paterno es requerido");
@@ -93,24 +93,53 @@ class UsersController
         if(!isset($_POST["val-password"]) || !$_POST["val-password"]) return responseError("Password es requerido");
         if(!isset($_POST["val-perfil"]) || !$_POST["val-perfil"]) return responseError("Perfil es requerido");
         if(!isset($_POST["val-area"]) || !$_POST["val-area"]) return responseError("Area es requerido");
+        if(!isset($_POST["val-cargo"]) || !$_POST["val-cargo"]) return responseError("Cargo es requerido");
         
-        $tipoDoc = $_POST["val_tipoDocumento"];
+        $tipoDoc = $_POST["val-tipoDocumento"];
         $nroDoc = $_POST["val-nroDoc"];
         $nroContacto = $_POST["val-nroContacto"];
         $apePat = $_POST["val-apePat"];
         $apeMat = $_POST["val-apeMat"];
         $apeName = $_POST["val-names"];
         $user = $_POST["val-username"];
-        $apePass = password_hash($_POST["val-password"], PASSWORD_BCRYPT);
+        $apePass = password_hash($_POST["val-password"],PASSWORD_BCRYPT);
         $perfil = $_POST["val-perfil"];
         $area = $_POST["val-area"];
+        $cargo = $_POST["val-cargo"];
+        $estado = 0;
+        if(isset($_POST["val-enable"])){
+            $estado = $_POST["val-enable"];
+        }
+
 
         $conn = $this->app->getConnection("conn1");
+        //Validaciones
+        $query = "SELECT USER_NAMES FROM FU_USERS WHERE USER_NAMES ='".$user."'";
+
+        $validacionUser = $conn->get_row($query);
+        if ($validacionUser === false){
+            //error interno
+        }
+        if ($validacionUser){
+            //error que existe ya el user
+            return responseError("El usuario ya existe, intente nuevamente");
+        }
 
         //armar array será insertado
         $dataToInsert = [
             "USER_NAMES" => $user,
-            "LAST_NAME_PAT" => $apePat
+            "LAST_NAME_PAT" => $apePat,
+            "LAST_NAME_MAT" => $apeMat,
+            "NAMES" => $apeName,
+            "COD_TD" => $tipoDoc,
+            "NR_DOC" => $nroDoc,
+            "NR_CONTACT" => $nroContacto,
+            "WORKSTATION" => $cargo,
+            "PROFILE_ID" => $perfil,
+            "STATUS_USER" => $estado,
+            "AREA_ID" => $area,
+            "PASS" => $apePass,
+
         ];
 
         $conn->insert("FU_USERS", $dataToInsert);

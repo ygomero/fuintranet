@@ -117,7 +117,7 @@
                         <div class="col-lg-12">
                             <div class="form-group row">
                               <div class="col-lg-8 ml-auto">
-                                <button type="submit" class="btn btn-primary" id="guardar_usuario">Guardar</button>
+                                <button type="submit" class="btn btn-primary" id="guardar_registro_unico">Guardar</button>
                                 <button type="submit" class="btn btn-light"  id="nuevo_usuario_cancelar">Cancelar</button>
                               </div>
                             </div>
@@ -129,14 +129,22 @@
                         <div class="card-body">
                             <div class="email-middle-box ml-0 ml-sm-4 ml-sm-0">
                                 <div class="compose-content">
-                                  <form action="#" class="dropzone">
+                                  <form action="#" class="dropzone" id="file_zone">
                                     <div class="fallback">
-                                      <input name="file" type="file" multiple />
+                                      <input name="file" type="file" enctype="multipart/form-data" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
                                     </div>
                                   </form>
                                     <!--a href="javascript:void(0);" class="btn btn-outline-success ml-2">Seleccionar Archivo</a-->
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-lg-12">
+                          <div class="form-group row">
+                            <div class="col-lg-8 ml-auto">
+                              <button type="submit" class="btn btn-primary" id="guardar_registro_masivo">Guardar</button>
+                              <button type="submit" class="btn btn-light"  id="nuevo_usuario_cancelar">Cancelar</button>
+                            </div>
+                          </div>
                         </div>
                     </div> 
                 </div>
@@ -146,22 +154,44 @@
 </div>
 
 <script type="text/javascript">
+  
   document.addEventListener("DOMContentLoaded", function () {
+    //Dropzone Configuration
+    Dropzone.autoDiscover = false;
+
     loadSelectBanks();
+
+    var myDropzone = $("#file_zone").dropzone({ 
+      url: "/api/depositos/upload",
+      maxFiles: 1,
+      success: (upd, res)=>{
+        res = JSON.parse(res);
+        if(res.status != 'ok'){
+          swal("Error", res.msg, "error");
+          clearFiles();
+        }
+      }
+    });
+
+    function clearFiles(){
+      myDropzone[0].dropzone.removeAllFiles();  
+    }
+
   });
  
-  function loadSelectBanks(){
+  async function loadSelectBanks(){
     $.ajax({
       url: "/api/depositos/bancos",
       type: "GET",
       dataType: "JSON",
     }).done(function (res) {
         res.forEach(element => {
-            $( "#select_bank" ).append(  `<option value='${element.value}'> ${element.name} </option>` );
+            $("#select_bank").append(`<option value='${element.value}'> ${element.name} </option>`);
         });
+        $("#select_bank").selectpicker('refresh')
     });
 
   }
 
-console.log(res);
+
 </script>

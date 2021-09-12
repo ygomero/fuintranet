@@ -12,18 +12,18 @@
               <div class="row">
                 <div class="col-xl-6">
                   <div class="form-group row">
-                    <label class="col-lg-4 col-form-label" for="val-skill"
+                    <label class="col-lg-4 col-form-label" for="val-tipoDocumento"
                       >Tipo de Documento
                       <span class="text-danger">*</span>
                     </label>
                     <div class="col-lg-6">
-                      <select class="form-control default-select" id="select_tipo_documento" name="val_tipoDocumento">
+                      <select class="form-control default-select" id="select_tipo_documento" name="val-tipoDocumento">
                         <option value="">Seleccione</option>
                       </select>
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label class="col-lg-4 col-form-label" for="val-currency">Nro Doc
+                    <label class="col-lg-4 col-form-label" for="val-nroDoc">Nro Doc
                       <span class="text-danger">*</span>
                     </label>
                     <div class="col-lg-6">
@@ -37,7 +37,7 @@
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label class="col-lg-4 col-form-label" for="val-website"
+                    <label class="col-lg-4 col-form-label" for="val-nroContacto"
                       >N° Contacto
                       <span class="text-danger">*</span>
                     </label>
@@ -69,7 +69,7 @@
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label class="col-lg-4 col-form-label" for="val-email"
+                    <label class="col-lg-4 col-form-label" for="val-apeMat"
                       >Apellido Materno <span class="text-danger">*</span>
                     </label>
                     <div class="col-lg-6">
@@ -84,7 +84,7 @@
                   </div>
 
                   <div class="form-group row">
-                    <label class="col-lg-4 col-form-label" for="val-phoneus"
+                    <label class="col-lg-4 col-form-label" for="val-names"
                       >Nombres
                       <span class="text-danger">*</span>
                     </label>
@@ -145,7 +145,7 @@
                 </div>
                 <div class="col-xl-6">
                   <div class="form-group row">
-                    <label class="col-lg-4 col-form-label" for="val-skill"
+                    <label class="col-lg-4 col-form-label" for="val-perfil"
                       >Perfil
                       <span class="text-danger">*</span>
                     </label>
@@ -156,7 +156,7 @@
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label class="col-lg-4 col-form-label" for="val-skill" >Área
+                    <label class="col-lg-4 col-form-label" for="val-area" >Área
                       <span class="text-danger">*</span>
                     </label>
                     <div class="col-lg-6">
@@ -166,7 +166,7 @@
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label class="col-lg-4 col-form-label" for="val-website"
+                    <label class="col-lg-4 col-form-label" for="val-cargo"
                       >Cargo
                       <span class="text-danger">*</span>
                     </label>
@@ -174,8 +174,8 @@
                       <input
                         type="text"
                         class="form-control"
-                        id="val-area"
-                        name="val-area"
+                        id="val-cargo"
+                        name="val-cargo"
                         placeholder="Ingrese cargo"
                       />
                     </div>
@@ -189,14 +189,15 @@
                     <div class="col-lg-8">
                       <label
                         class="css-control css-control-primary css-checkbox"
-                        for="val-terms"
+                        for="val-enable"
                       >
                         <input
                           type="checkbox"
                           class="css-control-input mr-2"
-                          id="val-terms"
-                          name="val-terms"
+                          id="val-enable"
+                          name="val-enable"
                           value="1"
+                          checked=true;
                         />
                         <span class="css-control-indicator"></span> Habilitado
                       </label>
@@ -234,7 +235,10 @@
             data:$('#formUsuarioNuevo').serialize(),
             dataType:"JSON",
             success:function(res){
-              if(res.status == 'fail'){
+              if(res.status == 'ok'){
+                swal("Usuario", res.msg, "success");
+              }
+              else{
                 swal("Error", res.msg, "error");
               }
             }
@@ -257,6 +261,7 @@
         res.forEach(element => {
             $( "#select_tipo_documento" ).append(  `<option value='${element.value}'> ${element.name} </option>` );
         });
+        $("#select_tipo_documento").selectpicker('refresh')
     });
   }
 
@@ -270,6 +275,7 @@
         res.forEach(element => {
             $( "#select_tipo_perfil" ).append(  `<option value='${element.value}'> ${element.name} </option>` );
         });
+        $("#select_tipo_perfil").selectpicker('refresh')
     });
   }
 
@@ -282,6 +288,7 @@
         res.forEach(element => {
             $( "#select_tipo_area" ).append(  `<option value='${element.value}'> ${element.name} </option>` );
         });
+        $("#select_tipo_area").selectpicker('refresh')
     });
   }
 

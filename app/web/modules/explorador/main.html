@@ -2,7 +2,7 @@
   <div class="form-head d-flex mb-3 mb-md-5 align-items-start">
     <div class="col-lg-12">
       <div class="mr-auto d-none d-lg-block">
-        <a href="javascript:void()" class="btn btn-primary mb-1 mr-1">Asociar Factura</a>
+        <a href="javascript:void()" class="btn btn-primary mb-1 mr-1" data-toggle="modal" data-target="#add-factura">Asociar Factura</a>
       </div>
     </div>
   </div>
@@ -39,6 +39,41 @@
             </table>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="modal fade" id="add-factura">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Seleccione Factura</h5>
+                  <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <div class="col-xl-6 col-lg-6">
+                  <div class="card">
+                      <div class="card-header">
+                          <h4 class="card-title">Inline Radio </h4>
+                      </div>
+                      <div class="card-body">
+                          <div class="basic-form">
+                              <form>
+                                  <div class="form-group mb-0">
+                                      <label class="radio-inline mr-3"><input type="radio" name="optradio"> Option 1</label>
+                                      <label class="radio-inline mr-3"><input type="radio" name="optradio"> Option 2</label>
+                                      <label class="radio-inline mr-3"><input type="radio" name="optradio"> Option 3</label>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger light" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+          </div>
       </div>
     </div>
   </div>

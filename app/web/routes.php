@@ -152,4 +152,10 @@ $routes =  [
         'method' => "GET",
         'fullpage'=>false
     ),
+    array(
+        'path' => "/api/depositos/upload",
+        'controller' => "depositos",
+        'method' => "POST",
+        'fullpage'=>false
+    ),
 ];
