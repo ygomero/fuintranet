@@ -26,3 +26,7 @@ function randomString($length = 10) {
     }
     return $randomString;
 }
+
+function money($amount){
+    return MONEY_SYMBOL.number_format($amount,2);
+}

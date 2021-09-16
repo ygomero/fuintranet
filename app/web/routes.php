@@ -2,6 +2,14 @@
 
 $routes =  [
     array(
+        'path' => "/debug/log",
+        'controller' => "home",
+        'method' => "GET",
+        'guards' => [
+            "auth"
+        ]
+    ),
+    array(
         'path' => "/",
         'controller' => "home",
         'method' => "GET",
@@ -141,19 +149,68 @@ $routes =  [
         'fullpage'=>false
     ),
     array(
-        'path' => "/api/depositos/bancos",
-        'controller' => "depositos",
-        'method' => "GET",
-        'fullpage'=>false
-    ),
-    array(
         'path' => "/api/depositos",
         'controller' => "depositos",
         'method' => "GET",
         'fullpage'=>false
     ),
     array(
+        'path' => "/api/depositos/bancos",
+        'controller' => "depositos",
+        'method' => "GET",
+        'fullpage'=>false
+    ),
+    array(
+        'path' => "/api/depositos/local",
+        'controller' => "depositos",
+        'method' => "GET",
+        'fullpage'=>false
+    ),
+
+    array(
+        'path' => "/api/depositos/local",
+        'controller' => "depositos",
+        'method' => "GET",
+        'fullpage'=>false
+    ),
+
+    array(
+        'path' => "/api/depositos/usuarios",
+        'controller' => "depositos",
+        'method' => "GET",
+        'fullpage'=>false
+    ),
+
+    array(
         'path' => "/api/depositos/upload",
+        'controller' => "depositos",
+        'method' => "POST",
+        'fullpage'=>false
+    ),
+
+    array(
+        'path' => "/api/depositos/cargamasiva",
+        'controller' => "depositos",
+        'method' => "POST",
+        'fullpage'=>false
+    ),
+
+    array(
+        'path' => "/api/depositos/search",
+        'controller' => "depositos",
+        'method' => "POST",
+        'fullpage'=>false
+    ),
+
+    array(
+        'path' => "/api/depositos/register",
+        'controller' => "depositos",
+        'method' => "POST",
+        'fullpage'=>false
+    ),
+
+    array(
+        'path' => "/api/depositos/guardar-asociacion",
         'controller' => "depositos",
         'method' => "POST",
         'fullpage'=>false

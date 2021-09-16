@@ -14,7 +14,7 @@
                     <div class="card review-table">
                         <div class="card-body">
                             <div class="form-validation">
-                              <form class="form-valide" action="/api/login" method="post" id="formUsuarioNuevo">
+                              <form class="form-valide" action="/api/login" method="post" id="formDepositoNuevo">
                                 <div class="row">
                                   <div class="col-xl-6">
                                       <div class="form-group row">
@@ -25,9 +25,8 @@
                                           <div class="col-lg-6">
                                           <input type="date"
                                           class="form-control"
-                                          id="val-nroDoc"
-                                          name="val-nroDoc"
-                                          placeholder="99999999"/>
+                                          id="val-fecha-oper"
+                                          name="val-fecha-oper"/>
                                           </div>
                                       </div>
                                       <div class="form-group row">
@@ -48,8 +47,8 @@
                                           <input
                                               type="text"
                                               class="form-control"
-                                              id="val-nroDoc"
-                                              name="val-nroDoc"
+                                              id="val-primer-refer"
+                                              name="val-primer-refer"
                                               placeholder="Ingrese Referencia"/>
                                           </div>
                                       </div>
@@ -60,8 +59,8 @@
                                               <input
                                               type="text"
                                               class="form-control"
-                                              id="val-nroDoc"
-                                              name="val-nroDoc"
+                                              id="val-segundo-refer"
+                                              name="val-segundo-refer"
                                               placeholder="Ingrese Referencia"/>
                                           </div>
                                       </div>
@@ -75,8 +74,8 @@
                                         <input
                                           type="text"
                                           class="form-control"
-                                          id="val-apePat"
-                                          name="val-apePat"
+                                          id="val-n-oper"
+                                          name="val-n-oper"
                                           placeholder="Ingrese N° de Operación"
                                         />
                                       </div>
@@ -88,23 +87,22 @@
                                         <input
                                           type="text"
                                           class="form-control"
-                                          id="val-apeMat"
-                                          name="val-apeMat"
-                                          placeholder="Ingrese apellido materno"
+                                          id="val-importe"
+                                          name="val-importe"
+                                          placeholder="Ingrese Importe"
                                         />
                                       </div>
                                     </div>
                   
                                     <div class="form-group row">
                                       <label class="col-lg-4 col-form-label" for="val-phoneus">Saldo
-                                        <span class="text-danger">*</span>
                                       </label>
                                       <div class="col-lg-6">
                                         <input
                                           type="text"
                                           class="form-control"
-                                          id="val-names"
-                                          name="val-names"
+                                          id="val-saldo"
+                                          name="val-saldo"
                                           placeholder="Ingrese saldo"
                                         />
                                       </div>
@@ -129,11 +127,12 @@
                         <div class="card-body">
                             <div class="email-middle-box ml-0 ml-sm-4 ml-sm-0">
                                 <div class="compose-content">
-                                  <form action="#" class="dropzone" id="file_zone">
+                                  <form action="#" class="dropzone" id="formDepositoMasivo">
                                     <div class="fallback">
                                       <input name="file" type="file" enctype="multipart/form-data" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
                                     </div>
                                   </form>
+                                  <input type="hidden" id="id_file">
                                     <!--a href="javascript:void(0);" class="btn btn-outline-success ml-2">Seleccionar Archivo</a-->
                                 </div>
                             </div>
@@ -161,21 +160,64 @@
 
     loadSelectBanks();
 
-    var myDropzone = $("#file_zone").dropzone({ 
+    $("#guardar_registro_unico").click((e)=>{
+        e.preventDefault();
+        $.ajax({
+            url: '/api/depositos/register',
+            type: 'post',
+            data:$('#formDepositoNuevo').serialize(),
+            dataType:"JSON",
+            success:function(res){
+              if(res.status == 'ok'){
+                swal("Depósito", res.msg, "success");
+              }
+              else{
+                swal("Error", res.msg, "error");
+              }
+            }
+        });
+    })
+
+
+    var myDropzone = $("#formDepositoMasivo").dropzone({ 
       url: "/api/depositos/upload",
       maxFiles: 1,
+      mimeTypes:[
+      'file/xls','file/xlsx'
+      ],
       success: (upd, res)=>{
         res = JSON.parse(res);
         if(res.status != 'ok'){
           swal("Error", res.msg, "error");
           clearFiles();
+        }else{
+          $("#id_file").val(res.data.id);
         }
+
       }
     });
 
     function clearFiles(){
       myDropzone[0].dropzone.removeAllFiles();  
     }
+
+    $("#guardar_registro_masivo").click(function(e){
+      $.ajax({
+        url: "/api/depositos/cargamasiva",
+        type: "POST",
+        dataType: "JSON",
+        data: {
+          id_file:  $("#id_file").val()
+        }
+      }).done(function (res) {
+              if(res.status == 'ok'){
+                swal("Depósito", res.msg, "success");
+              }
+              else{
+                swal("Error", res.msg, "error");
+              }
+      });
+    })
 
   });
  
@@ -193,5 +235,5 @@
 
   }
 
-
+  
 </script>

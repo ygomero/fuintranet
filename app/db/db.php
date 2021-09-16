@@ -266,51 +266,88 @@ class SQLSRV_DataBase {
 	 *
 	 * @return string
 	 */
-	private function schema_prepare_value( $table, $column, $value ) {
-		if ( false === $this->schema || ! isset( $this->schema->$table ) || ! isset( $this->schema->$table->$column ) ) {
-			if ( null === $value ) {
-				return 'NULL';
-			}
-			elseif ( ctype_digit( str_replace( array( '.', '-' ), '', $value ) ) && substr_count( $value, '.' ) < 2 ) {
-				return $value;
-			}
-			else {
-				return "'" . addslashes( utf8_decode( $value ) ) . "'";
-			}
-		}
-
-		$schema = $this->schema->$table->$column;
-		$numerics = array(
-			'int',
-			'decimal',
-			'money'
-		);
-
-		if ( in_array( $schema->TYPE_NAME, $numerics ) ) {
-			if ( null === $value || '' === $value ) {
-				if ( 1 == $schema->NULLABLE ) {
-					return 'NULL';
+	private function schema_prepare_value( $table, $column, $value, $type = array() ) {
+		if(count($type) > 0 ){
+			$nullable =  ($type[1] == 'NULLABLE') ? true : false;
+			$type = ($type[0] != '') ? $type[0]:"";
+			$numerics = array(
+				'int',
+				'decimal',
+				'money'
+			);
+			
+			if ( in_array( $type, $numerics ) ) {
+				if ( null === $value || '' === $value ) {
+					if ( 1 == $nullable ) {
+						return 'NULL';
+					}
+					else {
+						return 0;
+					}
 				}
 				else {
-					return 0;
+					return $value;
 				}
 			}
 			else {
-				return $value;
+				if ( null === $value || empty( $value ) ) {
+					if ( 1 == $nullable ) {
+						return 'NULL';
+					}
+					else {
+						return "''";
+					}
+				}
 			}
+			return "'" . addslashes( utf8_decode( $value ) ) . "'";
 		}
-		else {
-			if ( null === $value || empty( $value ) ) {
-				if ( 1 == $schema->NULLABLE ) {
+		else{
+
+			if ( false === $this->schema || ! isset( $this->schema->$table ) || ! isset( $this->schema->$table->$column ) ) {
+				if ( null === $value ) {
 					return 'NULL';
 				}
+				elseif ( ctype_digit( str_replace( array( '.', '-' ), '', $value ) ) && substr_count( $value, '.' ) < 2 ) {
+					return $value;
+				}
 				else {
-					return "''";
+					return "'" . addslashes( utf8_decode( $value ) ) . "'";
 				}
 			}
+			
+			$schema = $this->schema->$table->$column;
+			$numerics = array(
+				'int',
+				'decimal',
+				'money'
+			);
+	
+			if ( in_array( $schema->TYPE_NAME, $numerics ) ) {
+				if ( null === $value || '' === $value ) {
+					if ( 1 == $schema->NULLABLE ) {
+						return 'NULL';
+					}
+					else {
+						return 0;
+					}
+				}
+				else {
+					return $value;
+				}
+			}
+			else {
+				if ( null === $value || empty( $value ) ) {
+					if ( 1 == $schema->NULLABLE ) {
+						return 'NULL';
+					}
+					else {
+						return "''";
+					}
+				}
+			}
+	
+			return "'" . addslashes( utf8_decode( $value ) ) . "'";
 		}
-
-		return "'" . addslashes( utf8_decode( $value ) ) . "'";
 	}
 
 
@@ -363,7 +400,7 @@ class SQLSRV_DataBase {
 	 *
 	 * @return void
 	 */
-	public function update( $table, $what, $where = array() ) {
+	public function update( $table, $what, $where = array(), $types = array() ) {
 		$set   = '';
 		$check = '';
 
@@ -376,7 +413,7 @@ class SQLSRV_DataBase {
 			}
 			$set .= $table . '.' . $field . ' = ';
 
-			$set .= $this->schema_prepare_value( $table, $field, $value );
+			$set .= $this->schema_prepare_value( $table, $field, $value);
 		}
 
 		foreach( $where AS $field => $value ) {
@@ -450,7 +487,7 @@ class SQLSRV_DataBase {
 	 *
 	 * @return void
 	 */
-	public function insert( $table, $data ) {
+	public function insert( $table, $data , $types = array() ) {
 		$fields = '';
 		$values = '';
 
@@ -466,8 +503,8 @@ class SQLSRV_DataBase {
 			}
 
 			$fields .= $table . '.' . $field;
-
-			$values .= $this->schema_prepare_value( $table, $field, $value );
+			$type = isset($types[$field])?$types[$field]:[];
+			$values .= $this->schema_prepare_value( $table, $field, $value, $type );
 		}
 
 		$result = $this->query( "

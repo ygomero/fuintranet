@@ -8,5 +8,8 @@ $querys = [
                             INNER JOIN FU_COMPANY C ON C.COMPANY_ID = B.COMPANY_ID",
     "tipoDocSelectAll"  => "SELECT * FROM FU_TIPO_DOC",
     "areaSelectAll"     => "SELECT * FROM FU_AREA",
-    "depositosSelectAll"=> "SELECT * FROM FU_DEPOSIT"
+    "depositosSelectAll"=> "SELECT CONVERT(DATE,DATE_OPERATION) AS DATEOPER,* from FU_DEPOSIT ORDER BY DATE_REG DESC",
+    "localSelectAll"    => "SELECT SISCOD,SISENT FROM SISTEMA ORDER BY SISENT",
+    "usersLolfarSelectAll" => "SELECT usecod,useusr,usenam FROM usuarios WHERE estado='S' AND grucod <> 'UINVEN' AND usecod <> 1
+                            ORDER BY usenam"
 ];      

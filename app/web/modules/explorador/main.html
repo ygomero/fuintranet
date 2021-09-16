@@ -2,7 +2,7 @@
   <div class="form-head d-flex mb-3 mb-md-5 align-items-start">
     <div class="col-lg-12">
       <div class="mr-auto d-none d-lg-block">
-        <a href="javascript:void()" class="btn btn-primary mb-1 mr-1" data-toggle="modal" data-target="#add-factura">Asociar Factura</a>
+        <a href="javascript:void()" class="btn btn-primary mb-1 mr-1 disabled" data-toggle="modal" data-target="#add-factura" id="btn_modal_asociar">Asociar Factura</a>
       </div>
     </div>
   </div>
@@ -15,7 +15,7 @@
               <thead>
                 <tr>
                   <th class="pr-3">
-                    <div class="custom-control custom-checkbox mx-2">
+                    <!-- <div class="custom-control custom-checkbox mx-2">
                       <input
                         type="checkbox"
                         class="custom-control-input"
@@ -25,14 +25,14 @@
                         class="custom-control-label"
                         for="checkAll"
                       ></label>
-                    </div>
+                    </div> -->
                   </th>
                   <th>Banco</th>
                   <th>Fecha de Operación</th>
-                  <th>1° Referencia</th>
-                  <th>2° Referencia</th>
-                  <th>Importe</th>
+                  <th>Referencia</th>
                   <th>N° Operación</th>
+                  <th>Importe</th>
+                  <th>Saldo</th>
                 </tr>
               </thead>
 
@@ -41,51 +41,155 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="add-factura">
-      <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="add-factura">
+      <div class="modal-dialog modal-xl">
           <div class="modal-content">
               <div class="modal-header">
-                  <h5 class="modal-title">Seleccione Factura</h5>
+                  <h5 class="modal-title">Asociar factura</h5>
                   <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
                   </button>
               </div>
-              <div class="modal-body">
-                <div class="col-xl-6 col-lg-6">
-                  <div class="card">
-                      <div class="card-header">
-                          <h4 class="card-title">Inline Radio </h4>
+
+              <div class="col-lg-12">
+                  <ul class="nav nav-pills review-tab">
+                      <li class="nav-item">
+                          <a href="#secuencia" class="explorador-item nav-link active" data-type="secuencia" data-toggle="tab" aria-expanded="false">SECUENCIA</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#documento" class="explorador-item nav-link" data-type="documento" data-toggle="tab" aria-expanded="false">DOCUMENTO</a>
+                      </li>
+                  </ul>
+                  <div class="tab-content">
+                      <div id="secuencia" class="tab-pane active">
+                        <div class="card-body">
+                          <div class="form-validation">
+                            <form class="form-valide" action="/api/login" method="post" id="formSearch">
+                              <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="form-group row">
+                                    <label class="col-lg-4 col-form-label" for="val-skill"> Secuencia
+                                    </label>
+                                    <div class="col-lg-6">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="val-secuencia"
+                                        name="val-secuencia"
+                                        placeholder="Ingrese n° de secuencia"/>
+                                    </div>
+                                    </div>
+                                </div>
+                                
+                              </div>
+                            </form>
+                          </div>     
+                        </div>
                       </div>
-                      <div class="card-body">
-                          <div class="basic-form">
-                              <form>
-                                  <div class="form-group mb-0">
-                                      <label class="radio-inline mr-3"><input type="radio" name="optradio"> Option 1</label>
-                                      <label class="radio-inline mr-3"><input type="radio" name="optradio"> Option 2</label>
-                                      <label class="radio-inline mr-3"><input type="radio" name="optradio"> Option 3</label>
+                      <div id="documento" class="tab-pane">
+                        <div class="card-body">
+                            <div class="form-validation">
+                              <form class="form-valide" action="/api/login" method="post" id="formUsuarioNuevo">
+                                <div class="row">
+                                  <div class="col-xl-12">
+                                      <div class="form-group row">
+                                        <label class="col-lg-2 col-form-label" for="val-serie"> N° Serie
+                                        </label>
+                                        <div class="col-lg-4">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="val-serie"
+                                            name="val-serie"
+                                            placeholder="Ingrese n° de serie"/>
+                                        </div>
+                                        <label class="col-lg-2 col-form-label" for="val-documento"> N° Documento
+                                        </label>
+                                        <div class="col-lg-4">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="val-documento"
+                                            name="val-documento"
+                                            placeholder="Ingrese n° de documento"/>
+                                        </div>
+                                      </div>
+                                      
                                   </div>
+                                  
+                                </div>
                               </form>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-xl-12">
+                        <div class="form-group row">
+                          <label class="col-lg-1 col-form-label" for="val-skill">Local
+                          </label>
+                          <div class="col-lg-2">
+                            <select class="form-control default-select" id="select_local" name="val_local">
+                              <option value="">Seleccione</option>
+                            </select> 
                           </div>
+                          <label class="col-lg-1 col-form-label" for="val-skill">Solicitante
+                          </label>
+                          <div class="col-lg-3">
+                            <select class="form-control default-select" id="select_sol" name="val_solicitante">
+                              <option value="">Seleccione</option>
+                            </select>
+                          </div>
+                          <label class="col-lg-2 col-form-label" for="val-skill">Responsable
+                          </label>
+                          <div class="col-lg-3">
+                            <select class="form-control default-select" id="select_res" name="val_responsable">
+                              <option value="">Seleccione</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="table-responsive">
+                        <table id="table_asociarFac" class="table table-sm mb-0 table-striped">
+                          <thead>
+                            <tr>
+                              <th>Secuencia</th>
+                              <th>N° Serie</th>
+                              <th>N° Doc</th>
+                              <th>Total</th>
+                              <th>Importe</th>
+                              <th>Saldo</th>
+                              <th>Cliente</th>
+                            </tr>
+                          </thead>
+                        </table>
                       </div>
                   </div>
-                </div>
               </div>
+
               <div class="modal-footer">
                   <button type="button" class="btn btn-danger light" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary" id="guardar_asociacion">Save changes</button>
               </div>
           </div>
       </div>
+    </div>
     </div>
   </div>
 </div>
 
 <script type="text/javascript">
+  let dataSet = [];
+  let factura = "";
+  let arDepositos = [];
+
   document.addEventListener("DOMContentLoaded", function () {
-    let dataSet = [];
+
+    loadSelectLoad(), loadSelecSolicitanteLolfar(), loadSelecResponsableLolfar();
+
     $(document).ready(function () {
+      page_loading();
+
       table = $("#table_id").DataTable({
-        dom: "Blfrtip",
-        buttons: ["excel"],
+        // dom: "Blfrtip",
+        // buttons: ["excel"],
         lengthChange: true,
         paging: true,
         iDisplayLength: 10,
@@ -93,7 +197,18 @@
           [10, 20, 50, 100, -1],
           [10, 20, 50, 100, "Todos"],
         ],
+        "columnDefs": [
+          {
+            "targets": [ 7 ],
+            "visible": false,
+            "searchable": false,
+          },
+        ],
         data: dataSet,
+        select: {
+            style:    'os',
+            selector: 'td:first-child'
+        },
       });
 
       table.clear();
@@ -106,7 +221,163 @@
         //asignar nuevos valores
         dataSet = res;
         table.rows.add(dataSet).draw();
+        page_stop_loading();
       });
+
+      //tabla de modal
+      tableDocument = $("#table_asociarFac").DataTable({
+        dom: "Blfrtip",
+        buttons: ["excel"],
+        lengthChange: false,
+        paging: false,
+        iDisplayLength: 10,
+        bFilter: false,
+        bInfo: false,
+        data: dataSet,
+      });
+
+      $('#val-secuencia').keypress(function(e) {
+        var keycode = (e.keyCode ? e.keyCode : e.which);
+        if (keycode == '13') {
+            e.preventDefault();
+            searchDocumentos();
+            return false;
+        }
+      });
+
+      $('#val-documento').keypress(function(e) {
+        var keycode = (e.keyCode ? e.keyCode : e.which);
+        if (keycode == '13') {
+            e.preventDefault();
+            searchDocumentos();
+            return false;
+        }
+      });
+
+      $("#guardar_asociacion").click(function(e){
+        e.preventDefault();
+
+        let dataToSend = {
+          val_documento:factura,
+          val_depositos:JSON.stringify(arDepositos),
+          val_local: $("#select_local").val(),
+          val_solicitante:$("#select_sol").val(),
+          val_responsable: $("#select_res").val()
+        }
+
+        $.ajax({
+          url: "/api/depositos/guardar-asociacion",
+          type: "POST",
+          dataType: "JSON",
+          data: dataToSend
+        }).done(function (res) {
+          if(res.status === 'fail'){
+            swal("Error", res.msg, "error");
+          }else{
+            swal("Asociacion", "Guardado correctamente", "success");
+          }
+        });
+
+      })
+      
+      $('a[data-toggle="tab"].explorador-item').on('shown.bs.tab', function (e) {
+        // console.log(e.target); // newly activated tab
+        // console.log(e.relatedTarget); // previous active tab
+        tableDocument.clear();
+        let typeClear = $(e.relatedTarget).data("type");
+        if(typeClear == "secuencia"){ 
+          $('#val-secuencia').val("");
+        }
+        else if(typeClear == "documento"){
+          $('#val-serie').val("");
+          $('#val-documento').val("");
+        }
+      })
+
     });
   });
+
+  function agregarDeposito(idDeposito){
+    let existe = arDepositos.findIndex((i)=>i === idDeposito);
+    if(existe == -1){ arDepositos.push(idDeposito); }
+    else{ arDepositos.splice(existe,1) }
+
+    if(arDepositos.length > 0){
+      $("#btn_modal_asociar").removeClass("disabled");
+    }
+    else{
+      $("#btn_modal_asociar").addClass("disabled");
+    }
+  } 
+
+  function searchDocumentos(){
+    page_loading();
+
+    tableDocument.clear();
+    $.ajax({
+      url: "/api/depositos/search",
+      type: "POST",
+      dataType: "JSON",
+      data:{ 
+        "val-secuencia": $('#val-secuencia').val(),
+        "val-serie": $('#val-serie').val(),
+        "val-documento": $('#val-documento').val(),
+        "depositos": JSON.stringify(arDepositos)
+      },
+    }).done(function (res) {
+      //asignar nuevos valores
+      if(res.status == 'fail'){
+        swal("Error", res.msg, "error");
+      }
+      else{
+        let data = res.data;
+        dataSet = data;
+        tableDocument.rows.add(dataSet).draw();
+        factura = data[0][0]+"/"+data[0][1]+"/"+data[0][2];
+        console.log("factura",factura);
+      }
+      page_stop_loading();
+    });
+  }
+
+  async function loadSelectLoad(){
+    $.ajax({
+      url: "/api/depositos/local",
+      type: "GET",
+      dataType: "JSON",
+    }).done(function (res) {
+        res.forEach(element => {
+            $("#select_local").append(`<option value='${element.value}'> ${element.name} </option>`);
+        });
+        $("#select_local").selectpicker('refresh')
+    });
+
+  }
+
+  async function loadSelecSolicitanteLolfar(){
+    $.ajax({
+      url: "/api/depositos/usuarios",
+      type: "GET",
+      dataType: "JSON",
+    }).done(function (res) {
+        res.forEach(element => {
+            $("#select_sol").append(`<option value='${element.value}'> ${element.name} </option>`);
+        });
+        $("#select_sol").selectpicker('refresh')
+    });
+  }
+
+  async function loadSelecResponsableLolfar(){
+    $.ajax({
+      url: "/api/depositos/usuarios",
+      type: "GET",
+      dataType: "JSON",
+    }).done(function (res) {
+        res.forEach(element => {
+            $("#select_res").append(`<option value='${element.value}'> ${element.name} </option>`);
+        });
+        $("#select_res").selectpicker('refresh')
+    });
+  }
+
 </script>

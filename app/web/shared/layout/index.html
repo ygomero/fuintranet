@@ -18,12 +18,41 @@
 	<link href="/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
 	<!-- Dropzone -->
 	<link href="/vendor/dropzone/dist/dropzone.css" rel="stylesheet">
+
+	<style>
+		.loading_view{
+			z-index: 9999;
+			width: 100%;
+			position: absolute;
+			height: 100%;
+			background: #2f33324f;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			display: none;
+		}
+		.loading_view.display{
+			display: flex;
+		}
+		.loading_view .sk-three-bounce{
+			background-color: unset;
+		}
+
+	</style>
 	
 </head>
 
 <body data-typography="poppins" data-theme-version="light" data-layout="vertical" data-nav-headerbg="color_1" data-headerbg="color_1" 
 data-sidebar-style="full" data-sibebarbg="color_1" data-sidebar-position="fixed" data-header-position="static" data-container="wide"
 direction="ltr" data-primary="color_1">
+
+<div class="loading_view" id="loading_view">
+	<div class="sk-three-bounce">
+		<div class="sk-child sk-bounce1"></div>
+		<div class="sk-child sk-bounce2"></div>
+		<div class="sk-child sk-bounce3"></div>
+	</div>
+</div>
 
     <!--*******************
         Preloader start
@@ -586,16 +615,12 @@ direction="ltr" data-primary="color_1">
                                     <svg id="icon-minimize" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minimize"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path></svg>
                                 </a>
 							</li>
-							<li class="nav-item dropdown notification_dropdown">
-                                <a class="nav-link bell bell-link" href="#">
-                                    <i class="flaticon-381-pad"></i>
-                                </a>
-							</li>
+
                             <li class="nav-item dropdown notification_dropdown">
-                                <a class="nav-link  ai-icon" href="#" role="button" data-toggle="dropdown">
+                                <!--a class="nav-link  ai-icon" href="#" role="button" data-toggle="dropdown">
                                     <i class="flaticon-381-ring"></i>
                                     <div class="pulse-css"></div>
-                                </a>
+                                </a-->
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <div id="DZ_W_Notification1" class="widget-media dz-scroll p-3" style="height:380px;">
 										<ul class="timeline">
@@ -755,6 +780,7 @@ direction="ltr" data-primary="color_1">
 	<script src="/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
     <script src="/js/custom.min.js"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="/js/functions.js"></script>
 
 	<script type="text/javascript">
 		$("#session_logout").click((e)=>{

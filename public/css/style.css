@@ -8506,6 +8506,7 @@ a.text-dark:hover, a.text-dark:focus {
   background: #711685; }
 
 body {
+  
   overflow-x: hidden;
   height: 100%;
   position: relative;
