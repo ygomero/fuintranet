@@ -41,7 +41,7 @@ class EtiquetafmprController{
         $pdf->Cell(10,0,utf8_decode('PAC:  '.$results->PACIENTE));
         $pdf->Ln(2.5);
         $pdf->SetFont('Helvetica','B',6);      
-        $pdf->Cell(10,0,utf8_decode('MED:  Q.F.: JANETH HERRERA S.'));
+        $pdf->Cell(10,0,utf8_decode('MED:  Q.F.: NATALY CARDENAS H.'));
         $pdf->Ln(2);
         $pdf->Cell(10,0,utf8_decode('MANTENER ALEJADO DE LOS NIÑOS'));
         $pdf->Ln(2);
