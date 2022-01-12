@@ -27,24 +27,26 @@
                       <a href="index.html"><img width="100%" src="/images/logo-full-big.png" alt=""
                       /></a>
                     </div>
-                    <h4 class="text-center mb-4">Sign in your account</h4>
+                    <h4 class="text-center mb-4">Ingrese su cuenta</h4>
                     <form action="/api/login" method="POST" id="formLogin">
                       <div class="form-group">
-                        <label class="mb-1"><strong>Email</strong></label>
+                        <label class="mb-1"><strong>Usuario</strong></label>
                         <input
-                          name="email"
-                          type="email"
+                          id="user"
+                          name="user"
+                          type="text"
                           class="form-control"
-                          value="hello@example.com"
+                          value=""
                         />
-                        <small></small>
                       </div>
                       <div class="form-group">
-                        <label class="mb-1"><strong>Password</strong></label>
+                        <label class="mb-1"><strong>Contraseña</strong></label>
                         <input
+                          id="password"
+                          name="password"
                           type="password"
                           class="form-control"
-                          value="Password"
+                          value=""
                         />
                       </div>
                       <div
@@ -57,6 +59,7 @@
                         "
                       >
                         <div class="form-group">
+                          <p id=msgError></p>
                           <div class="custom-control custom-checkbox ml-1">
                             <input
                               type="checkbox"
@@ -70,15 +73,15 @@
                             >
                           </div>
                         </div>
-                        <div class="form-group">
+                        <!--div class="form-group">
                           <a href="page-forgot-password.html"
                             >Forgot Password?</a
                           >
-                        </div>
+                        </div-->
                       </div>
                       <div class="text-center">
                         <button type="submit" class="btn btn-primary btn-block">
-                          Sign Me In
+                          Iniciar sesión
                         </button>
                       </div>
                     </form>
@@ -105,34 +108,21 @@
 
     <script type="text/javascript">
         const form = document.querySelector("#formLogin");
-        const EMAIL_REQUIRED = "Please enter your email";
-        const EMAIL_INVALID = "Please enter a correct email address format";
+        const USER_REQUIRED = "Por favor ingresa tu usuario";
 
         form.addEventListener("submit", function (event) {
           // stop form submission
           event.preventDefault();
 
           // validate the form
-          let emailValid = validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
-          // if valid, submit the form.
-          if (emailValid) {
-            alert("Demo only. No form was posted.");
-          }
+          let emailValid = validateUser(form.elements["user"], USER_REQUIRED);
         });
 
 
-        function validateEmail(input, requiredMsg, invalidMsg) {
+        function validateUser(input, requiredMsg) {
           // check if the value is not empty
           if (!hasValue(input, requiredMsg)) {
             return false;
-          }
-          // validate email format
-          const emailRegex =
-            /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-          const email = input.value.trim();
-          if (!emailRegex.test(email)) {
-            return showError(input, invalidMsg);
           }
           return true;
         }
@@ -145,7 +135,7 @@
         }
 
         function showError(input, message) {
-          return showMessage(input, message, false);
+          return showMessage( message, false);
         }
 
         function showSuccess(input) {
@@ -153,23 +143,28 @@
           $.ajax({
             url: "/api/login",
             method: "POST",
-            data: {},
+            data: {
+              user: $("#user").val(),
+              password: $("#password").val(),
+            },
             dataType: "JSON"
           }).done(function(response) {
             if(response.status == "ok"){
               window.location.href = "/home";
+            }else{
+              showMessage(response.msg, false);
             }
           });
 
         }
 
 
-        function showMessage(input, message, type) {
+        function showMessage( message, type) {
           // get the <small> element and set the message
-          const msg = input.parentNode.querySelector("small");
+          const msg = document.getElementById("msgError");
           msg.innerText = message;
           // update the class for the input
-          input.className = type ? "success" : "error";
+          msg.className = type ? "success" : "error";
           return type;
         }
 

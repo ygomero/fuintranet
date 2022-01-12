@@ -52,18 +52,6 @@
                                               placeholder="Ingrese Referencia"/>
                                           </div>
                                       </div>
-                                      <div class="form-group row">
-                                          <label class="col-lg-4 col-form-label" for="val-skill"> 2° Referencia
-                                          </label>
-                                          <div class="col-lg-6">
-                                              <input
-                                              type="text"
-                                              class="form-control"
-                                              id="val-segundo-refer"
-                                              name="val-segundo-refer"
-                                              placeholder="Ingrese Referencia"/>
-                                          </div>
-                                      </div>
                                   </div>
                                   <div class="col-xl-6">
                                     <div class="form-group row">
@@ -93,20 +81,18 @@
                                         />
                                       </div>
                                     </div>
-                  
                                     <div class="form-group row">
-                                      <label class="col-lg-4 col-form-label" for="val-phoneus">Saldo
+                                      <label class="col-lg-4 col-form-label" for="val-skill"> 2° Referencia
                                       </label>
                                       <div class="col-lg-6">
-                                        <input
+                                          <input
                                           type="text"
                                           class="form-control"
-                                          id="val-saldo"
-                                          name="val-saldo"
-                                          placeholder="Ingrese saldo"
-                                        />
+                                          id="val-segundo-refer"
+                                          name="val-segundo-refer"
+                                          placeholder="Ingrese Referencia"/>
                                       </div>
-                                    </div>
+                                    </div>               
                                   </div>
                                 </div>
                               </form>
@@ -165,7 +151,7 @@
         $.ajax({
             url: '/api/depositos/register',
             type: 'post',
-            data:$('#formDepositoNuevo').serialize(),
+            data:$('#formDepositoNuevo').serialize(), 
             dataType:"JSON",
             success:function(res){
               if(res.status == 'ok'){

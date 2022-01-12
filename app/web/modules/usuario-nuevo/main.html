@@ -142,6 +142,16 @@
                       />
                     </div>
                   </div>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-establecimiento">Establecimiento
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <select class="form-control default-select" id="select_establecimiento" name="val-establecimiento">
+                        <option value="">Seleccione</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-xl-6">
                   <div class="form-group row">
@@ -180,7 +190,6 @@
                       />
                     </div>
                   </div>
-
                   <div class="form-group row">
                     <label class="col-lg-4 col-form-label"
                       ><a href="javascript:void()">Estado</a>
@@ -225,7 +234,7 @@
 
 <script type="text/javascript">
   document.addEventListener("DOMContentLoaded", function () {
-    loadSelectTipoDocumento(),loadSelectPerfil(),loadSelectArea();
+    loadSelectTipoDocumento(),loadSelectPerfil(),loadSelectArea(),loadSelectEstablecimiento();
     
     $("#guardar_usuario").click((e)=>{
         e.preventDefault();
@@ -289,6 +298,19 @@
             $( "#select_tipo_area" ).append(  `<option value='${element.value}'> ${element.name} </option>` );
         });
         $("#select_tipo_area").selectpicker('refresh')
+    });
+  }
+
+  function loadSelectEstablecimiento(){
+    $.ajax({
+      url: "/api/users/establecimiento",
+      type: "GET",
+      dataType: "JSON",
+    }).done(function (res) {
+        res.forEach(element => {
+            $( "#select_establecimiento" ).append(  `<option value='${element.value}'> ${element.name} </option>` );
+        });
+        $("#select_establecimiento").selectpicker('refresh')
     });
   }
 

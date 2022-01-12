@@ -26,6 +26,10 @@ class View{
                 $main = str_replace("<extra-js></extra-js>",$js,$main);
             }
 
+            $user = $_SESSION["user"]; 
+            $html_session = "<span>{$user->name}</span>
+            <small>{$user->namePerfil}</small>";
+            $main = str_replace("<user-session></user-session>",$html_session,$main);
             $layoutCrtl = new LayoutController(self::$app);
             $main = str_replace("<app-sidebar></app-sidebar>",$layoutCrtl->getSideBar(),$main);
             echo $main;exit;

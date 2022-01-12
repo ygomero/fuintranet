@@ -268,13 +268,19 @@ class SQLSRV_DataBase {
 	 */
 	private function schema_prepare_value( $table, $column, $value, $type = array() ) {
 		if(count($type) > 0 ){
+			
 			$nullable =  ($type[1] == 'NULLABLE') ? true : false;
+			$isSeq =  ($type[0] == 'SEQUENCE') ? true : false;
+			$sequence = ($type[1] != '') ? $type[1]:"";
 			$type = ($type[0] != '') ? $type[0]:"";
 			$numerics = array(
 				'int',
 				'decimal',
 				'money'
 			);
+			if($isSeq){
+				return "NEXT VALUE FOR ".$sequence;
+			}
 			
 			if ( in_array( $type, $numerics ) ) {
 				if ( null === $value || '' === $value ) {

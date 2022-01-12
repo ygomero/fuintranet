@@ -1,0 +1,184 @@
+<style>
+  .dt-buttons{
+    margin-bottom: 16px;
+  }
+ 
+</style>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+          <div class="card-body">
+            <div class="form-validation">
+              <form class="form-valide" action="/api/login" method="post" id="formSeguimiento">
+                <div class="row">
+        
+                  <div class="col-xl-12">
+                    <div class="form-group row">
+                      
+                      <label class="col-lg-2 col-form-label text-black" for="val-local">
+                        Fecha de Venta
+                      </label>
+                                             
+                      <div class="col-lg-3">
+                        <span>Desde:</span>
+                        <input type="date" class="form-control datepicker-default" id="val_fecha_desde" name="val_fecha_desde"/>
+                      </div>
+                       
+                      <div class="col-lg-3">
+                        <span>Hasta:</span>
+                        <input type="date" class="form-control datepicker-default" id="val_fecha_hasta" name="val_fecha_hasta"/>
+                      </div>
+
+                      <div class="col-lg-4">
+                        <span>Local:</span>
+                        <select class="form-control default-select" id="select_local" name="val-local">
+                          <option value="">Seleccione local de Venta</option>
+                        </select>
+                      </div>
+
+                    </div>
+                  </div>
+        
+                </div>
+                <div class="row">
+                  <button type="button" class="btn btn-primary float-lg-left" id="search"><i class="fa fa-search pr-2" aria-hidden="true"></i>Buscar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table id="table_id" class="table table-sm mb-0 table-striped">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>FECHA</th>
+                  <th>LOCAL</th>
+                  <th>PACIENTE</th>
+                  <th>TELEFONO</th>
+                  <th>MEDICO</th>
+                  <th>TIP DOC</th>
+                  <th>COMPROBANTE</th>
+                  <th>SKU</th>
+                  <th>PRODUCTO</th>
+                  <th>UNIDADES</th>
+                  <th>TOTAL</th>
+                  <th>S-VENTA</th>
+                  <th>DESCUENTO</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+  let dataSet = [];
+  document.addEventListener("DOMContentLoaded", function () {
+
+    $('.datepicker-default').pickadate({
+      format: 'dd/mm/yyyy',
+      formatSubmit: 'dd/mm/yyyy',
+      monthsFull: [ 'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Setiembre', 'Octubre', 'Noviembre', 'Diciembre' ],
+      weekdaysShort: [ 'Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab' ],
+      today: "Hoy",
+      clear: "Limpiar",
+      close: "Cerrar"
+    });
+
+
+    loadSelectLocal();
+    let today = new Date();
+    let todayFormat = ('0' + today.getDate()).slice(-2) + '/' + ('0' + (today.getMonth() + 1)).slice(-2) + '/' +  today.getFullYear();
+    document.getElementById('val_fecha_desde').value = todayFormat;
+    document.getElementById('val_fecha_hasta').value = todayFormat;
+
+    $(document).ready(function () { 
+      table = $("#table_id").DataTable({
+        "language": {
+          "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+        },
+        
+        dom: 'Blfrtip',
+        buttons:[ 
+          {
+              extend: 'excel',
+              className: 'btn btn-primary ml-auto',
+              style: 'align:rigth;',
+              text: 'Exportar Excel',
+              // exportOptions: {
+              //     modifier: {
+              //         page: 'current'
+              //     }
+              // }
+          }
+        ],
+        lengthChange: true,
+        paging:true,
+        iDisplayLength: 10,
+        aLengthMenu: [[ 10, 20, 50, 100 ,-1],[10,20,50,100,"Todos"]],
+        data:dataSet,
+        "columnDefs": [
+          {
+            //"targets": [ 13 ],
+            "visible": false,
+            "searchable": false,
+          },
+        ]
+      });
+      //searchData(); 
+    });
+
+    $("#search").click(function(e){
+      e.preventDefault();
+      searchData();
+    })
+
+  });
+
+  function loadSelectLocal(){
+    $.ajax({
+      url: "/api/seguimientodep/local",
+      type: "GET",
+      dataType: "JSON",
+    }).done(function (res) {
+        res.forEach(element => {
+            $( "#select_local" ).append(  `<option value='${element.value}'> ${element.name} </option>` );
+        });
+        $("#select_local").selectpicker('refresh')
+    });
+  }
+
+  function searchData(){
+    page_loading();
+    table.clear();
+    let dataToSend = {
+      //solo se enb
+      val_local: $("#select_local").val(),
+      val_fecha_desde: $("#val_fecha_desde").val(),
+      val_fecha_hasta: $("#val_fecha_hasta").val(),
+    };
+    
+    $.ajax({
+      url: "/api/reportes/ventasProductosRecomendados",
+      type: "POST",
+      dataType: "JSON",
+      data: dataToSend, 
+    }).done(function (res) {
+      dataSet = res;
+      table.rows.add(dataSet).draw();
+      page_stop_loading();
+    });
+  }
+
+</script>
+

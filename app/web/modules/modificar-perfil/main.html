@@ -1,0 +1,185 @@
+<div class="container-fluid">
+
+    <!-- row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-validation">
+                        <form class="form-valide" action="#" method="post" id="form_datos">
+                            <div class="row">
+                                <div class="col-xl-4">
+                                    <div class="form-group row">
+                                        <label class="col-lg-4 col-form-label" for="val-profile-name">Nombre Perfil
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="col-lg-8">
+                                            <input type="text" class="form-control" id="val-profile-name" name="val-perfil" placeholder="Ingrese Nombre del Perfil">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="form-group row">
+                                        <label class="col-lg-4 col-form-label" for="val-profile-description">Descripción
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="col-lg-8">
+                                            <input type="text" class="form-control" id="val-profile-description" name="val-descripcion" placeholder="Ingrese Descripción">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4    ">
+                                    <div class="form-group row">
+                                        <label class="col-lg-4 col-form-label"><a href="javascript:void()">Estado</a>
+                                        <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="col-lg-8">
+                                        <label class="css-control css-control-primary css-checkbox"
+                                            for="val-enable">
+                                            <input
+                                            type="checkbox"
+                                            class="css-control-input mr-2"
+                                            id="val-enable"
+                                            name="val-enable"
+                                            value="1"
+                                            />
+                                            <span class="css-control-indicator"></span> Habilitado
+                                        </label>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <form id="form_permisos">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">PERMISOS</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive" id="table_container">
+                            
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-12">
+            <div class="form-group row">
+                <div class="col-lg-8 ml-auto">
+                    <button type="submit" class="btn btn-primary" id="permisos_guardar">Guardar</button>
+                    <button type="submit" class="btn btn-light" id="permisos_cancelar">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    let dataSet = []; //inicia vacio
+    let table;
+    //obtener el id de la url
+    let url_string = window.location.href
+    let url = new URL(url_string);
+    let idProfile = url.searchParams.get("id");
+
+    document.addEventListener("DOMContentLoaded", function () { 
+      
+        $(document).ready(function () { 
+            table = $("#table_id").DataTable({
+                    
+                "language": {
+                "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+                },
+                
+                dom: 'Blfrtip',
+    
+                lengthChange: true,
+                paging:true,
+                iDisplayLength: 10, 
+                aLengthMenu: [[ 10, 20, 50, 100 ,-1],[10,20,50,100,"Todos"]],
+                data:dataSet, 
+                "columnDefs": [
+                {
+                    "targets": [ 2 ],
+                    "visible": false   ,
+                    "searchable": false,
+                },
+                ]
+            })
+            loadTablaModulo();
+
+            //carga la informacion del perfil que se esta editando
+            cargarPerfil(idProfile);
+
+            $("#permisos_guardar").click(function(e){
+                e.preventDefault();
+
+   
+                let dataToSend = $("#form_permisos, #form_datos").serializeArray();
+                dataToSend.push({ "name": "idProfile", value: idProfile });
+
+                $.ajax({
+                    url: "/api/profile/actualizar",
+                    type: "POST",
+                    dataType: "JSON",
+                    data: dataToSend
+                }).done(function (res) {
+                    if(res.status == 'ok'){
+                        swal("Perfil", res.msg, "success");
+                    }
+                    else{
+                        swal("Error", res.msg, "error");
+                    }
+                });
+            })
+
+            $("#permisos_cancelar").click((e)=>{
+                e.preventDefault();
+                window.location.href = "/perfil";
+            })
+        });
+    });
+   
+   
+    function loadTablaModulo(){
+      page_loading();
+      $.ajax({
+        url: "/api/profile/modulosCharge",
+        type: "GET",
+        dataType: "JSON",
+      }).done(function (res) {
+        $("#table_container").append(res);
+        $(".form-check-input").prop("checked",false)
+        page_stop_loading();
+      });
+    }
+
+    function cargarPerfil(id){
+      page_loading();
+      $.ajax({
+        url: "/api/profile/search-item",
+        type: "POST",
+        dataType: "JSON",
+        data:{
+            idProfile: idProfile
+        }
+      }).done(function (res) {
+        if(res.status == 'ok'){
+            $("#val-profile-name").val(res.data.perfil.PROFILE_NAME);
+            $("#val-profile-description").val(res.data.perfil.PROFILE_DESCRIPTION);
+            $("#val-enable").prop("checked",res.data.perfil.STATUS_PROFILE)
+            res.data.permisos.forEach((value, index, array) => {
+                $("#"+value.MOD_ID).prop("checked",true);
+            })
+        }
+        page_stop_loading();
+      });
+    }
+
+  </script>

@@ -5,11 +5,13 @@ class App
     private static $pathGuards = DIR_APP . DS . "domain" . DS . "guards";
     private static $pathControllers = DIR_APP . DS . "domain" . DS . "controllers";
     private static $pathLogger = DIR_APP . DS . "shared" . DS . "core";
+    private static $pathLibPdf = DIR_LIBS . DS . "fpdf";
+    private static $pathLibRpdf = DIR_LIBS . DS . "fpdf";
     private $connections = [];
     private $routes = [];
     private $pathNotFound = null;
     private $methodNotAllowed = null;
-    private $currentModule = null;
+    public $currentModule = null;
     private $querys = [];
 
     public function __construct()
@@ -17,6 +19,8 @@ class App
         require_once(self::$pathLogger . DS . 'Logger.php');
         require_once(self::$pathControllers . DS . 'LayoutController.php');
         require_once(self::$pathControllers . DS . 'ModulesController.php');
+        require_once(self::$pathLibPdf . DS . 'fpdf.php');
+        require_once(self::$pathLibRpdf . DS . 'rpdf.php');
     }
 
     function addQuerys($querys)
@@ -152,8 +156,19 @@ class App
         }
 
 
+        if($module == "viewer"){
+            $function = "viewer";
+            $class = 'App\Controllers\\' . ucfirst($this->currentModule["controller"]) . 'Controller';
+            $object = new $class($this);
+            $response = $object->$function();
+            $response = json_encode($response);
+            if (!json_last_error()) {
+                echo  $response;
+                exit;
+            }
+        }
         //modulo api es para peticiones ajax
-        if ($module === "api") {
+        elseif ($module === "api") {
             $function = "main";
             if (isset($parts[3])) {
                 $function = $parts[3];
@@ -187,7 +202,7 @@ class App
             if (isset($this->currentModule["guards"])) {
                 foreach ($this->currentModule["guards"] as $guard) {
                     $class = 'App\Guards\\' . ucfirst($guard) . 'Guard';
-                    $class::main();
+                    $class::main($this);
                 }
             }
 

@@ -9,3 +9,4 @@ define("DIR_LOG",DIR_DATA.DS."log");
 define("WEB_URL","");
 define("MONEY_SYMBOL","S/");
 define("SQL_DATETIME_FORMAT","Y-d-m H:i:s");
+define("DIR_LIBS",DIR_APP.DS."libs");

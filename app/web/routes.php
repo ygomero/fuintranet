@@ -42,8 +42,24 @@ $routes =  [
         ]
     ),
     array(
+        'path' => "/usuarios/modificar",
+        'controller' => "modificar-usuario",
+        'method' => "GET",
+        'guards' => [
+            "auth"
+        ]
+    ),
+    array(
         'path' => "/perfil/nuevo",
         'controller' => "perfil-nuevo",
+        'method' => "GET",
+        'guards' => [
+            "auth"
+        ]
+    ),
+    array(
+        'path' => "/perfil/modificar",
+        'controller' => "modificar-perfil",
         'method' => "GET",
         'guards' => [
             "auth"
@@ -67,7 +83,7 @@ $routes =  [
     ),
     array(
         'path' => "/registro",
-        'controller' => "registro",
+        'controller' => "registro-deposito",
         'method' => "GET",
         'guards' => [
             "auth"
@@ -75,7 +91,31 @@ $routes =  [
     ),
     array(
         'path' => "/explorador",
-        'controller' => "explorador",
+        'controller' => "explorador-deposito",
+        'method' => "GET",
+        'guards' => [
+            "auth"
+        ]
+    ),
+    array(
+        'path' => "/seguimiento",
+        'controller' => "seguimiento-deposito",
+        'method' => "GET",
+        'guards' => [
+            "auth"
+        ]
+    ),
+    array(
+        'path' => "/productos%20recomendados%20-%20ventas",
+        'controller' => "REPORTE DE VENTAS DE PRODUCTOS RECOMENDADOS",
+        'method' => "GET",
+        'guards' => [
+            "auth"
+        ]
+    ),
+    array(
+        'path' => "/recetas%20controladas",
+        'controller' => "RECETAS CONTROLADAS",
         'method' => "GET",
         'guards' => [
             "auth"
@@ -96,6 +136,18 @@ $routes =  [
     array(
         'path' => "/api/login/logout",
         'controller' => "login",
+        'method' => "POST",
+        'fullpage'=>false
+    ),
+    array(
+        'path' => "/api/reportes/ventasProductosRecomendados",
+        'controller' => "reportes",
+        'method' => "POST",
+        'fullpage'=>false
+    ),
+    array(
+        'path' => "/api/reportes/consultaRecetasControladas",
+        'controller' => "reportes",
         'method' => "POST",
         'fullpage'=>false
     ),
@@ -124,6 +176,12 @@ $routes =  [
         'fullpage'=>false
     ),
     array(
+        'path' => "/api/users/establecimiento",
+        'controller' => "users",
+        'method' => "GET",
+        'fullpage'=>false
+    ),
+    array(
         'path' => "/api/users",
         'controller' => "users",
         'method' => "GET",
@@ -137,9 +195,27 @@ $routes =  [
         'fullpage'=>false
     ),
     array(
-        'path' => "/api/profile/modulos",
+        'path' => "/api/profile/guardar",
+        'controller' => "profile",
+        'method' => "POST",
+        'fullpage'=>false
+    ),
+    array(
+        'path' => "/api/profile/modulosCharge",
         'controller' => "profile",
         'method' => "GET",
+        'fullpage'=>false
+    ),
+    array(
+        'path' => "/api/profile/search-item",
+        'controller' => "profile",
+        'method' => "POST",
+        'fullpage'=>false
+    ),
+    array(
+        'path' => "/api/profile/actualizar",
+        'controller' => "profile",
+        'method' => "POST",
         'fullpage'=>false
     ),
     array(
@@ -168,14 +244,35 @@ $routes =  [
     ),
 
     array(
-        'path' => "/api/depositos/local",
+        'path' => "/api/seguimientodep/local",
+        'controller' => "seguimientodep",
+        'method' => "GET",
+        'fullpage'=>false
+    ),
+
+    array(
+        'path' => "/api/reportes/local",
+        'controller' => "reportes",
+        'method' => "GET",
+        'fullpage'=>false
+    ),
+
+    array(
+        'path' => "/api/seguimientodep/search",
+        'controller' => "seguimientodep",
+        'method' => "POST",
+        'fullpage'=>false
+    ),
+
+    array(
+        'path' => "/api/depositos/usuarios",
         'controller' => "depositos",
         'method' => "GET",
         'fullpage'=>false
     ),
 
     array(
-        'path' => "/api/depositos/usuarios",
+        'path' => "/api/depositos/usuariosResponsables",
         'controller' => "depositos",
         'method' => "GET",
         'fullpage'=>false
@@ -215,4 +312,18 @@ $routes =  [
         'method' => "POST",
         'fullpage'=>false
     ),
+    array(
+        'path' => "/api/testpdf",
+        'controller' => "pdfconfirdep",
+        'method' => "GET",
+        'fullpage'=>false
+    ),
+    array(
+        'path' => "/api/etiqueta",
+        'controller' => "Etiquetafmpr",
+        'method' => "GET",
+        'fullpage'=>false
+    ),
+    
+   
 ];

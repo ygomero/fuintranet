@@ -2,12 +2,7 @@
   <div class="form-head d-flex mb-3 mb-md-5 align-items-start">
     <div class="col-lg-12">
       <div class="mr-auto d-none d-lg-block">
-        <a href="/usuarios/nuevo" class="btn btn-primary mb-1 mr-1"
-          >Nuevo usuario</a
-        >
-        <a href="javascript:void()" class="btn btn-primary mb-1 mr-1"
-          >Resetear</a
-        >
+        <a href="/usuarios/nuevo" class="btn btn-primary mb-1 mr-1">Nuevo usuario</a>
       </div>
 
     </div>
@@ -21,17 +16,7 @@
               <thead>
                 <tr>
                   <th class="pr-3">
-                    <div class="custom-control custom-checkbox mx-2">
-                      <input
-                        type="checkbox"
-                        class="custom-control-input"
-                        id="checkAll"
-                      />
-                      <label
-                        class="custom-control-label"
-                        for="checkAll"
-                      ></label>
-                    </div>
+                    
                   </th>
                   <th>Usuario</th>
                   <th>Nombre</th>
@@ -54,6 +39,9 @@
     let dataSet = [];
     $(document).ready(function () {
       table = $("#table_id").DataTable({
+        "language": {
+          "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+        },
         dom: "Blfrtip",
         buttons: ["excel"],
         lengthChange: true,

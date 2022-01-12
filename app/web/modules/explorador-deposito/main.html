@@ -29,7 +29,8 @@
                   </th>
                   <th>Banco</th>
                   <th>Fecha de Operación</th>
-                  <th>Referencia</th>
+                  <th>1° Referencia</th>
+                  <th>2° Referencia</th>
                   <th>N° Operación</th>
                   <th>Importe</th>
                   <th>Saldo</th>
@@ -154,7 +155,7 @@
                               <th>N° Serie</th>
                               <th>N° Doc</th>
                               <th>Total</th>
-                              <th>Importe</th>
+                              <th>Abono</th>
                               <th>Saldo</th>
                               <th>Cliente</th>
                             </tr>
@@ -165,8 +166,8 @@
               </div>
 
               <div class="modal-footer">
-                  <button type="button" class="btn btn-danger light" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary" id="guardar_asociacion">Save changes</button>
+                  <button type="button" class="btn btn-danger light" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary" id="guardar_asociacion">Guardar</button>
               </div>
           </div>
       </div>
@@ -185,11 +186,20 @@
     loadSelectLoad(), loadSelecSolicitanteLolfar(), loadSelecResponsableLolfar();
 
     $(document).ready(function () {
-      page_loading();
-
+      
       table = $("#table_id").DataTable({
-        // dom: "Blfrtip",
-        // buttons: ["excel"],
+        "language": {
+          "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+        },
+        //dom: "Blfrtip",
+        buttons: [
+          {
+            text: 'Reload',
+            action: function ( e, dt, node, config ) {
+                dt.ajax.reload();
+            }
+          }
+        ],
         lengthChange: true,
         paging: true,
         iDisplayLength: 10,
@@ -199,7 +209,7 @@
         ],
         "columnDefs": [
           {
-            "targets": [ 7 ],
+            "targets": [ 8 ],
             "visible": false,
             "searchable": false,
           },
@@ -211,18 +221,7 @@
         },
       });
 
-      table.clear();
-      $.ajax({
-        url: "/api/depositos",
-        type: "GET",
-        dataType: "JSON",
-        //   data: data,
-      }).done(function (res) {
-        //asignar nuevos valores
-        dataSet = res;
-        table.rows.add(dataSet).draw();
-        page_stop_loading();
-      });
+      loadDepositos();
 
       //tabla de modal
       tableDocument = $("#table_asociarFac").DataTable({
@@ -235,6 +234,7 @@
         bInfo: false,
         data: dataSet,
       });
+      
 
       $('#val-secuencia').keypress(function(e) {
         var keycode = (e.keyCode ? e.keyCode : e.which);
@@ -275,6 +275,15 @@
             swal("Error", res.msg, "error");
           }else{
             swal("Asociacion", "Guardado correctamente", "success");
+            $("#add-factura").modal("hide");
+            arDepositos = [];
+            $("#btn_modal_asociar").addClass("disabled");
+            loadDepositos();
+
+            //abrir los links de los depositos
+            res.data.registros.forEach((value, index, array) => {
+              window.open('http://192.168.25.12:82/api/testpdf?dep='+value, '_blank');
+            })
           }
         });
 
@@ -294,8 +303,30 @@
         }
       })
 
+
+      $("#add-factura").on("hidden.bs.modal", function () {
+        limpiarModal() 
+      });
+
     });
   });
+
+  function loadDepositos(){
+    page_loading();
+    factura = [];
+    table.clear();
+    $.ajax({
+      url: "/api/depositos",
+      type: "GET",
+      dataType: "JSON",
+      //   data: data,
+    }).done(function (res) {
+      //asignar nuevos valores
+      dataSet = res;
+      table.rows.add(dataSet).draw();
+      page_stop_loading();
+    });
+  }
 
   function agregarDeposito(idDeposito){
     let existe = arDepositos.findIndex((i)=>i === idDeposito);
@@ -334,10 +365,21 @@
         dataSet = data;
         tableDocument.rows.add(dataSet).draw();
         factura = data[0][0]+"/"+data[0][1]+"/"+data[0][2];
-        console.log("factura",factura);
       }
       page_stop_loading();
     });
+  }
+
+  function  limpiarModal(){
+      tableDocument.clear();
+      tableDocument.rows.add([]).draw();
+      $('#val-secuencia').val("");
+      $('#val-serie').val("");
+      $('#val-documento').val("");
+      $('#select_local').selectpicker('val', '');
+      $('#select_sol').selectpicker('val', '');
+      $('#select_res').selectpicker('val', '');
+      factura = '';
   }
 
   async function loadSelectLoad(){
@@ -369,7 +411,7 @@
 
   async function loadSelecResponsableLolfar(){
     $.ajax({
-      url: "/api/depositos/usuarios",
+      url: "/api/depositos/usuariosResponsables",
       type: "GET",
       dataType: "JSON",
     }).done(function (res) {

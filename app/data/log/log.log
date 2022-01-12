@@ -452,3 +452,3732 @@
 
 )
 
+2021-09-16T18:39:59-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1031
+    [NR_SEQUENCE] => 12345
+    [TYPE_DOC] => 
+    [NR_SERIE] => B205
+    [NR_DOC] => 1504
+    [FAC_TOT] => 30.00
+    [IMPORTE] => -20
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 3
+    [USER_APPLICANT] => BALMERCO
+    [USER_CONFIRM] => NALIAGA
+    [DATE_CONFIRMATION] => 2021-16-09 18:39:59
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-16-09 18:39:59
+    [DATE_MOD] => 
+)
+
+2021-09-16T19:18:27-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1031
+    [NR_SEQUENCE] => 111
+    [TYPE_DOC] => 
+    [NR_SERIE] => B202
+    [NR_DOC] => 57
+    [FAC_TOT] => 1.05
+    [IMPORTE] => -48.95
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 3
+    [USER_APPLICANT] => BALMERCO
+    [USER_CONFIRM] => CALEGRE
+    [DATE_CONFIRMATION] => 2021-16-09 19:18:27
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-16-09 19:18:27
+    [DATE_MOD] => 
+)
+
+2021-09-16T19:23:20-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 17
+    [NR_SEQUENCE] => 222
+    [TYPE_DOC] => 
+    [NR_SERIE] => B218
+    [NR_DOC] => 2
+    [FAC_TOT] => 9.14
+    [IMPORTE] => 9.14
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 8
+    [USER_APPLICANT] => NALIAGA
+    [USER_CONFIRM] => CALEGRE
+    [DATE_CONFIRMATION] => 2021-16-09 19:23:20
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-16-09 19:23:20
+    [DATE_MOD] => 
+)
+
+2021-09-16T19:26:04-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 18
+    [NR_SEQUENCE] => 333
+    [TYPE_DOC] => 
+    [NR_SERIE] => B200
+    [NR_DOC] => 50
+    [FAC_TOT] => 35.95
+    [IMPORTE] => 35.95
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 3
+    [USER_APPLICANT] => BALMERCO
+    [USER_CONFIRM] => CALEGRE
+    [DATE_CONFIRMATION] => 2021-16-09 19:26:04
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-16-09 19:26:04
+    [DATE_MOD] => 
+)
+
+2021-09-16T19:28:52-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 18
+    [NR_SEQUENCE] => 444
+    [TYPE_DOC] => 
+    [NR_SERIE] => B218
+    [NR_DOC] => 27
+    [FAC_TOT] => 44.10
+    [IMPORTE] => 14.05
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 2
+    [USER_APPLICANT] => HANGULO
+    [USER_CONFIRM] => HANGULO
+    [DATE_CONFIRMATION] => 2021-16-09 19:28:52
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-16-09 19:28:52
+    [DATE_MOD] => 
+)
+
+2021-09-16T19:30:02-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 19
+    [NR_SEQUENCE] => 444
+    [TYPE_DOC] => 
+    [NR_SERIE] => B218
+    [NR_DOC] => 27
+    [FAC_TOT] => 44.10
+    [IMPORTE] => 30.05
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 11
+    [USER_APPLICANT] => SANDRADE
+    [USER_CONFIRM] => HANGULO
+    [DATE_CONFIRMATION] => 2021-16-09 19:30:02
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-16-09 19:30:02
+    [DATE_MOD] => 
+)
+
+2021-09-16T19:30:38-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 19
+    [NR_SEQUENCE] => 666
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 692985
+    [FAC_TOT] => 77.85
+    [IMPORTE] => 19.95
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 11
+    [USER_APPLICANT] => SANDRADE
+    [USER_CONFIRM] => HANGULO
+    [DATE_CONFIRMATION] => 2021-16-09 19:30:38
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-16-09 19:30:38
+    [DATE_MOD] => 
+)
+
+2021-09-16T19:30:38-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 24
+    [NR_SEQUENCE] => 666
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 692985
+    [FAC_TOT] => 77.85
+    [IMPORTE] => 50
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 11
+    [USER_APPLICANT] => SANDRADE
+    [USER_CONFIRM] => HANGULO
+    [DATE_CONFIRMATION] => 2021-16-09 19:30:38
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-16-09 19:30:38
+    [DATE_MOD] => 
+)
+
+2021-09-16T20:08:27-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 17
+    [NR_SEQUENCE] => 666
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 692985
+    [FAC_TOT] => 77.85
+    [IMPORTE] => 7.9
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 11
+    [USER_APPLICANT] => HANGULO
+    [USER_CONFIRM] => HANGULO
+    [DATE_CONFIRMATION] => 2021-16-09 20:08:27
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-16-09 20:08:27
+    [DATE_MOD] => 
+)
+
+2021-09-16T20:09:13-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 17
+    [NR_SEQUENCE] => 555
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 692867
+    [FAC_TOT] => 2.98
+    [IMPORTE] => 2.98
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 2
+    [USER_APPLICANT] => AAPOLO
+    [USER_CONFIRM] => ALTAMIRANO
+    [DATE_CONFIRMATION] => 2021-16-09 20:09:13
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-16-09 20:09:13
+    [DATE_MOD] => 
+)
+
+2021-09-17T08:03:25-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1031
+    [NR_SEQUENCE] => 692985
+    [TYPE_DOC] => 
+    [NR_SERIE] => B206
+    [NR_DOC] => 206171
+    [FAC_TOT] => 253.17
+    [IMPORTE] => 50
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => PEREZ AIQUIPA RUTH MARISOL
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => EAQUISE
+    [USER_CONFIRM] => YGOMERO
+    [DATE_CONFIRMATION] => 2021-17-09 08:03:25
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 08:03:25
+    [DATE_MOD] => 
+)
+
+2021-09-17T08:05:20-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1030
+    [NR_SEQUENCE] => 692985
+    [TYPE_DOC] => 
+    [NR_SERIE] => B206
+    [NR_DOC] => 206171
+    [FAC_TOT] => 253.17
+    [IMPORTE] => 50
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => PEREZ AIQUIPA RUTH MARISOL
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => EAQUISE
+    [USER_CONFIRM] => YGOMERO
+    [DATE_CONFIRMATION] => 2021-17-09 08:05:20
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 08:05:20
+    [DATE_MOD] => 
+)
+
+2021-09-17T08:05:20-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1031
+    [NR_SEQUENCE] => 692985
+    [TYPE_DOC] => 
+    [NR_SERIE] => B206
+    [NR_DOC] => 206171
+    [FAC_TOT] => 253.17
+    [IMPORTE] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => PEREZ AIQUIPA RUTH MARISOL
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => EAQUISE
+    [USER_CONFIRM] => YGOMERO
+    [DATE_CONFIRMATION] => 2021-17-09 08:05:20
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 08:05:20
+    [DATE_MOD] => 
+)
+
+2021-09-17T08:05:52-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1029
+    [NR_SEQUENCE] => 692985
+    [TYPE_DOC] => 
+    [NR_SERIE] => B206
+    [NR_DOC] => 206171
+    [FAC_TOT] => 253.17
+    [IMPORTE] => 50
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => PEREZ AIQUIPA RUTH MARISOL
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => EAQUISE
+    [USER_CONFIRM] => YGOMERO
+    [DATE_CONFIRMATION] => 2021-17-09 08:05:52
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 08:05:52
+    [DATE_MOD] => 
+)
+
+2021-09-17T08:05:52-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1030
+    [NR_SEQUENCE] => 692985
+    [TYPE_DOC] => 
+    [NR_SERIE] => B206
+    [NR_DOC] => 206171
+    [FAC_TOT] => 253.17
+    [IMPORTE] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => PEREZ AIQUIPA RUTH MARISOL
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => EAQUISE
+    [USER_CONFIRM] => YGOMERO
+    [DATE_CONFIRMATION] => 2021-17-09 08:05:52
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 08:05:52
+    [DATE_MOD] => 
+)
+
+2021-09-17T08:05:52-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1031
+    [NR_SEQUENCE] => 692985
+    [TYPE_DOC] => 
+    [NR_SERIE] => B206
+    [NR_DOC] => 206171
+    [FAC_TOT] => 253.17
+    [IMPORTE] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => PEREZ AIQUIPA RUTH MARISOL
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => EAQUISE
+    [USER_CONFIRM] => YGOMERO
+    [DATE_CONFIRMATION] => 2021-17-09 08:05:52
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 08:05:52
+    [DATE_MOD] => 
+)
+
+2021-09-17T09:55:13-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 28
+    [NR_SEQUENCE] => 123
+    [TYPE_DOC] => 
+    [NR_SERIE] => B206
+    [NR_DOC] => 10
+    [FAC_TOT] => 44.10
+    [IMPORTE] => 44.1
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 12
+    [USER_APPLICANT] => RARANDA
+    [USER_CONFIRM] => EAQUISE
+    [DATE_CONFIRMATION] => 2021-17-09 09:55:13
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 09:55:13
+    [DATE_MOD] => 
+)
+
+2021-09-17T09:59:35-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 27
+    [NR_SEQUENCE] => 123
+    [TYPE_DOC] => 
+    [NR_SERIE] => B206
+    [NR_DOC] => 10
+    [FAC_TOT] => 44.10
+    [IMPORTE] => 44.1
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => EAQUISE
+    [USER_CONFIRM] => YARROYO
+    [DATE_CONFIRMATION] => 2021-17-09 09:59:35
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 09:59:35
+    [DATE_MOD] => 
+)
+
+2021-09-17T10:02:49-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 19
+    [NR_SEQUENCE] => 666
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 692985
+    [FAC_TOT] => 77.85
+    [IMPORTE] => 50
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 9
+    [USER_APPLICANT] => RARANDA
+    [USER_CONFIRM] => BAVENDAÃ‘O
+    [DATE_CONFIRMATION] => 2021-17-09 10:02:49
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 10:02:49
+    [DATE_MOD] => 
+)
+
+2021-09-17T10:02:49-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 27
+    [NR_SEQUENCE] => 666
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 692985
+    [FAC_TOT] => 77.85
+    [IMPORTE] => 5.9
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 9
+    [USER_APPLICANT] => RARANDA
+    [USER_CONFIRM] => BAVENDAÃ‘O
+    [DATE_CONFIRMATION] => 2021-17-09 10:02:49
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 10:02:49
+    [DATE_MOD] => 
+)
+
+2021-09-17T10:03:04-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 19
+    [NR_SEQUENCE] => 666
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 692985
+    [FAC_TOT] => 77.85
+    [IMPORTE] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 9
+    [USER_APPLICANT] => RARANDA
+    [USER_CONFIRM] => BAVENDAÃ‘O
+    [DATE_CONFIRMATION] => 2021-17-09 10:03:04
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 10:03:04
+    [DATE_MOD] => 
+)
+
+2021-09-17T10:03:04-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 27
+    [NR_SEQUENCE] => 666
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 692985
+    [FAC_TOT] => 77.85
+    [IMPORTE] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 9
+    [USER_APPLICANT] => RARANDA
+    [USER_CONFIRM] => BAVENDAÃ‘O
+    [DATE_CONFIRMATION] => 2021-17-09 10:03:04
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 10:03:04
+    [DATE_MOD] => 
+)
+
+2021-09-17T10:03:04-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 28
+    [NR_SEQUENCE] => 666
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 692985
+    [FAC_TOT] => 77.85
+    [IMPORTE] => 5.9
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 9
+    [USER_APPLICANT] => RARANDA
+    [USER_CONFIRM] => BAVENDAÃ‘O
+    [DATE_CONFIRMATION] => 2021-17-09 10:03:04
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 10:03:04
+    [DATE_MOD] => 
+)
+
+2021-09-17T10:20:46-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 17
+    [NR_SEQUENCE] => 888
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 692936
+    [FAC_TOT] => 113.42
+    [IMPORTE] => 50
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 8
+    [USER_APPLICANT] => HARAUJO
+    [USER_CONFIRM] => HARAUJO
+    [DATE_CONFIRMATION] => 2021-17-09 10:20:46
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 10:20:46
+    [DATE_MOD] => 
+)
+
+2021-09-17T10:21:17-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 17
+    [NR_SEQUENCE] => 999
+    [TYPE_DOC] => 
+    [NR_SERIE] => B214
+    [NR_DOC] => 8
+    [FAC_TOT] => 3.36
+    [IMPORTE] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 8
+    [USER_APPLICANT] => HARAUJO
+    [USER_CONFIRM] => HARAUJO
+    [DATE_CONFIRMATION] => 2021-17-09 10:21:17
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 10:21:17
+    [DATE_MOD] => 
+)
+
+2021-09-17T10:21:17-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 18
+    [NR_SEQUENCE] => 999
+    [TYPE_DOC] => 
+    [NR_SERIE] => B214
+    [NR_DOC] => 8
+    [FAC_TOT] => 3.36
+    [IMPORTE] => 3.36
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 8
+    [USER_APPLICANT] => HARAUJO
+    [USER_CONFIRM] => HARAUJO
+    [DATE_CONFIRMATION] => 2021-17-09 10:21:17
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 10:21:17
+    [DATE_MOD] => 
+)
+
+2021-09-17T10:23:56-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 18
+    [NR_SEQUENCE] => 654
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 692976
+    [FAC_TOT] => 46.22
+    [IMPORTE] => 46.22
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 17
+    [USER_APPLICANT] => YGOMERO
+    [USER_CONFIRM] => YGOMERO
+    [DATE_CONFIRMATION] => 2021-17-09 10:23:56
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 10:23:56
+    [DATE_MOD] => 
+)
+
+2021-09-17T10:25:35-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 18
+    [NR_SEQUENCE] => 888
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 692936
+    [FAC_TOT] => 113.42
+    [IMPORTE] => 0.42
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 17
+    [USER_APPLICANT] => YGOMERO
+    [USER_CONFIRM] => YGOMERO
+    [DATE_CONFIRMATION] => 2021-17-09 10:25:35
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 10:25:35
+    [DATE_MOD] => 
+)
+
+2021-09-17T10:25:35-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 23
+    [NR_SEQUENCE] => 888
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 692936
+    [FAC_TOT] => 113.42
+    [IMPORTE] => 50
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 17
+    [USER_APPLICANT] => YGOMERO
+    [USER_CONFIRM] => YGOMERO
+    [DATE_CONFIRMATION] => 2021-17-09 10:25:35
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 10:25:35
+    [DATE_MOD] => 
+)
+
+2021-09-17T10:33:15-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 24
+    [NR_SEQUENCE] => 1010
+    [TYPE_DOC] => 
+    [NR_SERIE] => B208
+    [NR_DOC] => 54
+    [FAC_TOT] => 5.39
+    [IMPORTE] => 5.39
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => AAPOLO
+    [USER_CONFIRM] => HARAUJO
+    [DATE_CONFIRMATION] => 2021-17-09 10:33:15
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 10:33:15
+    [DATE_MOD] => 
+)
+
+2021-09-17T10:46:16-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 24
+    [NR_SEQUENCE] => 666
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 692985
+    [FAC_TOT] => 77.85
+    [IMPORTE] => 16.05
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 11
+    [USER_APPLICANT] => SANDRADE
+    [USER_CONFIRM] => SANDRADE
+    [DATE_CONFIRMATION] => 2021-17-09 10:46:16
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 10:46:16
+    [DATE_MOD] => 
+)
+
+2021-09-17T11:04:19-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1031
+    [NR_SEQUENCE] => 123
+    [TYPE_DOC] => 
+    [NR_SERIE] => B206
+    [NR_DOC] => 10
+    [FAC_TOT] => 44.10
+    [IMPORTE] => 44.1
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 14
+    [USER_APPLICANT] => RRARANDA
+    [USER_CONFIRM] => EAQUISE
+    [DATE_CONFIRMATION] => 2021-17-09 11:04:19
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 11:04:19
+    [DATE_MOD] => 
+)
+
+2021-09-17T11:04:38-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1030
+    [NR_SEQUENCE] => 345
+    [TYPE_DOC] => 
+    [NR_SERIE] => B200
+    [NR_DOC] => 56
+    [FAC_TOT] => 1.80
+    [IMPORTE] => 1.8
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 4
+    [USER_APPLICANT] => RRARANDA
+    [USER_CONFIRM] => EAQUISE
+    [DATE_CONFIRMATION] => 2021-17-09 11:04:38
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 11:04:38
+    [DATE_MOD] => 
+)
+
+2021-09-17T11:05:00-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 27
+    [NR_SEQUENCE] => 999
+    [TYPE_DOC] => 
+    [NR_SERIE] => B214
+    [NR_DOC] => 8
+    [FAC_TOT] => 3.36
+    [IMPORTE] => 3.36
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 9
+    [USER_APPLICANT] => RRARANDA
+    [USER_CONFIRM] => EAQUISE
+    [DATE_CONFIRMATION] => 2021-17-09 11:05:00
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 11:05:00
+    [DATE_MOD] => 
+)
+
+2021-09-17T11:05:22-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1031
+    [NR_SEQUENCE] => 888
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 692936
+    [FAC_TOT] => 113.42
+    [IMPORTE] => 5.9
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 11
+    [USER_APPLICANT] => RRARANDA
+    [USER_CONFIRM] => EAQUISE
+    [DATE_CONFIRMATION] => 2021-17-09 11:05:22
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 11:05:22
+    [DATE_MOD] => 
+)
+
+2021-09-17T11:06:18-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 17
+    [NR_SEQUENCE] => 888
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 692936
+    [FAC_TOT] => 113.42
+    [IMPORTE] => 50
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 5
+    [USER_APPLICANT] => RRARANDA
+    [USER_CONFIRM] => EAQUISE
+    [DATE_CONFIRMATION] => 2021-17-09 11:06:18
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 11:06:18
+    [DATE_MOD] => 
+)
+
+2021-09-17T11:06:48-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1029
+    [NR_SEQUENCE] => 888
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 692936
+    [FAC_TOT] => 113.42
+    [IMPORTE] => 50
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => RRARANDA
+    [USER_CONFIRM] => EAQUISE
+    [DATE_CONFIRMATION] => 2021-17-09 11:06:48
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 11:06:48
+    [DATE_MOD] => 
+)
+
+2021-09-17T11:06:48-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1030
+    [NR_SEQUENCE] => 888
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 692936
+    [FAC_TOT] => 113.42
+    [IMPORTE] => 7.52
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => RRARANDA
+    [USER_CONFIRM] => EAQUISE
+    [DATE_CONFIRMATION] => 2021-17-09 11:06:48
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 11:06:48
+    [DATE_MOD] => 
+)
+
+2021-09-17T14:44:35-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 3
+    [NR_SEQUENCE] => 2318214
+    [TYPE_DOC] => 
+    [NR_SERIE] => F001
+    [NR_DOC] => 4588
+    [FAC_TOT] => 1036.36
+    [IMPORTE] => 1036.36
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => ALBINAGORTA PAJUELO HUGO
+    [LOCAL_GUIA] => 3
+    [USER_APPLICANT] => HARAUJO
+    [USER_CONFIRM] => DCRISTOBAL
+    [DATE_CONFIRMATION] => 2021-17-09 14:44:35
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 14:44:35
+    [DATE_MOD] => 
+)
+
+2021-09-17T14:49:24-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 4
+    [NR_SEQUENCE] => 6650609
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 10087
+    [FAC_TOT] => 165672.00
+    [IMPORTE] => 111
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => TECNOLOGICA DE ALIMENTOS S.A.
+    [LOCAL_GUIA] => 6
+    [USER_APPLICANT] => AAZAÃ‘A
+    [USER_CONFIRM] => DDELACRUZ
+    [DATE_CONFIRMATION] => 2021-17-09 14:49:24
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 14:49:24
+    [DATE_MOD] => 
+)
+
+2021-09-17T14:49:59-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 3
+    [NR_SEQUENCE] => 6650609
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 10087
+    [FAC_TOT] => 165672.00
+    [IMPORTE] => 17885.64
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => TECNOLOGICA DE ALIMENTOS S.A.
+    [LOCAL_GUIA] => 5
+    [USER_APPLICANT] => AAZAÃ‘A
+    [USER_CONFIRM] => DDELACRUZ
+    [DATE_CONFIRMATION] => 2021-17-09 14:49:59
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 14:49:59
+    [DATE_MOD] => 
+)
+
+2021-09-17T14:50:20-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1
+    [NR_SEQUENCE] => 6650609
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 10087
+    [FAC_TOT] => 165672.00
+    [IMPORTE] => 2345
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => TECNOLOGICA DE ALIMENTOS S.A.
+    [LOCAL_GUIA] => 8
+    [USER_APPLICANT] => AAZAÃ‘A
+    [USER_CONFIRM] => DDELACRUZ
+    [DATE_CONFIRMATION] => 2021-17-09 14:50:20
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 14:50:20
+    [DATE_MOD] => 
+)
+
+2021-09-17T15:04:54-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 7
+    [NR_SEQUENCE] => 6641183
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 10058
+    [FAC_TOT] => 978.50
+    [IMPORTE] => 800
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => MINERA AURIFERA CUATRO DE ENERO S.A.
+    [LOCAL_GUIA] => 8
+    [USER_APPLICANT] => BALMERCO
+    [USER_CONFIRM] => VCHAMBI
+    [DATE_CONFIRMATION] => 2021-17-09 15:04:54
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 15:04:54
+    [DATE_MOD] => 
+)
+
+2021-09-17T15:05:48-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 2
+    [NR_SEQUENCE] => 6641183
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 10058
+    [FAC_TOT] => 978.50
+    [IMPORTE] => 50
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => MINERA AURIFERA CUATRO DE ENERO S.A.
+    [LOCAL_GUIA] => 5
+    [USER_APPLICANT] => BALMERCO
+    [USER_CONFIRM] => VCHAMBI
+    [DATE_CONFIRMATION] => 2021-17-09 15:05:48
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 15:05:48
+    [DATE_MOD] => 
+)
+
+2021-09-17T15:07:14-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 8
+    [NR_SEQUENCE] => 6641183
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 10058
+    [FAC_TOT] => 978.50
+    [IMPORTE] => 128.5
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => MINERA AURIFERA CUATRO DE ENERO S.A.
+    [LOCAL_GUIA] => 16
+    [USER_APPLICANT] => SANDRADE
+    [USER_CONFIRM] => HANGULO
+    [DATE_CONFIRMATION] => 2021-17-09 15:07:14
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-17-09 15:07:14
+    [DATE_MOD] => 
+)
+
+2021-09-20T10:21:26-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 5
+    [NR_SEQUENCE] => 4444
+    [TYPE_DOC] => 
+    [NR_SERIE] => B220
+    [NR_DOC] => 341
+    [FAC_TOT] => 3.48
+    [IMPORTE] => 3.48
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 9
+    [USER_APPLICANT] => HARAUJO
+    [USER_CONFIRM] => RRARANDA
+    [DATE_CONFIRMATION] => 2021-20-09 10:21:26
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-20-09 10:21:26
+    [DATE_MOD] => 
+)
+
+2021-09-20T12:47:33-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 5
+    [NR_SEQUENCE] => 78965
+    [TYPE_DOC] => 
+    [NR_SERIE] => B200
+    [NR_DOC] => 6691
+    [FAC_TOT] => 28.19
+    [IMPORTE] => 28.19
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => CHACARILLA
+    [USER_APPLICANT] => HARAUJO
+    [USER_CONFIRM] => IBARZOLA
+    [DATE_CONFIRMATION] => 2021-20-09 12:47:33
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-20-09 12:47:33
+    [DATE_MOD] => 
+)
+
+2021-09-20T14:13:36-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 5
+    [NR_SEQUENCE] => 6528766
+    [TYPE_DOC] => 
+    [NR_SERIE] => B023
+    [NR_DOC] => 6638
+    [FAC_TOT] => 448.74
+    [IMPORTE] => 301.33
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => ORMEÑO GONZALES DENNIS
+    [LOCAL_GUIA] => 17
+    [USER_APPLICANT] => RARANDA
+    [USER_CONFIRM] => SANDRADE
+    [DATE_CONFIRMATION] => 2021-20-09 14:13:36
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-20-09 14:13:36
+    [DATE_MOD] => 
+)
+
+2021-09-20T14:15:18-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 6
+    [NR_SEQUENCE] => 6528766
+    [TYPE_DOC] => 
+    [NR_SERIE] => B023
+    [NR_DOC] => 6638
+    [FAC_TOT] => 448.74
+    [IMPORTE] => 44
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => ORMEÑO GONZALES DENNIS
+    [LOCAL_GUIA] => 2
+    [USER_APPLICANT] => RARANDA
+    [USER_CONFIRM] => SANDRADE
+    [DATE_CONFIRMATION] => 2021-20-09 14:15:18
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-20-09 14:15:18
+    [DATE_MOD] => 
+)
+
+2021-09-20T14:18:31-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1007
+    [NR_SEQUENCE] => 6528766
+    [TYPE_DOC] => 
+    [NR_SERIE] => B023
+    [NR_DOC] => 6638
+    [FAC_TOT] => 448.74
+    [IMPORTE] => 103.41
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => ORMEÑO GONZALES DENNIS
+    [LOCAL_GUIA] => 17
+    [USER_APPLICANT] => RARANDA
+    [USER_CONFIRM] => RARANDA
+    [DATE_CONFIRMATION] => 2021-20-09 14:18:31
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-20-09 14:18:31
+    [DATE_MOD] => 
+)
+
+2021-09-20T15:12:14-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1007
+    [NR_SEQUENCE] => 89654
+    [TYPE_DOC] => 
+    [NR_SERIE] => B200
+    [NR_DOC] => 7783
+    [FAC_TOT] => 24.30
+    [IMPORTE] => 24.3
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 2
+    [USER_APPLICANT] => RARANDA
+    [USER_CONFIRM] => EAQUISE
+    [DATE_CONFIRMATION] => 2021-20-09 15:12:14
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-20-09 15:12:14
+    [DATE_MOD] => 
+)
+
+2021-09-29T08:56:07-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 22018
+            [code] => 245
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error de conversión al convertir el valor varchar 'NEXT VALUE FOR DEPOSITOS' al tipo de datos int.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( 'NEXT VALUE FOR DEPOSITOS', '2021-30-09 00:00:00', 'PRUEBA YADI 1', NULL, 1996, '061096', 5, 'FU SCOTIABANK SOLES', '000-3575047', '', '', '', 1996 )
+		
+        )
+
+)
+
+2021-09-29T08:56:13-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 22018
+            [code] => 245
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error de conversión al convertir el valor varchar 'NEXT VALUE FOR DEPOSITOS' al tipo de datos int.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( 'NEXT VALUE FOR DEPOSITOS', '2021-30-09 00:00:00', 'PRUEBA YADI 1', NULL, 1996, '061096', 5, 'FU SCOTIABANK SOLES', '000-3575047', '', '', '', 1996 )
+		
+        )
+
+)
+
+2021-09-29T09:00:49-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 23000
+            [code] => 515
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]No se puede insertar el valor NULL en la columna 'DEPOSIT_ID', tabla 'BD_INFORMES.dbo.FU_DEPOSIT'. La columna no admite valores NULL. Error de INSERT.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( '2021-30-09 00:00:00', 'PRUEBA YADI', NULL, 200, '123', 7, 'FU BBVA SOLES', '0011-0130-01-00003624', '', '', '', 200 )
+		
+        )
+
+    [1] => Array
+        (
+            [SQLSTATE] => 01000
+            [code] => 3621
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Se terminó la instrucción.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( '2021-30-09 00:00:00', 'PRUEBA YADI', NULL, 200, '123', 7, 'FU BBVA SOLES', '0011-0130-01-00003624', '', '', '', 200 )
+		
+        )
+
+)
+
+2021-09-29T09:13:06-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 23000
+            [code] => 515
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]No se puede insertar el valor NULL en la columna 'DEPOSIT_ID', tabla 'BD_INFORMES.dbo.FU_DEPOSIT'. La columna no admite valores NULL. Error de INSERT.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.SALDO, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD )
+			VALUES ( '2021-17-09 00:00:00', 'Prueba', NULL, 50, '12', 3, 'FU INTERBANK AUXILIAR', '100-3000254950', 50, '', '2021-29-09 09:13:06', '' )
+		
+        )
+
+    [1] => Array
+        (
+            [SQLSTATE] => 01000
+            [code] => 3621
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Se terminó la instrucción.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.SALDO, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD )
+			VALUES ( '2021-17-09 00:00:00', 'Prueba', NULL, 50, '12', 3, 'FU INTERBANK AUXILIAR', '100-3000254950', 50, '', '2021-29-09 09:13:06', '' )
+		
+        )
+
+)
+
+2021-09-29T09:15:52-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 22018
+            [code] => 245
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error de conversión al convertir el valor varchar 'NEXT VALUE FOR DEPOSITOS' al tipo de datos int.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( 'NEXT VALUE FOR DEPOSITOS', '2021-09-30 00:00:00', 'PRUEBA YADI', NULL, 200, '123', 7, 'FU BBVA SOLES', '0011-0130-01-00003624', '', '', '', 200 )
+		
+        )
+
+)
+
+2021-09-29T09:21:28-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 22018
+            [code] => 245
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error de conversión al convertir el valor varchar 'NEXT VALUE FOR DEPOSITOS' al tipo de datos int.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( 'NEXT VALUE FOR DEPOSITOS', '2021-09-30 00:00:00', '222', NULL, 2345, '222', 4, 'FU INTERBANK DÓLARES', '100-3000259756', '', '', '', 2345 )
+		
+        )
+
+)
+
+2021-09-29T09:25:37-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 22018
+            [code] => 245
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error de conversión al convertir el valor varchar 'NEXT VALUE FOR DEPOSITOS' al tipo de datos int.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( 'NEXT VALUE FOR DEPOSITOS', '2021-09-30 00:00:00', '222', NULL, 2345, '222', 4, 'FU INTERBANK DÓLARES', '100-3000259756', '', '', '', 2345 )
+		
+        )
+
+)
+
+2021-09-29T09:25:49-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 22018
+            [code] => 245
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error de conversión al convertir el valor varchar 'NEXT VALUE FOR DEPOSITOS' al tipo de datos int.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( 'NEXT VALUE FOR DEPOSITOS', '2021-09-30 00:00:00', '222', NULL, 2345, '222', 4, 'FU INTERBANK DÓLARES', '100-3000259756', '', '', '', 2345 )
+		
+        )
+
+)
+
+2021-09-29T09:29:08-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 22007
+            [code] => 242
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( '2021-09-16 00:00:00', '12123123', '33333', 22, '123123123', 2, 'FU INTERBANK SOLES', '041-2000028685', '', '', '', 22 )
+		
+        )
+
+    [1] => Array
+        (
+            [SQLSTATE] => 01000
+            [code] => 3621
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Se terminó la instrucción.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( '2021-09-16 00:00:00', '12123123', '33333', 22, '123123123', 2, 'FU INTERBANK SOLES', '041-2000028685', '', '', '', 22 )
+		
+        )
+
+)
+
+2021-09-29T09:29:28-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 22007
+            [code] => 242
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( '2021-09-30 00:00:00', '222', NULL, 2345, '222', 4, 'FU INTERBANK DÓLARES', '100-3000259756', '', '', '', 2345 )
+		
+        )
+
+    [1] => Array
+        (
+            [SQLSTATE] => 01000
+            [code] => 3621
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Se terminó la instrucción.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( '2021-09-30 00:00:00', '222', NULL, 2345, '222', 4, 'FU INTERBANK DÓLARES', '100-3000259756', '', '', '', 2345 )
+		
+        )
+
+)
+
+2021-09-29T09:30:24-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 42000
+            [code] => 102
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Sintaxis incorrecta cerca de '.0'.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.0, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( 'DEPOSIT_ID', '2021-09-16 00:00:00', '12123123', '33333', 22, '123123123', 2, 'FU INTERBANK SOLES', '041-2000028685', '', '', '', 22 )
+		
+        )
+
+)
+
+2021-09-29T09:35:39-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 42000
+            [code] => 102
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Sintaxis incorrecta cerca de 'VALUE'.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( NEX VALUE FOR SEQUENCE, '2021-09-16 00:00:00', '12123123', '33333', 22, '123123123', 2, 'FU INTERBANK SOLES', '041-2000028685', '', '', '', 22 )
+		
+        )
+
+)
+
+2021-09-29T09:37:36-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 22007
+            [code] => 242
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( NEXT VALUE FOR DEPOSITOS, '2021-09-16 00:00:00', '12123123', '33333', 22, '123123123', 2, 'FU INTERBANK SOLES', '041-2000028685', '', '', '', 22 )
+		
+        )
+
+    [1] => Array
+        (
+            [SQLSTATE] => 01000
+            [code] => 3621
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Se terminó la instrucción.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( NEXT VALUE FOR DEPOSITOS, '2021-09-16 00:00:00', '12123123', '33333', 22, '123123123', 2, 'FU INTERBANK SOLES', '041-2000028685', '', '', '', 22 )
+		
+        )
+
+)
+
+2021-09-29T09:41:07-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 22007
+            [code] => 242
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( NEXT VALUE FOR DEPOSITOS, '2021-09-30 00:00:00', '222', NULL, 2345, '222', 4, 'FU INTERBANK DÓLARES', '100-3000259756', '', '', '', 2345 )
+		
+        )
+
+    [1] => Array
+        (
+            [SQLSTATE] => 01000
+            [code] => 3621
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Se terminó la instrucción.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( NEXT VALUE FOR DEPOSITOS, '2021-09-30 00:00:00', '222', NULL, 2345, '222', 4, 'FU INTERBANK DÓLARES', '100-3000259756', '', '', '', 2345 )
+		
+        )
+
+)
+
+2021-09-29T09:45:22-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 22007
+            [code] => 242
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( NEXT VALUE FOR DEPOSITOS, '2021-09-30 00:00:00', '222', NULL, 2345, '222', 4, 'FU INTERBANK DÓLARES', '100-3000259756', '', '', '', 2345 )
+		
+        )
+
+    [1] => Array
+        (
+            [SQLSTATE] => 01000
+            [code] => 3621
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Se terminó la instrucción.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( NEXT VALUE FOR DEPOSITOS, '2021-09-30 00:00:00', '222', NULL, 2345, '222', 4, 'FU INTERBANK DÓLARES', '100-3000259756', '', '', '', 2345 )
+		
+        )
+
+)
+
+2021-09-29T09:46:46-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 22007
+            [code] => 242
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( NEXT VALUE FOR DEPOSITOS, '2021-09-30 00:00:00', '222', NULL, 2345, '222', 4, 'FU INTERBANK DÓLARES', '100-3000259756', '', '', '', 2345 )
+		
+        )
+
+    [1] => Array
+        (
+            [SQLSTATE] => 01000
+            [code] => 3621
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Se terminó la instrucción.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( NEXT VALUE FOR DEPOSITOS, '2021-09-30 00:00:00', '222', NULL, 2345, '222', 4, 'FU INTERBANK DÓLARES', '100-3000259756', '', '', '', 2345 )
+		
+        )
+
+)
+
+2021-09-29T09:55:09-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 22007
+            [code] => 242
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( NEXT VALUE FOR DEPOSITOS, '2021-09-15 00:00:00', '22222', '23123123123', 34, '1213123123123', 8, 'FU BBVA DÓLARES', '0011-0347-01-00047990', '', '2021-09-29 09:55:09', '', 34 )
+		
+        )
+
+    [1] => Array
+        (
+            [SQLSTATE] => 01000
+            [code] => 3621
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Se terminó la instrucción.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( NEXT VALUE FOR DEPOSITOS, '2021-09-15 00:00:00', '22222', '23123123123', 34, '1213123123123', 8, 'FU BBVA DÓLARES', '0011-0347-01-00047990', '', '2021-09-29 09:55:09', '', 34 )
+		
+        )
+
+)
+
+2021-09-29T09:56:18-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 22007
+            [code] => 242
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( NEXT VALUE FOR DEPOSITOS, '2021-09-15 00:00:00', '22222', '23123123123', 34, '1213123123123', 8, 'FU BBVA DÓLARES', '0011-0347-01-00047990', '', '2021-09-29 09:56:18', '', 34 )
+		
+        )
+
+    [1] => Array
+        (
+            [SQLSTATE] => 01000
+            [code] => 3621
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Se terminó la instrucción.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( NEXT VALUE FOR DEPOSITOS, '2021-09-15 00:00:00', '22222', '23123123123', 34, '1213123123123', 8, 'FU BBVA DÓLARES', '0011-0347-01-00047990', '', '2021-09-29 09:56:18', '', 34 )
+		
+        )
+
+)
+
+2021-09-29T10:01:59-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 22007
+            [code] => 242
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( NEXT VALUE FOR DEPOSITOS, '2021-09-15 00:00:00', '22222', '23123123123', 34, '1213123123123', 8, 'FU BBVA DÓLARES', '0011-0347-01-00047990', '', '2021-09-29 10:01:59', '', 34 )
+		
+        )
+
+    [1] => Array
+        (
+            [SQLSTATE] => 01000
+            [code] => 3621
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Se terminó la instrucción.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( NEXT VALUE FOR DEPOSITOS, '2021-09-15 00:00:00', '22222', '23123123123', 34, '1213123123123', 8, 'FU BBVA DÓLARES', '0011-0347-01-00047990', '', '2021-09-29 10:01:59', '', 34 )
+		
+        )
+
+)
+
+2021-09-29T10:05:04-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 22007
+            [code] => 242
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( NEXT VALUE FOR DEPOSITOS, '2021-09-30 00:00:00', '222', NULL, 2345, '222', 4, 'FU INTERBANK DÓLARES', '100-3000259756', '', '2021-09-29 10:05:04', '', 2345 )
+		
+        )
+
+    [1] => Array
+        (
+            [SQLSTATE] => 01000
+            [code] => 3621
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Se terminó la instrucción.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DEPOSIT_ID, FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( NEXT VALUE FOR DEPOSITOS, '2021-09-30 00:00:00', '222', NULL, 2345, '222', 4, 'FU INTERBANK DÓLARES', '100-3000259756', '', '2021-09-29 10:05:04', '', 2345 )
+		
+        )
+
+)
+
+2021-09-29T10:07:19-05:00 [ERROR] : 
+2021-09-29T10:08:21-05:00 [ERROR] : 
+2021-09-29T10:10:29-05:00 [ERROR] : 
+2021-09-29T10:11:39-05:00 [ERROR] : 
+2021-09-29T10:16:15-05:00 [ERROR] : 
+2021-09-29T10:21:17-05:00 [ERROR] : 
+2021-09-29T10:22:08-05:00 [ERROR] : 
+2021-09-29T10:30:39-05:00 [ERROR] : 
+2021-09-29T10:36:51-05:00 [ERROR] : 
+2021-09-29T10:39:16-05:00 [ERROR] : 
+2021-09-29T10:39:51-05:00 [ERROR] : 
+2021-09-29T10:41:15-05:00 [ERROR] : 
+2021-09-29T10:44:22-05:00 [ERROR] : 
+2021-09-29T11:02:42-05:00 [ERROR] : 
+2021-09-29T11:04:51-05:00 [ERROR] : 
+2021-09-29T11:06:10-05:00 [ERROR] : 
+2021-09-29T11:22:57-05:00 [INFO] : Array
+(
+    [DEPOSIT_DET_ID] => DEPOSITOS_DET
+    [DEPOSIT_ID] => 16
+    [NR_SEQUENCE] => 7525860
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 137367
+    [FAC_TOT] => 34.00
+    [IMPORTE] => 34
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => GARCIA MUGABURU DE FORTES CECILIA HAYDEE
+    [LOCAL_GUIA] => 4
+    [USER_APPLICANT] => HARAUJO
+    [USER_CONFIRM] => JCORONEL
+    [DATE_CONFIRMATION] => 2021-29-09 11:22:57
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-29-09 11:22:57
+    [DATE_MOD] => 
+)
+
+2021-09-29T11:22:57-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 22018
+            [code] => 245
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error de conversión al convertir el valor varchar 'DEPOSITOS_DET' al tipo de datos int.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT_DET ( FU_DEPOSIT_DET.DEPOSIT_DET_ID, FU_DEPOSIT_DET.DEPOSIT_ID, FU_DEPOSIT_DET.NR_SEQUENCE, FU_DEPOSIT_DET.TYPE_DOC, FU_DEPOSIT_DET.NR_SERIE, FU_DEPOSIT_DET.NR_DOC, FU_DEPOSIT_DET.FAC_TOT, FU_DEPOSIT_DET.IMPORTE, FU_DEPOSIT_DET.DOC_CLIENT, FU_DEPOSIT_DET.NAME_CLIENT, FU_DEPOSIT_DET.LOCAL_GUIA, FU_DEPOSIT_DET.USER_APPLICANT, FU_DEPOSIT_DET.USER_CONFIRM, FU_DEPOSIT_DET.DATE_CONFIRMATION, FU_DEPOSIT_DET.DATE_LIQUIDATE, FU_DEPOSIT_DET.NR_SEQUENCE_CASH, FU_DEPOSIT_DET.NAME_CASH, FU_DEPOSIT_DET.USER_REG, FU_DEPOSIT_DET.USER_MOD, FU_DEPOSIT_DET.DATE_REG, FU_DEPOSIT_DET.DATE_MOD )
+			VALUES ( 'DEPOSITOS_DET', NEXT VALUE FOR DEPOSITOS_DET, 7525860, '', 'B006', 137367, 34.00, 34, '', 'GARCIA MUGABURU DE FORTES CECILIA HAYDEE', 4, 'HARAUJO', 'JCORONEL', '2021-29-09 11:22:57', '', '', '', '', '', '2021-29-09 11:22:57', '' )
+		
+        )
+
+)
+
+2021-09-29T11:23:09-05:00 [INFO] : Array
+(
+    [DEPOSIT_DET_ID] => DEPOSITOS_DET
+    [DEPOSIT_ID] => 16
+    [NR_SEQUENCE] => 7525860
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 137367
+    [FAC_TOT] => 34.00
+    [IMPORTE] => 34
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => GARCIA MUGABURU DE FORTES CECILIA HAYDEE
+    [LOCAL_GUIA] => 4
+    [USER_APPLICANT] => HARAUJO
+    [USER_CONFIRM] => JCORONEL
+    [DATE_CONFIRMATION] => 2021-29-09 11:23:09
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-29-09 11:23:09
+    [DATE_MOD] => 
+)
+
+2021-09-29T11:23:09-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 22018
+            [code] => 245
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error de conversión al convertir el valor varchar 'DEPOSITOS_DET' al tipo de datos int.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT_DET ( FU_DEPOSIT_DET.DEPOSIT_DET_ID, FU_DEPOSIT_DET.DEPOSIT_ID, FU_DEPOSIT_DET.NR_SEQUENCE, FU_DEPOSIT_DET.TYPE_DOC, FU_DEPOSIT_DET.NR_SERIE, FU_DEPOSIT_DET.NR_DOC, FU_DEPOSIT_DET.FAC_TOT, FU_DEPOSIT_DET.IMPORTE, FU_DEPOSIT_DET.DOC_CLIENT, FU_DEPOSIT_DET.NAME_CLIENT, FU_DEPOSIT_DET.LOCAL_GUIA, FU_DEPOSIT_DET.USER_APPLICANT, FU_DEPOSIT_DET.USER_CONFIRM, FU_DEPOSIT_DET.DATE_CONFIRMATION, FU_DEPOSIT_DET.DATE_LIQUIDATE, FU_DEPOSIT_DET.NR_SEQUENCE_CASH, FU_DEPOSIT_DET.NAME_CASH, FU_DEPOSIT_DET.USER_REG, FU_DEPOSIT_DET.USER_MOD, FU_DEPOSIT_DET.DATE_REG, FU_DEPOSIT_DET.DATE_MOD )
+			VALUES ( 'DEPOSITOS_DET', NEXT VALUE FOR DEPOSITOS_DET, 7525860, '', 'B006', 137367, 34.00, 34, '', 'GARCIA MUGABURU DE FORTES CECILIA HAYDEE', 4, 'HARAUJO', 'JCORONEL', '2021-29-09 11:23:09', '', '', '', '', '', '2021-29-09 11:23:09', '' )
+		
+        )
+
+)
+
+2021-09-29T11:24:05-05:00 [INFO] : Array
+(
+    [DEPOSIT_DET_ID] => DEPOSITOS_DET
+    [DEPOSIT_ID] => 16
+    [NR_SEQUENCE] => 7525860
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 137367
+    [FAC_TOT] => 34.00
+    [IMPORTE] => 34
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => GARCIA MUGABURU DE FORTES CECILIA HAYDEE
+    [LOCAL_GUIA] => 4
+    [USER_APPLICANT] => HARAUJO
+    [USER_CONFIRM] => JCORONEL
+    [DATE_CONFIRMATION] => 2021-29-09 11:24:05
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-29-09 11:24:05
+    [DATE_MOD] => 
+)
+
+2021-09-29T11:24:05-05:00 [ERROR] : 
+2021-09-29T12:16:27-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 23000
+            [code] => 2627
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Infracción de la restricción PRIMARY KEY 'PK__FU_USERS__75BD933E2158DCF3'. No se puede insertar una clave duplicada en el objeto 'dbo.FU_USERS'. El valor de la clave duplicada es (4).
+            [query] => 
+			INSERT INTO
+				FU_USERS ( FU_USERS.USERS_ID, FU_USERS.USER_NAMES, FU_USERS.LAST_NAME_PAT, FU_USERS.LAST_NAME_MAT, FU_USERS.NAMES, FU_USERS.COD_TD, FU_USERS.NR_DOC, FU_USERS.NR_CONTACT, FU_USERS.WORKSTATION, FU_USERS.PROFILE_ID, FU_USERS.STATUS_USER, FU_USERS.AREA_ID, FU_USERS.PASS )
+			VALUES ( NEXT VALUE FOR USERS, 'YGOMEROTT', 'GO', 'TA', 'YA', 01, 73905081, 78945615, 'DBA', 1, 1, 1, '$2y$10$smPYjHX77FWiVU7UakL4BOOj4ri6z6Ez2DMMyJ.H0ZUFIUuTpSnU.' )
+		
+        )
+
+    [1] => Array
+        (
+            [SQLSTATE] => 01000
+            [code] => 3621
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Se terminó la instrucción.
+            [query] => 
+			INSERT INTO
+				FU_USERS ( FU_USERS.USERS_ID, FU_USERS.USER_NAMES, FU_USERS.LAST_NAME_PAT, FU_USERS.LAST_NAME_MAT, FU_USERS.NAMES, FU_USERS.COD_TD, FU_USERS.NR_DOC, FU_USERS.NR_CONTACT, FU_USERS.WORKSTATION, FU_USERS.PROFILE_ID, FU_USERS.STATUS_USER, FU_USERS.AREA_ID, FU_USERS.PASS )
+			VALUES ( NEXT VALUE FOR USERS, 'YGOMEROTT', 'GO', 'TA', 'YA', 01, 73905081, 78945615, 'DBA', 1, 1, 1, '$2y$10$smPYjHX77FWiVU7UakL4BOOj4ri6z6Ez2DMMyJ.H0ZUFIUuTpSnU.' )
+		
+        )
+
+)
+
+2021-09-29T12:17:08-05:00 [ERROR] : 
+2021-09-29T12:32:00-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 23000
+            [code] => 515
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]No se puede insertar el valor NULL en la columna 'DEPOSIT_ID', tabla 'BD_INFORMES.dbo.FU_DEPOSIT'. La columna no admite valores NULL. Error de INSERT.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( '2021-30-09 00:00:00', '222', NULL, 9000, '222', 9, 'FU BCP SOLES', '191-0337438-0-63', '', '2021-29-09 12:32:00', '', 9000 )
+		
+        )
+
+    [1] => Array
+        (
+            [SQLSTATE] => 01000
+            [code] => 3621
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Se terminó la instrucción.
+            [query] => 
+			INSERT INTO
+				FU_DEPOSIT ( FU_DEPOSIT.DATE_OPERATION, FU_DEPOSIT.REFERENCE_ONE, FU_DEPOSIT.REFERENCE_TWO, FU_DEPOSIT.IMPORTE, FU_DEPOSIT.NR_OPERATION, FU_DEPOSIT.BANK_ID, FU_DEPOSIT.NAME_BANK, FU_DEPOSIT.NR_ACCOUNT, FU_DEPOSIT.USER_REG, FU_DEPOSIT.DATE_REG, FU_DEPOSIT.DATE_MOD, FU_DEPOSIT.SALDO )
+			VALUES ( '2021-30-09 00:00:00', '222', NULL, 9000, '222', 9, 'FU BCP SOLES', '191-0337438-0-63', '', '2021-29-09 12:32:00', '', 9000 )
+		
+        )
+
+)
+
+2021-09-30T11:28:20-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 2
+    [NR_SEQUENCE] => 7519024
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 11820
+    [FAC_TOT] => 108.00
+    [IMPORTE] => 50
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => NUESTRA SENORA DEL SAGRADO CORAZON
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => EAQUISE
+    [USER_CONFIRM] => RARANDA
+    [DATE_CONFIRMATION] => 2021-30-09 11:28:20
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-30-09 11:28:20
+    [DATE_MOD] => 
+)
+
+2021-09-30T11:30:30-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 3
+    [NR_SEQUENCE] => 7519024
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 11820
+    [FAC_TOT] => 108.00
+    [IMPORTE] => 58
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => NUESTRA SENORA DEL SAGRADO CORAZON
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => HARAUJO
+    [USER_CONFIRM] => RARANDA
+    [DATE_CONFIRMATION] => 2021-30-09 11:30:30
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-30-09 11:30:30
+    [DATE_MOD] => 
+)
+
+2021-09-30T11:49:25-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 5
+    [NR_SEQUENCE] => 7526120
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 11829
+    [FAC_TOT] => 19.00
+    [IMPORTE] => 19
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => NUESTRA SENORA DEL SAGRADO CORAZON
+    [LOCAL_GUIA] => 17
+    [USER_APPLICANT] => HANGULO
+    [USER_CONFIRM] => RARANDA
+    [DATE_CONFIRMATION] => 2021-30-09 11:49:25
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-30-09 11:49:25
+    [DATE_MOD] => 
+)
+
+2021-09-30T12:13:02-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 5
+    [NR_SEQUENCE] => 7525265
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 11822
+    [FAC_TOT] => 405.92
+    [IMPORTE] => 405.92
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => TECNOLOGICA DE ALIMENTOS S.A.
+    [LOCAL_GUIA] => 8
+    [USER_APPLICANT] => DALCARRAZ
+    [USER_CONFIRM] => SALCANTARA
+    [DATE_CONFIRMATION] => 2021-30-09 12:13:02
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-30-09 12:13:02
+    [DATE_MOD] => 
+)
+
+2021-10-01T15:07:58-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 6
+    [NR_SEQUENCE] => 7525253
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 11821
+    [FAC_TOT] => 75.40
+    [IMPORTE] => 75.4
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => TECNOLOGICA DE ALIMENTOS S.A.
+    [LOCAL_GUIA] => 11
+    [USER_APPLICANT] => YBUENO
+    [USER_CONFIRM] => RARANDA
+    [DATE_CONFIRMATION] => 2021-01-10 15:07:58
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-01-10 15:07:58
+    [DATE_MOD] => 
+)
+
+2021-10-07T15:09:52-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1
+    [NR_SEQUENCE] => 7566668
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 11902
+    [FAC_TOT] => 4977.60
+    [IMPORTE] => 4977.6
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => TECNOLOGICA DE ALIMENTOS S.A.
+    [LOCAL_GUIA] => 2
+    [USER_APPLICANT] => YGOMERO
+    [USER_CONFIRM] => VGARCIA
+    [DATE_CONFIRMATION] => 2021-07-10 15:09:52
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-07-10 15:09:52
+    [DATE_MOD] => 
+)
+
+2021-10-07T15:11:05-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1
+    [NR_SEQUENCE] => 6528686
+    [TYPE_DOC] => 
+    [NR_SERIE] => B038
+    [NR_DOC] => 168111
+    [FAC_TOT] => 170.20
+    [IMPORTE] => 170.2
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 14
+    [USER_APPLICANT] => FCAMARENA
+    [USER_CONFIRM] => MCARRERA
+    [DATE_CONFIRMATION] => 2021-07-10 15:11:05
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-07-10 15:11:05
+    [DATE_MOD] => 
+)
+
+2021-10-07T15:11:40-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1
+    [NR_SEQUENCE] => 6528766
+    [TYPE_DOC] => 
+    [NR_SERIE] => B023
+    [NR_DOC] => 6638
+    [FAC_TOT] => 448.74
+    [IMPORTE] => 448.74
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => ORMEÑO GONZALES DENNIS
+    [LOCAL_GUIA] => 9
+    [USER_APPLICANT] => FCARBAJAL
+    [USER_CONFIRM] => KCATAY
+    [DATE_CONFIRMATION] => 2021-07-10 15:11:40
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-07-10 15:11:40
+    [DATE_MOD] => 
+)
+
+2021-10-07T15:12:57-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1
+    [NR_SEQUENCE] => 7525333
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 11823
+    [FAC_TOT] => 582.64
+    [IMPORTE] => 582.64
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => COMPAÑIA MINERA ARES SAC
+    [LOCAL_GUIA] => 8
+    [USER_APPLICANT] => RBECERRA
+    [USER_CONFIRM] => BAVENDAÃ‘O
+    [DATE_CONFIRMATION] => 2021-07-10 15:12:57
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-07-10 15:12:57
+    [DATE_MOD] => 
+)
+
+2021-10-12T15:01:30-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 8
+    [NR_SEQUENCE] => 6641201
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 10060
+    [FAC_TOT] => 3950.70
+    [IMPORTE] => 2525
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => MINERA AURIFERA CUATRO DE ENERO S.A.
+    [LOCAL_GUIA] => 15
+    [USER_APPLICANT] => LVERA
+    [USER_CONFIRM] => MCARRERA
+    [DATE_CONFIRMATION] => 2021-12-10 15:01:30
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-12-10 15:01:30
+    [DATE_MOD] => 
+)
+
+2021-10-12T15:08:56-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 9
+    [NR_SEQUENCE] => 7542651
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 11854
+    [FAC_TOT] => 1073.40
+    [IMPORTE] => 1073.4
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => COMPAÑIA MINERA ARES SAC
+    [LOCAL_GUIA] => 15
+    [USER_APPLICANT] => LVERA
+    [USER_CONFIRM] => RRARANDA
+    [DATE_CONFIRMATION] => 2021-12-10 15:08:56
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-12-10 15:08:56
+    [DATE_MOD] => 
+)
+
+2021-10-12T15:23:28-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 9
+    [NR_SEQUENCE] => 7542679
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 11855
+    [FAC_TOT] => 1448.50
+    [IMPORTE] => 1448.5
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => COMPAÑIA MINERA ARES SAC
+    [LOCAL_GUIA] => 9
+    [USER_APPLICANT] => EAQUISE
+    [USER_CONFIRM] => DCORDOVA
+    [DATE_CONFIRMATION] => 2021-12-10 15:23:28
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-12-10 15:23:28
+    [DATE_MOD] => 
+)
+
+2021-10-13T15:10:41-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 9
+    [NR_SEQUENCE] => 7578654
+    [TYPE_DOC] => 
+    [NR_SERIE] => B037
+    [NR_DOC] => 57234
+    [FAC_TOT] => 113.20
+    [IMPORTE] => 113.2
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => GUZMÁN CERNA  NORA
+    [LOCAL_GUIA] => 2
+    [USER_APPLICANT] => EAQUISE
+    [USER_CONFIRM] => EAQUISE
+    [DATE_CONFIRMATION] => 2021-13-10 15:10:41
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-13-10 15:10:41
+    [DATE_MOD] => 
+)
+
+2021-10-13T15:14:43-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 9
+    [NR_SEQUENCE] => 7578654
+    [TYPE_DOC] => 
+    [NR_SERIE] => B037
+    [NR_DOC] => 57234
+    [FAC_TOT] => 113.20
+    [IMPORTE] => 113.2
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => GUZM?N CERNA  NORA
+    [LOCAL_GUIA] => 11
+    [USER_APPLICANT] => SANDRADE
+    [USER_CONFIRM] => NAGUERO
+    [DATE_CONFIRMATION] => 2021-13-10 15:14:43
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-13-10 15:14:43
+    [DATE_MOD] => 
+)
+
+2021-10-13T15:15:55-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 9
+    [NR_SEQUENCE] => 7578654
+    [TYPE_DOC] => 
+    [NR_SERIE] => B037
+    [NR_DOC] => 57234
+    [FAC_TOT] => 113.20
+    [IMPORTE] => 113.2
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => GUZMÃN CERNA  NORA
+    [LOCAL_GUIA] => 2
+    [USER_APPLICANT] => BAVENDAÃ‘O
+    [USER_CONFIRM] => NAGUERO
+    [DATE_CONFIRMATION] => 2021-13-10 15:15:55
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-13-10 15:15:55
+    [DATE_MOD] => 
+)
+
+2021-10-14T09:01:22-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 9
+    [NR_SEQUENCE] => 7587178
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 11944
+    [FAC_TOT] => 163.32
+    [IMPORTE] => 138.5
+    [SALDO] => 24.82
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => CLUB TENNIS LAS TERRAZAS MIRAFLORES
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => YARROYO
+    [USER_CONFIRM] => RARANDA
+    [DATE_CONFIRMATION] => 2021-14-10 09:01:22
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-14-10 09:01:22
+    [DATE_MOD] => 
+)
+
+2021-10-14T09:01:54-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 7
+    [NR_SEQUENCE] => 7587178
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 11944
+    [FAC_TOT] => 163.32
+    [IMPORTE] => 24.82
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => CLUB TENNIS LAS TERRAZAS MIRAFLORES
+    [LOCAL_GUIA] => 8
+    [USER_APPLICANT] => BAVENDAÃ‘O
+    [USER_CONFIRM] => HARAUJO
+    [DATE_CONFIRMATION] => 2021-14-10 09:01:54
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-14-10 09:01:54
+    [DATE_MOD] => 
+)
+
+2021-10-14T16:21:52-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 6
+    [NR_SEQUENCE] => 7587180
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 11945
+    [FAC_TOT] => 155.26
+    [IMPORTE] => 155.26
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => FIBRAS INDUSTRIALES S A
+    [LOCAL_GUIA] => 9
+    [USER_APPLICANT] => SANDRADE
+    [USER_CONFIRM] => JHERRERA
+    [DATE_CONFIRMATION] => 2021-14-10 16:21:52
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-14-10 16:21:52
+    [DATE_MOD] => 
+)
+
+2021-10-14T16:25:06-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 6
+    [NR_SEQUENCE] => 7587986
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 11947
+    [FAC_TOT] => 860.55
+    [IMPORTE] => 769.34
+    [SALDO] => 91.21
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => MINERA LA ZANJA S.R.L.
+    [LOCAL_GUIA] => 2
+    [USER_APPLICANT] => RRARANDA
+    [USER_CONFIRM] => LTOLEDO
+    [DATE_CONFIRMATION] => 2021-14-10 16:25:06
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-14-10 16:25:06
+    [DATE_MOD] => 
+)
+
+2021-10-14T16:33:23-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 4
+    [NR_SEQUENCE] => 666
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 692985
+    [FAC_TOT] => 77.85
+    [IMPORTE] => 50
+    [SALDO] => 27.85
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 17
+    [USER_APPLICANT] => EAQUISE
+    [USER_CONFIRM] => AMIRANDA
+    [DATE_CONFIRMATION] => 2021-14-10 16:33:23
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-14-10 16:33:23
+    [DATE_MOD] => 
+)
+
+2021-10-14T16:44:56-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1
+    [NR_SEQUENCE] => 7588384
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 11950
+    [FAC_TOT] => 1520.44
+    [IMPORTE] => 1520.44
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => CARTONES VILLA MARINA S.A.
+    [LOCAL_GUIA] => 11
+    [USER_APPLICANT] => EAQUISE
+    [USER_CONFIRM] => RRIOS
+    [DATE_CONFIRMATION] => 2021-14-10 16:44:56
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-14-10 16:44:56
+    [DATE_MOD] => 
+)
+
+2021-10-17T17:02:55-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => PRUEBA
+    [PROFILE_DESCRIPTION] => PRUEBA
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T17:02:59-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => PRUEBA
+    [PROFILE_DESCRIPTION] => PRUEBA
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T17:04:43-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => PRUEBA
+    [PROFILE_DESCRIPTION] => PRUEBA
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T17:20:19-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => 555
+    [PROFILE_DESCRIPTION] => 555
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T19:22:36-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => wewewe
+    [PROFILE_DESCRIPTION] => wewe
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T19:30:30-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => SUPER
+    [PROFILE_DESCRIPTION] => test
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T19:31:54-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => SUPER
+    [PROFILE_DESCRIPTION] => test
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T19:32:20-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => SUPER
+    [PROFILE_DESCRIPTION] => test
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T19:32:23-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => SUPER
+    [PROFILE_DESCRIPTION] => test
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T19:32:24-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => SUPER
+    [PROFILE_DESCRIPTION] => test
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T19:32:40-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => SUPER
+    [PROFILE_DESCRIPTION] => test
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T19:34:12-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => SUPER
+    [PROFILE_DESCRIPTION] => test
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T19:34:47-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => SUPER
+    [PROFILE_DESCRIPTION] => test
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T19:35:13-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => SUPER
+    [PROFILE_DESCRIPTION] => test
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T19:35:57-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => SUPER
+    [PROFILE_DESCRIPTION] => test
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T19:35:57-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 23000
+            [code] => 544
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]No se puede insertar un valor explícito en la columna de identidad de la tabla 'FU_PERMISSIONS' cuando IDENTITY_INSERT es OFF.
+            [query] => 
+			INSERT INTO
+				FU_PERMISSIONS ( FU_PERMISSIONS.PROFILE_ID, FU_PERMISSIONS.MOD_ID, FU_PERMISSIONS.PER_DEFAULT )
+			VALUES ( 16, 0101, 1 )
+		
+        )
+
+)
+
+2021-10-17T19:36:09-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => SUPER
+    [PROFILE_DESCRIPTION] => test
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T19:36:09-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 23000
+            [code] => 544
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]No se puede insertar un valor explícito en la columna de identidad de la tabla 'FU_PERMISSIONS' cuando IDENTITY_INSERT es OFF.
+            [query] => 
+			INSERT INTO
+				FU_PERMISSIONS ( FU_PERMISSIONS.PROFILE_ID, FU_PERMISSIONS.MOD_ID, FU_PERMISSIONS.PER_DEFAULT )
+			VALUES ( 17, 0101, 1 )
+		
+        )
+
+)
+
+2021-10-17T19:36:24-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => SUPER
+    [PROFILE_DESCRIPTION] => test
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T19:36:24-05:00 [ERROR] : Array
+(
+    [0] => Array
+        (
+            [SQLSTATE] => 23000
+            [code] => 544
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]No se puede insertar un valor explícito en la columna de identidad de la tabla 'FU_PERMISSIONS' cuando IDENTITY_INSERT es OFF.
+            [query] => 
+			INSERT INTO
+				FU_PERMISSIONS ( FU_PERMISSIONS.PROFILE_ID, FU_PERMISSIONS.MOD_ID, FU_PERMISSIONS.PER_DEFAULT )
+			VALUES ( 18, 0101, 1 )
+		
+        )
+
+)
+
+2021-10-17T19:36:51-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => SUPER
+    [PROFILE_DESCRIPTION] => test
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T19:37:33-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => SUPER
+    [PROFILE_DESCRIPTION] => test
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T19:40:33-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => SUPER
+    [PROFILE_DESCRIPTION] => test
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T19:40:33-05:00 [ERROR] : 
+2021-10-17T19:43:28-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => SUPER
+    [PROFILE_DESCRIPTION] => test
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T19:43:28-05:00 [ERROR] : 
+2021-10-17T19:43:28-05:00 [ERROR] : 
+2021-10-17T19:43:28-05:00 [ERROR] : 
+2021-10-17T19:43:28-05:00 [ERROR] : 
+2021-10-17T19:43:28-05:00 [ERROR] : 
+2021-10-17T19:57:58-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => RTRT
+    [PROFILE_DESCRIPTION] => RTRTRT
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-17T19:57:58-05:00 [ERROR] : 
+2021-10-17T19:57:58-05:00 [ERROR] : 
+2021-10-17T19:57:58-05:00 [ERROR] : 
+2021-10-18T09:48:01-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => PRUEBA18
+    [PROFILE_DESCRIPTION] => PRUEBA18
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-18T09:48:01-05:00 [ERROR] : 
+2021-10-18T09:48:01-05:00 [ERROR] : 
+2021-10-18T09:48:01-05:00 [ERROR] : 
+2021-10-18T09:48:01-05:00 [ERROR] : 
+2021-10-18T09:48:01-05:00 [ERROR] : 
+2021-10-18T09:48:01-05:00 [ERROR] : 
+2021-10-18T09:49:08-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => PRUEBA18
+    [PROFILE_DESCRIPTION] => PRUEBA18
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-18T09:49:08-05:00 [ERROR] : 
+2021-10-18T09:49:08-05:00 [ERROR] : 
+2021-10-18T09:49:08-05:00 [ERROR] : 
+2021-10-18T09:49:08-05:00 [ERROR] : 
+2021-10-18T09:49:08-05:00 [ERROR] : 
+2021-10-18T09:49:08-05:00 [ERROR] : 
+2021-10-18T09:49:25-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => PRUEBA18
+    [PROFILE_DESCRIPTION] => PRUEBA18
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-18T09:49:25-05:00 [ERROR] : 
+2021-10-18T09:49:25-05:00 [ERROR] : 
+2021-10-18T09:49:25-05:00 [ERROR] : 
+2021-10-18T09:49:25-05:00 [ERROR] : 
+2021-10-18T09:49:25-05:00 [ERROR] : 
+2021-10-18T09:49:25-05:00 [ERROR] : 
+2021-10-18T09:52:03-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => YADIRA
+    [PROFILE_DESCRIPTION] => YADIRA
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-18T09:52:03-05:00 [ERROR] : 
+2021-10-18T09:52:03-05:00 [ERROR] : 
+2021-10-18T09:52:03-05:00 [ERROR] : 
+2021-10-18T09:52:03-05:00 [ERROR] : 
+2021-10-18T09:52:03-05:00 [ERROR] : 
+2021-10-18T09:52:03-05:00 [ERROR] : 
+2021-10-18T09:52:03-05:00 [ERROR] : 
+2021-10-18T09:52:03-05:00 [ERROR] : 
+2021-10-18T09:52:03-05:00 [ERROR] : 
+2021-10-19T15:20:30-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => ROOT
+    [PROFILE_DESCRIPTION] => ROOT
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-19T15:20:30-05:00 [ERROR] : 
+2021-10-19T15:20:30-05:00 [ERROR] : 
+2021-10-19T15:20:30-05:00 [ERROR] : 
+2021-10-19T15:20:30-05:00 [ERROR] : 
+2021-10-19T15:20:30-05:00 [ERROR] : 
+2021-10-19T15:20:30-05:00 [ERROR] : 
+2021-10-19T15:20:30-05:00 [ERROR] : 
+2021-10-19T15:20:30-05:00 [ERROR] : 
+2021-10-19T15:20:30-05:00 [ERROR] : 
+2021-10-19T18:19:40-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => ROOTT
+    [PROFILE_DESCRIPTION] => ROOT
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-19T18:20:24-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => ROOTT
+    [PROFILE_DESCRIPTION] => ROOT
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-19T18:21:11-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => ROOTT
+    [PROFILE_DESCRIPTION] => ROOT
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-19T18:21:22-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => ROOTT
+    [PROFILE_DESCRIPTION] => ROOT
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-19T18:23:42-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => ROOTT
+    [PROFILE_DESCRIPTION] => ROOT
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-19T18:23:56-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => ROOTT
+    [PROFILE_DESCRIPTION] => ROOT
+    [STATUS_PROFILE] => 0
+)
+
+2021-10-19T18:26:31-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => ADMIN
+    [PROFILE_DESCRIPTION] => ADMIN
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-19T18:26:31-05:00 [ERROR] : 
+2021-10-19T18:26:31-05:00 [ERROR] : 
+2021-10-19T18:26:31-05:00 [ERROR] : 
+2021-10-19T18:26:31-05:00 [ERROR] : 
+2021-10-19T18:26:31-05:00 [ERROR] : 
+2021-10-19T18:26:31-05:00 [ERROR] : 
+2021-10-19T18:27:54-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => ADMIN
+    [PROFILE_DESCRIPTION] => ROOT
+    [STATUS_PROFILE] => 0
+)
+
+2021-10-19T18:28:19-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => ADMIN
+    [PROFILE_DESCRIPTION] => ROOT
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-19T18:36:08-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => MASTER
+    [PROFILE_DESCRIPTION] => MASTER
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-19T18:36:08-05:00 [ERROR] : 
+2021-10-19T18:36:08-05:00 [ERROR] : 
+2021-10-19T18:36:08-05:00 [ERROR] : 
+2021-10-19T18:36:08-05:00 [ERROR] : 
+2021-10-19T18:36:08-05:00 [ERROR] : 
+2021-10-19T18:36:08-05:00 [ERROR] : 
+2021-10-19T18:36:08-05:00 [ERROR] : 
+2021-10-19T18:36:08-05:00 [ERROR] : 
+2021-10-19T18:36:08-05:00 [ERROR] : 
+2021-10-20T18:03:51-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 14
+    [NR_SEQUENCE] => 7584087
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 11932
+    [FAC_TOT] => 871.72
+    [IMPORTE] => 871.72
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => OFTALMICA S.A.C.
+    [LOCAL_GUIA] => 2
+    [USER_APPLICANT] => JHERBOZO
+    [USER_CONFIRM] => JHERRERA
+    [DATE_CONFIRMATION] => 2021-20-10 18:03:51
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-20-10 18:03:51
+    [DATE_MOD] => 
+)
+
+2021-10-20T18:06:32-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 17
+    [NR_SEQUENCE] => 7585092
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 11939
+    [FAC_TOT] => 1037.41
+    [IMPORTE] => 200
+    [SALDO] => 837.41
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => COMPAÃ‘IA MINERA LUREN SA.
+    [LOCAL_GUIA] => 15
+    [USER_APPLICANT] => HARAUJO
+    [USER_CONFIRM] => LTOLEDO
+    [DATE_CONFIRMATION] => 2021-20-10 18:06:32
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-20-10 18:06:32
+    [DATE_MOD] => 
+)
+
+2021-10-20T18:07:44-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 14
+    [NR_SEQUENCE] => 7585092
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 11939
+    [FAC_TOT] => 1037.41
+    [IMPORTE] => 128.28
+    [SALDO] => 709.13
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => COMPAÃ‘IA MINERA LUREN SA.
+    [LOCAL_GUIA] => 11
+    [USER_APPLICANT] => HARAUJO
+    [USER_CONFIRM] => JCORNEJO
+    [DATE_CONFIRMATION] => 2021-20-10 18:07:44
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-20-10 18:07:44
+    [DATE_MOD] => 
+)
+
+2021-10-20T18:10:43-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 18
+    [NR_SEQUENCE] => 7585302
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 11941
+    [FAC_TOT] => 79.48
+    [IMPORTE] => 79.48
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => CLINICA INTERNACIONAL S.A.
+    [LOCAL_GUIA] => 15
+    [USER_APPLICANT] => YARROYO
+    [USER_CONFIRM] => RRIOS
+    [DATE_CONFIRMATION] => 2021-20-10 18:10:43
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-20-10 18:10:43
+    [DATE_MOD] => 
+)
+
+2021-10-20T18:11:27-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 18
+    [NR_SEQUENCE] => 7585590
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 11942
+    [FAC_TOT] => 1315.04
+    [IMPORTE] => 1315.04
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => CONFIPETROL ANDINA SA
+    [LOCAL_GUIA] => 15
+    [USER_APPLICANT] => HARAUJO
+    [USER_CONFIRM] => AMELGAREJO
+    [DATE_CONFIRMATION] => 2021-20-10 18:11:27
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-20-10 18:11:27
+    [DATE_MOD] => 
+)
+
+2021-10-26T11:07:44-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => ADMINISTRACION Y FINANZAS
+    [PROFILE_DESCRIPTION] => GESTION ADMINISTRATIVA Y FINANCIERA
+    [STATUS_PROFILE] => 1
+)
+
+2021-10-26T11:07:44-05:00 [ERROR] : 
+2021-10-26T11:07:44-05:00 [ERROR] : 
+2021-10-26T11:07:44-05:00 [ERROR] : 
+2021-10-26T11:07:44-05:00 [ERROR] : 
+2021-10-26T16:20:22-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 2
+    [NR_SEQUENCE] => 7621385
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 12009
+    [FAC_TOT] => 256.00
+    [IMPORTE] => 256
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => CORPORACION SECURITY TECH S.A.C.
+    [LOCAL_GUIA] => 15
+    [USER_APPLICANT] => GVASQUEZ
+    [USER_CONFIRM] => JHERRERA
+    [DATE_CONFIRMATION] => 2021-26-10 16:20:22
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-26-10 16:20:22
+    [DATE_MOD] => 
+)
+
+2021-11-02T13:22:31-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => PERFIL ESTÃNDAR
+    [PROFILE_DESCRIPTION] => SOLO LECTURA
+    [STATUS_PROFILE] => 1
+)
+
+2021-11-02T13:22:31-05:00 [ERROR] : 
+2021-11-02T13:22:31-05:00 [ERROR] : 
+2021-11-02T13:22:31-05:00 [ERROR] : 
+2021-11-04T15:22:07-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 2
+    [NR_SEQUENCE] => 7611447
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 11992
+    [FAC_TOT] => 326.77
+    [IMPORTE] => 200
+    [SALDO] => 126.77
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => MAJOREL SP SOLUTIONS SA SUCURSAL DEL PERU
+    [LOCAL_GUIA] => 15
+    [USER_APPLICANT] => NGARCIA
+    [USER_CONFIRM] => RRIOS
+    [DATE_CONFIRMATION] => 2021-04-11 15:22:07
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-04-11 15:22:07
+    [DATE_MOD] => 
+)
+
+2021-11-04T15:25:09-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1
+    [NR_SEQUENCE] => 7669654
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 12103
+    [FAC_TOT] => 631.58
+    [IMPORTE] => 631.58
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => NEGOCIOS METALURGICOS S.A.C.
+    [LOCAL_GUIA] => 15
+    [USER_APPLICANT] => AQUISPE
+    [USER_CONFIRM] => RRIOS
+    [DATE_CONFIRMATION] => 2021-04-11 15:25:09
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-04-11 15:25:09
+    [DATE_MOD] => 
+)
+
+2021-11-09T12:07:28-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 3
+    [NR_SEQUENCE] => 1880081
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 14143
+    [FAC_TOT] => 156.00
+    [IMPORTE] => 82.5
+    [SALDO] => 73.5
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => STICONA
+    [USER_CONFIRM] => VGARCIA
+    [DATE_CONFIRMATION] => 2021-09-11 12:07:28
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-09-11 12:07:28
+    [DATE_MOD] => 
+)
+
+2021-11-09T12:17:02-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 2
+    [NR_SEQUENCE] => 1880069
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 14142
+    [FAC_TOT] => 32.00
+    [IMPORTE] => 32
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => RRARANDA
+    [USER_CONFIRM] => VGARCIA
+    [DATE_CONFIRMATION] => 2021-09-11 12:17:02
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-09-11 12:17:02
+    [DATE_MOD] => 
+)
+
+2021-11-09T12:32:12-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1
+    [NR_SEQUENCE] => 7525503
+    [TYPE_DOC] => 
+    [NR_SERIE] => F006
+    [NR_DOC] => 14143
+    [FAC_TOT] => 226.84
+    [IMPORTE] => 226.84
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => RED PEDIATRICA S.C.R.L
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => STICONA
+    [USER_CONFIRM] => RARANDA
+    [DATE_CONFIRMATION] => 2021-09-11 12:32:12
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-09-11 12:32:12
+    [DATE_MOD] => 
+)
+
+2021-11-10T15:22:00-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 6
+    [NR_SEQUENCE] => 7688555
+    [TYPE_DOC] => 
+    [NR_SERIE] => B038
+    [NR_DOC] => 273865
+    [FAC_TOT] => 703.54
+    [IMPORTE] => 703.54
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => SON TAI LAO SAM
+    [LOCAL_GUIA] => 16
+    [USER_APPLICANT] => LRIVERA
+    [USER_CONFIRM] => LTOLEDO
+    [DATE_CONFIRMATION] => 2021-10-11 15:22:00
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-10-11 15:22:00
+    [DATE_MOD] => 
+)
+
+2021-11-10T15:25:10-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1
+    [NR_SEQUENCE] => 7697081
+    [TYPE_DOC] => 
+    [NR_SERIE] => B044
+    [NR_DOC] => 6755
+    [FAC_TOT] => 321.98
+    [IMPORTE] => 321.98
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => CHAVARRY GARCIA JANETT MARITA
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => RRARANDA
+    [USER_CONFIRM] => RCABALLERO
+    [DATE_CONFIRMATION] => 2021-10-11 15:25:10
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-10-11 15:25:10
+    [DATE_MOD] => 
+)
+
+2021-11-10T15:36:42-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 7
+    [NR_SEQUENCE] => 7699091
+    [TYPE_DOC] => 
+    [NR_SERIE] => B037
+    [NR_DOC] => 59493
+    [FAC_TOT] => 35.00
+    [IMPORTE] => 35
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => VIDAURRE NAVARRETE BETSABE DENISE
+    [LOCAL_GUIA] => 17
+    [USER_APPLICANT] => IBARZOLA
+    [USER_CONFIRM] => VGARCIA
+    [DATE_CONFIRMATION] => 2021-10-11 15:36:42
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-10-11 15:36:42
+    [DATE_MOD] => 
+)
+
+2021-11-10T15:42:02-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 8
+    [NR_SEQUENCE] => 7698516
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 12167
+    [FAC_TOT] => 604.82
+    [IMPORTE] => 300
+    [SALDO] => 304.82
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => SERGEMI CONTRATISTAS S.A.C.
+    [LOCAL_GUIA] => 15
+    [USER_APPLICANT] => AQUISPE
+    [USER_CONFIRM] => MCARRERA
+    [DATE_CONFIRMATION] => 2021-10-11 15:42:02
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-10-11 15:42:02
+    [DATE_MOD] => 
+)
+
+2021-11-10T15:42:02-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 9
+    [NR_SEQUENCE] => 7698516
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 12167
+    [FAC_TOT] => 604.82
+    [IMPORTE] => 304.82
+    [SALDO] => 5.6843418860808E-14
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => SERGEMI CONTRATISTAS S.A.C.
+    [LOCAL_GUIA] => 15
+    [USER_APPLICANT] => AQUISPE
+    [USER_CONFIRM] => MCARRERA
+    [DATE_CONFIRMATION] => 2021-10-11 15:42:02
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-10-11 15:42:02
+    [DATE_MOD] => 
+)
+
+2021-11-10T15:58:35-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 4
+    [NR_SEQUENCE] => 7667523
+    [TYPE_DOC] => 
+    [NR_SERIE] => B044
+    [NR_DOC] => 6514
+    [FAC_TOT] => 50.00
+    [IMPORTE] => 50
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => VIDAL OLIVO ROXANA YNES
+    [LOCAL_GUIA] => 16
+    [USER_APPLICANT] => STICONA
+    [USER_CONFIRM] => LTOLEDO
+    [DATE_CONFIRMATION] => 2021-10-11 15:58:35
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-10-11 15:58:35
+    [DATE_MOD] => 
+)
+
+2021-11-10T16:26:00-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 10
+    [NR_SEQUENCE] => 7699072
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 141649
+    [FAC_TOT] => 207.81
+    [IMPORTE] => 100
+    [SALDO] => 107.81
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => VILLA GARCIA DE LA FUENTE AGUSTA
+    [LOCAL_GUIA] => 11
+    [USER_APPLICANT] => CAVENDANO
+    [USER_CONFIRM] => SEGUROS
+    [DATE_CONFIRMATION] => 2021-10-11 16:26:00
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-10-11 16:26:00
+    [DATE_MOD] => 
+)
+
+2021-11-10T16:26:00-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 11
+    [NR_SEQUENCE] => 7699072
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 141649
+    [FAC_TOT] => 207.81
+    [IMPORTE] => 100
+    [SALDO] => 7.81
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => VILLA GARCIA DE LA FUENTE AGUSTA
+    [LOCAL_GUIA] => 11
+    [USER_APPLICANT] => CAVENDANO
+    [USER_CONFIRM] => SEGUROS
+    [DATE_CONFIRMATION] => 2021-10-11 16:26:00
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-10-11 16:26:00
+    [DATE_MOD] => 
+)
+
+2021-11-10T16:27:24-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 2
+    [NR_SEQUENCE] => 7699067
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 141647
+    [FAC_TOT] => 202.60
+    [IMPORTE] => 123.77
+    [SALDO] => 78.83
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => LANCHO RUIZ LIS ISABEL
+    [LOCAL_GUIA] => 8
+    [USER_APPLICANT] => CAVENDANO
+    [USER_CONFIRM] => RARANDA
+    [DATE_CONFIRMATION] => 2021-10-11 16:27:24
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-10-11 16:27:24
+    [DATE_MOD] => 
+)
+
+2021-11-10T16:27:24-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 6
+    [NR_SEQUENCE] => 7699067
+    [TYPE_DOC] => 
+    [NR_SERIE] => B006
+    [NR_DOC] => 141647
+    [FAC_TOT] => 202.60
+    [IMPORTE] => 4.46
+    [SALDO] => 74.37
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => LANCHO RUIZ LIS ISABEL
+    [LOCAL_GUIA] => 8
+    [USER_APPLICANT] => CAVENDANO
+    [USER_CONFIRM] => RARANDA
+    [DATE_CONFIRMATION] => 2021-10-11 16:27:24
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-10-11 16:27:24
+    [DATE_MOD] => 
+)
+
+2021-11-10T16:35:34-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1
+    [NR_SEQUENCE] => 7699063
+    [TYPE_DOC] => 
+    [NR_SERIE] => B035
+    [NR_DOC] => 15727
+    [FAC_TOT] => 95.65
+    [IMPORTE] => 95.65
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => REYES DIAZ 
+    [LOCAL_GUIA] => 2
+    [USER_APPLICANT] => AAPOLO
+    [USER_CONFIRM] => VGARCIA
+    [DATE_CONFIRMATION] => 2021-10-11 16:35:34
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-10-11 16:35:34
+    [DATE_MOD] => 
+)
+
+2021-11-10T16:37:36-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 1
+    [NR_SEQUENCE] => 7699026
+    [TYPE_DOC] => 
+    [NR_SERIE] => B031
+    [NR_DOC] => 23249
+    [FAC_TOT] => 88.57
+    [IMPORTE] => 63.53
+    [SALDO] => 25.04
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => HUARACHI LARA JUDITH
+    [LOCAL_GUIA] => 17
+    [USER_APPLICANT] => SANDRADE
+    [USER_CONFIRM] => VGARCIA
+    [DATE_CONFIRMATION] => 2021-10-11 16:37:36
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-10-11 16:37:36
+    [DATE_MOD] => 
+)
+
+2021-11-10T16:41:11-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 12
+    [NR_SEQUENCE] => 7699026
+    [TYPE_DOC] => 
+    [NR_SERIE] => B031
+    [NR_DOC] => 23249
+    [FAC_TOT] => 88.57
+    [IMPORTE] => 25.04
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => HUARACHI LARA JUDITH
+    [LOCAL_GUIA] => 5
+    [USER_APPLICANT] => AAPOLO
+    [USER_CONFIRM] => VGARCIA
+    [DATE_CONFIRMATION] => 2021-10-11 16:41:11
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-10-11 16:41:11
+    [DATE_MOD] => 
+)
+
+2021-11-10T16:50:07-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 12
+    [NR_SEQUENCE] => 7699024
+    [TYPE_DOC] => 
+    [NR_SERIE] => B031
+    [NR_DOC] => 23248
+    [FAC_TOT] => 70.00
+    [IMPORTE] => 7.105427357601E-15
+    [SALDO] => 70
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => ECHEGARAY ZEVALLOS NORKA AURORA
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => RARANDA
+    [USER_CONFIRM] => NCARDENAS
+    [DATE_CONFIRMATION] => 2021-10-11 16:50:07
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-10-11 16:50:07
+    [DATE_MOD] => 
+)
+
+2021-11-12T17:36:28-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 15
+    [NR_SEQUENCE] => 78452
+    [TYPE_DOC] => 
+    [NR_SERIE] => B200
+    [NR_DOC] => 6626
+    [FAC_TOT] => 21.64
+    [IMPORTE] => 21.64
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 17
+    [USER_APPLICANT] => CALEGRE
+    [USER_CONFIRM] => MCARRERA
+    [DATE_CONFIRMATION] => 2021-12-11 17:36:28
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => 
+    [USER_MOD] => 
+    [DATE_REG] => 2021-12-11 17:36:28
+    [DATE_MOD] => 
+)
+
+2021-11-12T17:46:22-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => SOPORTE
+    [PROFILE_DESCRIPTION] => SOPORTE
+    [STATUS_PROFILE] => 1
+)
+
+2021-11-12T17:46:22-05:00 [ERROR] : 
+2021-11-12T17:46:22-05:00 [ERROR] : 
+2021-11-12T17:46:22-05:00 [ERROR] : 
+2021-11-12T17:46:22-05:00 [ERROR] : 
+2021-11-12T17:46:22-05:00 [ERROR] : 
+2021-11-15T12:40:47-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 44
+    [NR_SEQUENCE] => 7717112
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 12204
+    [FAC_TOT] => 144.60
+    [IMPORTE] => 144.6
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => TRANSPORTES ATLANTIC INTERNATIONAL BUSINESS S.A.C.
+    [LOCAL_GUIA] => 15
+    [USER_APPLICANT] => AAPOLO
+    [USER_CONFIRM] => LTOLEDO
+    [DATE_CONFIRMATION] => 2021-15-11 12:40:47
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => YGOMERO
+    [USER_MOD] => 
+    [DATE_REG] => 2021-15-11 12:40:47
+    [DATE_MOD] => 
+)
+
+2021-11-18T10:50:55-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 45
+    [NR_SEQUENCE] => 7729514
+    [TYPE_DOC] => 
+    [NR_SERIE] => B031
+    [NR_DOC] => 23580
+    [FAC_TOT] => 90.86
+    [IMPORTE] => 40
+    [SALDO] => 50.86
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => GONZALES CRUZ KARIN ALEJANDRINA
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => SANDRADE
+    [USER_CONFIRM] => RARANDA
+    [DATE_CONFIRMATION] => 2021-18-11 10:50:55
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => YGOMERO
+    [USER_MOD] => 
+    [DATE_REG] => 2021-18-11 10:50:55
+    [DATE_MOD] => 
+)
+
+2021-11-18T10:50:55-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 46
+    [NR_SEQUENCE] => 7729514
+    [TYPE_DOC] => 
+    [NR_SERIE] => B031
+    [NR_DOC] => 23580
+    [FAC_TOT] => 90.86
+    [IMPORTE] => 37
+    [SALDO] => 13.86
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => GONZALES CRUZ KARIN ALEJANDRINA
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => SANDRADE
+    [USER_CONFIRM] => RARANDA
+    [DATE_CONFIRMATION] => 2021-18-11 10:50:55
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => YGOMERO
+    [USER_MOD] => 
+    [DATE_REG] => 2021-18-11 10:50:55
+    [DATE_MOD] => 
+)
+
+2021-11-18T10:52:50-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 47
+    [NR_SEQUENCE] => 7729513
+    [TYPE_DOC] => 
+    [NR_SERIE] => F031
+    [NR_DOC] => 1724
+    [FAC_TOT] => 99.90
+    [IMPORTE] => 50
+    [SALDO] => 49.9
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => TDM CONSTRUCCION S.A.
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => YARROYO
+    [USER_CONFIRM] => CVELIZ
+    [DATE_CONFIRMATION] => 2021-18-11 10:52:50
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => YGOMERO
+    [USER_MOD] => 
+    [DATE_REG] => 2021-18-11 10:52:50
+    [DATE_MOD] => 
+)
+
+2021-11-18T10:52:50-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 48
+    [NR_SEQUENCE] => 7729513
+    [TYPE_DOC] => 
+    [NR_SERIE] => F031
+    [NR_DOC] => 1724
+    [FAC_TOT] => 99.90
+    [IMPORTE] => 49.9
+    [SALDO] => 7.105427357601E-15
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => TDM CONSTRUCCION S.A.
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => YARROYO
+    [USER_CONFIRM] => CVELIZ
+    [DATE_CONFIRMATION] => 2021-18-11 10:52:50
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => YGOMERO
+    [USER_MOD] => 
+    [DATE_REG] => 2021-18-11 10:52:50
+    [DATE_MOD] => 
+)
+
+2021-11-18T10:56:26-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 49
+    [NR_SEQUENCE] => 7729456
+    [TYPE_DOC] => 
+    [NR_SERIE] => F006
+    [NR_DOC] => 14570
+    [FAC_TOT] => 124.00
+    [IMPORTE] => 100
+    [SALDO] => 24
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => ODONTOLOGOS ASOCIADOS SMV S.A.C.
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => YARROYO
+    [USER_CONFIRM] => JHERRERA
+    [DATE_CONFIRMATION] => 2021-18-11 10:56:26
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => YGOMERO
+    [USER_MOD] => 
+    [DATE_REG] => 2021-18-11 10:56:26
+    [DATE_MOD] => 
+)
+
+2021-11-18T10:56:26-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 50
+    [NR_SEQUENCE] => 7729456
+    [TYPE_DOC] => 
+    [NR_SERIE] => F006
+    [NR_DOC] => 14570
+    [FAC_TOT] => 124.00
+    [IMPORTE] => 24
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => ODONTOLOGOS ASOCIADOS SMV S.A.C.
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => YARROYO
+    [USER_CONFIRM] => JHERRERA
+    [DATE_CONFIRMATION] => 2021-18-11 10:56:26
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => YGOMERO
+    [USER_MOD] => 
+    [DATE_REG] => 2021-18-11 10:56:26
+    [DATE_MOD] => 
+)
+
+2021-11-19T19:27:36-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 53
+    [NR_SEQUENCE] => 7736130
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 12252
+    [FAC_TOT] => 1029.48
+    [IMPORTE] => 1029.48
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => ASOC. CIVIL IMPACTA SALUD Y EDUCACION
+    [LOCAL_GUIA] => 16
+    [USER_APPLICANT] => YARROYO
+    [USER_CONFIRM] => MCARRERA
+    [DATE_CONFIRMATION] => 2021-19-11 19:27:36
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => YGOMERO
+    [USER_MOD] => 
+    [DATE_REG] => 2021-19-11 19:27:36
+    [DATE_MOD] => 
+)
+
+2021-11-29T17:49:56-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 54
+    [NR_SEQUENCE] => 7772180
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 12319
+    [FAC_TOT] => 2742.25
+    [IMPORTE] => 2742.25
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => LUSAN PERU EIRL.
+    [LOCAL_GUIA] => 9
+    [USER_APPLICANT] => RRARANDA
+    [USER_CONFIRM] => NCARDENAS
+    [DATE_CONFIRMATION] => 2021-29-11 17:49:56
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => YGOMERO
+    [USER_MOD] => 
+    [DATE_REG] => 2021-29-11 17:49:56
+    [DATE_MOD] => 
+)
+
+2021-11-29T17:51:31-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 54
+    [NR_SEQUENCE] => 7761907
+    [TYPE_DOC] => 
+    [NR_SERIE] => F007
+    [NR_DOC] => 12314
+    [FAC_TOT] => 409.22
+    [IMPORTE] => 257.75
+    [SALDO] => 151.47
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => REMICSA DRILLING S.A.
+    [LOCAL_GUIA] => 9
+    [USER_APPLICANT] => RRARANDA
+    [USER_CONFIRM] => RCABALLERO
+    [DATE_CONFIRMATION] => 2021-29-11 17:51:31
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => YGOMERO
+    [USER_MOD] => 
+    [DATE_REG] => 2021-29-11 17:51:31
+    [DATE_MOD] => 
+)
+
+2021-11-30T16:37:40-05:00 [INFO] : Array
+(
+    [DEPOSIT_ID] => 43
+    [NR_SEQUENCE] => 7778158
+    [TYPE_DOC] => 
+    [NR_SERIE] => B009
+    [NR_DOC] => 149520
+    [FAC_TOT] => 32.08
+    [IMPORTE] => 32.08
+    [SALDO] => 0
+    [DOC_CLIENT] => 
+    [NAME_CLIENT] => 
+    [LOCAL_GUIA] => 1
+    [USER_APPLICANT] => RARANDA
+    [USER_CONFIRM] => JHERRERA
+    [DATE_CONFIRMATION] => 2021-30-11 16:37:40
+    [DATE_LIQUIDATE] => 
+    [NR_SEQUENCE_CASH] => 
+    [NAME_CASH] => 
+    [USER_REG] => YGOMERO
+    [USER_MOD] => 
+    [DATE_REG] => 2021-30-11 16:37:40
+    [DATE_MOD] => 
+)
+
+2021-12-29T17:57:46-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => ADMIN
+    [PROFILE_DESCRIPTION] => ADMINISTRADOR
+    [STATUS_PROFILE] => 1
+)
+
+2021-12-29T17:57:46-05:00 [ERROR] : 
+2022-01-04T16:05:36-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => LABORATORIO
+    [PROFILE_DESCRIPTION] => LABORATORIO
+    [STATUS_PROFILE] => 1
+)
+
+2022-01-04T16:05:36-05:00 [ERROR] : 
+2022-01-04T16:05:36-05:00 [ERROR] : 
+2022-01-05T15:37:24-05:00 [INFO] : Array
+(
+    [PROFILE_NAME] => ADMIN
+    [PROFILE_DESCRIPTION] => ADMINISTRADOR
+    [STATUS_PROFILE] => 1
+)
+
+2022-01-05T15:37:24-05:00 [ERROR] : 

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-
+use App\Log\Logger;
 class UsersController
 {
     public $app = null;
@@ -18,14 +18,27 @@ class UsersController
         $results = $conn->get_results($this->app->getQuery("usersSelectAll"));
         $users = [];
         foreach ($results as $item) {
+            $editar='';
+
+            $status='';
+            if ($item->STATUS_USER===1){
+                $status='ACTIVO';
+            }else{
+                $status='INACTIVO';
+            }
+            
+            $editar='<div class="d-flex">
+						<a href="/usuarios/modificar" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
+                    </div>';
+
             $users[] = [
-                "0" => "",
-                "1" => $item->USER_NAMES,
-                "2" => $item->NOMBRE,
+                "0" => $editar,
+                "1" => utf8_encode($item->USER_NAMES),
+                "2" => utf8_encode($item->NOMBRE),
                 "3" => $item->NR_DOC,
-                "4" => $item->PROFILE_ID,
-                "5" => $item->WORKSTATION,
-                "6" => $item->STATUS_USER,
+                "4" => utf8_encode($item->PROFILE_DESCRIPTION),
+                "5" => utf8_encode($item->WORKSTATION),
+                "6" => $status,
             ];
         }
 
@@ -57,7 +70,7 @@ class UsersController
         foreach ($results as $item) {
             $profile[] = [
                 "value" => $item->PROFILE_ID,
-                "name" => $item->PROFILE_NAME,
+                "name" => utf8_encode($item->PROFILE_NAME),
             ];
         }
 
@@ -80,9 +93,25 @@ class UsersController
         return $area;
     }
 
+    function establecimiento()
+    {
+        $conn = $this->app->getConnection("conn2");
+        $results = $conn->get_results($this->app->getQuery("localSelectAll"));
+        $establecimiento = [];
+
+        foreach($results as $item){
+            $establecimiento[]=[
+                "value" => $item->SISCOD,
+                "name" => $item->SISENT,
+            ];
+        }
+
+        return $establecimiento;
+    }
+
     function register()
     {
-        //validar datos requeridos antes de procesar, tambien validar en el front
+        
         if(!isset($_POST["val-tipoDocumento"]) || !$_POST["val-tipoDocumento"]) return responseError("Tipo de documento es requerido");
         if(!isset($_POST["val-nroDoc"]) || !$_POST["val-nroDoc"]) return responseError("Nro de documento es requerido");
         if(!isset($_POST["val-nroContacto"]) || !$_POST["val-nroContacto"]) return responseError("Nro de contacto es requerido");
@@ -91,11 +120,14 @@ class UsersController
         if(!isset($_POST["val-names"]) || !$_POST["val-names"]) return responseError("Nombres son requeridos");
         if(!isset($_POST["val-username"]) || !$_POST["val-username"]) return responseError("Username es requerido");
         if(!isset($_POST["val-password"]) || !$_POST["val-password"]) return responseError("Password es requerido");
+        if(!isset($_POST["val-confirm-password"]) || !$_POST["val-confirm-password"]) return responseError("Confirmacion Password es requerido");
+        if($_POST["val-password"] != $_POST["val-confirm-password"]) return responseError("Password y Confirmar Password NO SON IGUALES");
         if(!isset($_POST["val-perfil"]) || !$_POST["val-perfil"]) return responseError("Perfil es requerido");
         if(!isset($_POST["val-area"]) || !$_POST["val-area"]) return responseError("Area es requerido");
         if(!isset($_POST["val-cargo"]) || !$_POST["val-cargo"]) return responseError("Cargo es requerido");
+        if(!isset($_POST["val-establecimiento"]) || !$_POST["val-establecimiento"]) return responseError("Establecimiento es requerido");
         
-        $tipoDoc = $_POST["val-tipoDocumento"];
+        $tipoDoc = strval($_POST["val-tipoDocumento"]);
         $nroDoc = $_POST["val-nroDoc"];
         $nroContacto = $_POST["val-nroContacto"];
         $apePat = $_POST["val-apePat"];
@@ -106,15 +138,18 @@ class UsersController
         $perfil = $_POST["val-perfil"];
         $area = $_POST["val-area"];
         $cargo = $_POST["val-cargo"];
+        $establecimiento = $_POST["val-establecimiento"];
         $estado = 0;
         if(isset($_POST["val-enable"])){
             $estado = $_POST["val-enable"];
         }
 
+        
 
         $conn = $this->app->getConnection("conn1");
         //Validaciones
         $query = "SELECT USER_NAMES FROM FU_USERS WHERE USER_NAMES ='".$user."'";
+        $query2 = $conn->get_results($this->app->getQuery("tipoDocSelectAll"));
 
         $validacionUser = $conn->get_row($query);
         if ($validacionUser === false){
@@ -127,32 +162,58 @@ class UsersController
 
         //armar array será insertado
         $dataToInsert = [
-            "USER_NAMES" => $user,
+            "USER_NAMES"    => $user,
             "LAST_NAME_PAT" => $apePat,
             "LAST_NAME_MAT" => $apeMat,
-            "NAMES" => $apeName,
-            "COD_TD" => $tipoDoc,
-            "NR_DOC" => $nroDoc,
-            "NR_CONTACT" => $nroContacto,
-            "WORKSTATION" => $cargo,
-            "PROFILE_ID" => $perfil,
-            "STATUS_USER" => $estado,
-            "AREA_ID" => $area,
-            "PASS" => $apePass,
+            "NAMES"         => $apeName,
+            "COD_TD"        => $tipoDoc,
+            "NR_DOC"        => $nroDoc,
+            "NR_CONTACT"    => $nroContacto,
+            "WORKSTATION"   => $cargo,
+            "PROFILE_ID"    => $perfil,
+            "STATUS_USER"   => $estado,
+            "AREA_ID"       => $area,
+            "PASS"          => $apePass,
+            "ESTABLISHMENT" => $establecimiento,
 
         ];
 
-        $conn->insert("FU_USERS", $dataToInsert);
+       /* print_r($dataToInsert);
+        exit;*/
+
+        $result = $this->registerUser($dataToInsert); 
+        
+        if (!$result) {
+            return responseError("ERROR GUARDANDO USUARIO");
+            exit;
+        } 
+        return responseOK();
+
+    }
+    function registerUser($data)
+    {
+        $conn = $this->app->getConnection("conn1");
+
+        $types = [
+            "COD_TD" => ["varchar", "NULLABLE"],
+        ];
+
+        $conn->insert("FU_USERS", $data, $types);
 
         //trae el id del registro insertado 
         $last_insert_id = $conn->last_insert_id();
 
         //si el last id es > 0 significa que logró registrarse
-        if($last_insert_id > 0){
-            return responseOK();
+        if ($last_insert_id > 0) {
+            return true;
+        } else {
+            Logger::error($conn->has_error());
+            return false;
         }
-        else{
-            return responseError("Error guardando user");
-        }
+
+    }
+
+    function modifyUser(){
+
     }
 }

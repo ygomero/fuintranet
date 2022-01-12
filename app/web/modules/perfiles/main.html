@@ -16,10 +16,6 @@
                             <thead>
                                 <tr>
                                     <th class=" pr-3">
-                                        <div class="custom-control custom-checkbox mx-2">
-                                            <input type="checkbox" class="custom-control-input" id="checkAll">
-                                            <label class="custom-control-label" for="checkAll"></label>
-                                        </div>
                                     </th>
                                     <th>Nombre</th>
                                     <th>Descripción</th>
@@ -39,15 +35,18 @@
         let dataSet = [];
         $(document).ready( function () {
             table = $('#table_profile').DataTable({
-            dom: 'Blfrtip',
-            buttons:[ 
-                'excel'
-            ],
-            lengthChange: true,
-            paging:true,
-            iDisplayLength: 10,
-            aLengthMenu: [[ 10, 20, 50, 100 ,-1],[10,20,50,100,"Todos"]],
-            data:dataSet 
+                "language": {
+                "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+                },
+                dom: 'Blfrtip',
+                buttons:[ 
+                    'excel'
+                ],
+                lengthChange: true,
+                paging:true,
+                iDisplayLength: 10,
+                aLengthMenu: [[ 10, 20, 50, 100 ,-1],[10,20,50,100,"Todos"]],
+                data:dataSet 
             });
         
             table.clear()

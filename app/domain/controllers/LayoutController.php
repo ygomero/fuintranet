@@ -15,7 +15,7 @@ class LayoutController
     private static $html_first_level = '
     <li>
         <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-        <i class="flaticon-381-networking"></i>
+        <i class="<ICONO></ICONO>"></i>
         <span class="nav-text"><first-level-title></first-level-title></span>
         </a>
         <second-level></second-level>
@@ -31,7 +31,7 @@ class LayoutController
     function getSideBar()
     {
         $modulesCtrl = new ModulesController($this->app);
-        $modules = $modulesCtrl->getModules();
+        $modules = $modulesCtrl->getModulesPermission();
         $content = '';
         $result = self::getHtml1($modules,$content);
         return $result;
@@ -47,6 +47,7 @@ class LayoutController
         foreach ($modules as $module) {
             $content .= self::$html_first_level;
             $content = str_replace("<first-level-title></first-level-title>", $module["name"], $content);
+            $content = str_replace("<ICONO></ICONO>",$module["icon"], $content);
             if (isset($module["childs"])) {
                 $content2 = self::getHtml2($module["childs"], $content);
                 $content = str_replace("<second-level></second-level>", $content2, $content);

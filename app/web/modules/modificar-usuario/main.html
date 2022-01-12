@@ -1,0 +1,295 @@
+<div class="container-fluid">
+  <!-- row -->
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Información Personal</h4>
+        </div>
+        <div class="card-body">
+          <div class="form-validation">
+            <form class="form-valide" action="/api/login" method="post" id="formUsuarioNuevo">
+              <div class="row">
+                <div class="col-xl-6">
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-tipoDocumento"
+                      >Tipo de Documento
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <select class="form-control default-select" id="select_tipo_documento" name="val-tipoDocumento">
+                        <option value="">Seleccione</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-nroDoc">Nro Doc
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="val-nroDoc"
+                        name="val-nroDoc"
+                        placeholder="99999999"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-nroContacto"
+                      >N° Contacto
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="val-nroContacto"
+                        name="val-nroContacto"
+                        placeholder="987654321"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-apePat"
+                      >Apellido Paterno
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="val-apePat"
+                        name="val-apePat"
+                        placeholder="Ingrese apellido paterno"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-apeMat"
+                      >Apellido Materno <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="val-apeMat"
+                        name="val-apeMat"
+                        placeholder="Ingrese apellido materno"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-names"
+                      >Nombres
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="val-names"
+                        name="val-names"
+                        placeholder="Ingrese nombre"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-6">
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-username"
+                      >Username
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="val-username"
+                        name="val-username"
+                        placeholder="Ingrese usuario.."
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-password"
+                      >Password
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <input type="password" class="form-control" id="val-password" name="val-password" placeholder="Ingrese Password" />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label
+                      class="col-lg-4 col-form-label"
+                      for="val-confirm-password"
+                      >Confirmar Password <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="val-confirm-password"
+                        name="val-confirm-password"
+                        placeholder="Confirme password"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-perfil"
+                      >Perfil
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <select class="form-control default-select" id="select_tipo_perfil" name="val-perfil">
+                        <option value="">Seleccione</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-area" >Área
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <select class="form-control default-select" id="select_tipo_area" name="val-area">
+                        <option value="">Seleccione</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label" for="val-cargo"
+                      >Cargo
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="val-cargo"
+                        name="val-cargo"
+                        placeholder="Ingrese cargo"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label"
+                      ><a href="javascript:void()">Estado</a>
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-8">
+                      <label
+                        class="css-control css-control-primary css-checkbox"
+                        for="val-enable"
+                      >
+                        <input
+                          type="checkbox"
+                          class="css-control-input mr-2"
+                          id="val-enable"
+                          name="val-enable"
+                          value="1"
+                          checked=true;
+                        />
+                        <span class="css-control-indicator"></span> Habilitado
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-lg-12">
+      <div class="form-group row">
+        <div class="col-lg-8 ml-auto">
+          <button type="submit" class="btn btn-primary" id="guardar_usuario">Guardar</button>
+          <button type="submit" class="btn btn-light"  id="nuevo_usuario_cancelar">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    loadSelectTipoDocumento(),loadSelectPerfil(),loadSelectArea();
+    
+    $("#guardar_usuario").click((e)=>{
+        e.preventDefault();
+        $.ajax({
+            url: '/api/users/register',
+            type: 'post',
+            data:$('#formUsuarioNuevo').serialize(),
+            dataType:"JSON",
+            success:function(res){
+              if(res.status == 'ok'){
+                swal("Usuario", res.msg, "success");
+              }
+              else{
+                swal("Error", res.msg, "error");
+              }
+            }
+        });
+    })
+
+    $("#nuevo_usuario_cancelar").click((e)=>{
+      e.preventDefault();
+      window.location.href = "/usuarios";
+    })
+
+  });
+
+  function loadSelectTipoDocumento(){
+    $.ajax({
+      url: "/api/users/documentos",
+      type: "GET",
+      dataType: "JSON",
+    }).done(function (res) {
+        res.forEach(element => {
+            $( "#select_tipo_documento" ).append(  `<option value='${element.value}'> ${element.name} </option>` );
+        });
+        $("#select_tipo_documento").selectpicker('refresh')
+    });
+  }
+
+  
+  function loadSelectPerfil(){
+    $.ajax({
+      url: "/api/users/perfil",
+      type: "GET",
+      dataType: "JSON",
+    }).done(function (res) {
+        res.forEach(element => {
+            $( "#select_tipo_perfil" ).append(  `<option value='${element.value}'> ${element.name} </option>` );
+        });
+        $("#select_tipo_perfil").selectpicker('refresh')
+    });
+  }
+
+  function loadSelectArea(){
+    $.ajax({
+      url: "/api/users/area",
+      type: "GET",
+      dataType: "JSON",
+    }).done(function (res) {
+        res.forEach(element => {
+            $( "#select_tipo_area" ).append(  `<option value='${element.value}'> ${element.name} </option>` );
+        });
+        $("#select_tipo_area").selectpicker('refresh')
+    });
+  }
+
+</script>

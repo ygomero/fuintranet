@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use DateTime;
 use App\Log\Logger;
+use App\Controllers\LoginController;
 
 class DepositosController
 {
@@ -22,6 +23,8 @@ class DepositosController
         $depositos = [];
         $index = 0;
         
+       
+
         foreach ($results as $item) {
             $checkbox = '';
             if($item->SALDO > 0){
@@ -35,12 +38,13 @@ class DepositosController
             $depositos[] = [
                 "0" => $checkbox,
                 "1" => utf8_encode($item->NAME_BANK),
-                "2" => $item->DATEOPER->format('Y-m-d'),
+                "2" => $item->DATEOPER->format('d-m-Y'),
                 "3" => $item->REFERENCE_ONE,
-                "4" => $item->NR_OPERATION,
-                "5" => money($item->IMPORTE),
-                "6" => money($item->SALDO),
-                "7" => $item->DEPOSIT_ID,
+                "4" => $item->REFERENCE_TWO,
+                "5" => $item->NR_OPERATION,
+                "6" => money($item->IMPORTE),
+                "7" => money($item->SALDO),
+                "8" => $item->DEPOSIT_ID
             ];
             $index++;
         }
@@ -69,6 +73,7 @@ class DepositosController
         $resultBank = $conn->get_row($bankDetail);
 
         $newDate = date(SQL_DATETIME_FORMAT, strtotime($fechaOper));
+        $user_reg = $_SESSION["user"]->usuario;
 
         //armar array será insertado
         $dataToInsert = [
@@ -80,8 +85,8 @@ class DepositosController
             "BANK_ID" => $bank,
             "NAME_BANK" => utf8_encode($resultBank->NAME_BANK),
             "NR_ACCOUNT" => strval($resultBank->NR_ACCOUNT),
-            "USER_REG" => '',
-            "DATE_REG" => '',
+            "USER_REG" => $user_reg,
+            "DATE_REG" => date(SQL_DATETIME_FORMAT),
             "DATE_MOD" => '',
             "SALDO"=> $importe,
         ];
@@ -122,6 +127,7 @@ class DepositosController
         foreach ($results as $item) {
             $local[] = [
                 "value" => $item->SISCOD,
+                //"value" => utf8_encode($item->SISENT),
                 "name" => utf8_encode($item->SISENT),
             ];
         }
@@ -133,7 +139,25 @@ class DepositosController
     {
 
         $conn = $this->app->getConnection("conn2");
-        $results = $conn->get_results($this->app->getQuery("usersLolfarSelectAll"));
+        $results = $conn->get_results($this->app->getQuery("usersLolfarSelectAll")." ORDER BY usenam");
+        $users = [];
+
+        foreach ($results as $item) {
+            $users[] = [
+                "value" => utf8_encode($item->useusr),
+                "name" => utf8_encode($item->usenam),
+            ];
+        }
+
+        return $users;
+    }
+
+    function usuariosResponsables()
+    {
+
+        $conn = $this->app->getConnection("conn2");
+        $results = $conn->get_results($this->app->getQuery("usersLolfarSelectAll")." AND grucod IN (
+            'GDTC','GR0006','GR0012','GREG','DELYV','INT01') ORDER BY usenam");
         $users = [];
 
         foreach ($results as $item) {
@@ -174,17 +198,10 @@ class DepositosController
         $depositos = implode(",", $depositos);
 
         $resultsDep = $this->searchDepositosTotal($depositos);
-
-        //acumulado de depositos para un el documento
-
-        // $queryDep = "SELECT SUM(IMPORTE) AS ACUM_SALDO FROM FU_DEPOSIT_DET 
-        // WHERE NR_SEQUENCE = '".$secuencia."'";
-
-
         if (!$resultsDep) {
             return responseError("Depositos no encontrados");
         }
-
+ 
         //buscar documento
         if($type ==  1 ){
             $resultDoc = $this->searchBySecuencia($secuencia);
@@ -197,11 +214,24 @@ class DepositosController
             return responseError("Sin resultados");
         }
 
+        //acumulado de depositos para un el documento
+        $acumuladoTotDepxDoc = $this->TotaldepositoPorDocumento($resultDoc->SECUENCIA,$resultDoc->NROSERIE,$resultDoc->DOC);
+
+        if(!$acumuladoTotDepxDoc){
+            return responseError();
+        }
+
+        $totalDepositadoDoc = ($acumuladoTotDepxDoc->IMPORTE == '')? 0 : $acumuladoTotDepxDoc->IMPORTE;
+        
         //calculo de deposito vs documento
-        $totalDocumento = $resultDoc->TOTAL;
+        $totalDocumento = $resultDoc->TOTAL - $totalDepositadoDoc;
         $totalDepositos = $resultsDep->IMPORTE;
         $saldoDocumento = 0;
         $saldoDeposito = 0;
+
+        if(!($totalDocumento > 0)){
+            return responseError("Documento no tiene saldo por pagar");
+        }
 
         //caso 1 
         if ($totalDocumento < $totalDepositos) {
@@ -224,7 +254,7 @@ class DepositosController
             "3"  => money($resultDoc->TOTAL),
             "4"  => money($totalDepositos),
             "5"  => money($saldoDocumento),
-            "6"  => $resultDoc->NOMCLI
+            "6"  => UTF8_ENCODE($resultDoc->NOMCLI)
         ];
 
         return responseOk($documento); 
@@ -252,6 +282,7 @@ class DepositosController
         $totalDepositos = 0;
 
         $arDepositos = json_decode($depositos);
+        $user_reg = $_SESSION["user"]->usuario;
         
         if (!count($arDepositos)) {
             return responseError("Depositos no seleccionados");
@@ -290,14 +321,26 @@ class DepositosController
         if(!$validacionTotDepxDoc){
             return responseError();
         }
-
+        
         $totalDepositadoDoc = ($validacionTotDepxDoc->IMPORTE == '')? 0 : $validacionTotDepxDoc->IMPORTE;
         $saldoDocumento = $totalDocumento - $totalDepositadoDoc;
 
         if(!($saldoDocumento > 0)){
             return responseError("Documento no tiene saldo por pagar");
         }
+        
+        /*
+        YADIRA
+        */ 
+        /*$conn = $this->app->getConnection("conn2");
 
+        $bankDetail = "SELECT * FROM FU_BANK_ACCOUNT WHERE BANK_ID=" . $bank . "";
+        $resultBank = $conn->get_row($bankDetail); */
+
+        /*
+        YADIRA
+        */ 
+        $registros = [];
         //saldo del documento
         foreach($validacionDep as $deposito){
 
@@ -305,14 +348,14 @@ class DepositosController
                 //monto que el deposito aporta
 
                 $aporte = $deposito->SALDO;
-
+                
                 if($saldoDocumento < $aporte){
-                    $aporte = $saldoDocumento - $aporte;
+                    $aporte = $saldoDocumento;
                 }
                 
                 $saldoDocumento = $saldoDocumento - $aporte;
                 $saldoDeposito  = $deposito->SALDO - $aporte;
-
+                
                 $dataToInsert = [
                     "DEPOSIT_ID"    => $deposito->DEPOSIT_ID,
                     "NR_SEQUENCE"   => $secuencia,
@@ -321,8 +364,9 @@ class DepositosController
                     "NR_DOC"        => $nro_documento,
                     "FAC_TOT"       => $validacionDoc->TOTAL,
                     "IMPORTE"       => $aporte,
+                    "SALDO"         => $saldoDocumento,
                     "DOC_CLIENT"    => '',
-                    "NAME_CLIENT"   => $validacionDoc->NOMCLI,
+                    "NAME_CLIENT"   => utf8_encode($validacionDoc->NOMCLI),
                     "LOCAL_GUIA"    => $local,
                     "USER_APPLICANT"=> $solicitante,
                     "USER_CONFIRM"=> $responsable,
@@ -330,7 +374,7 @@ class DepositosController
                     "DATE_LIQUIDATE" =>'',
                     "NR_SEQUENCE_CASH" =>'',
                     "NAME_CASH" =>'',
-                    "USER_REG"  =>'',
+                    "USER_REG"  =>$user_reg,
                     "USER_MOD"  =>'',
                     "DATE_REG"  =>date(SQL_DATETIME_FORMAT),
                     "DATE_MOD"  =>'',
@@ -344,15 +388,23 @@ class DepositosController
                 } 
 
                 //actualizar saldo deposito
-                //actualizar algo mas xd
+                $dataUpdate = [
+                    "SALDO"=>$saldoDeposito
+                ];
+                $this->updateDeposito($dataUpdate,$deposito->DEPOSIT_ID);
+                //actualizar algo mas 
 
+                
+                $registros[] = $result;
             }
             else{
                 break;
             }
-        }
 
-        return responseOk();
+        }
+        //devuelves todo lo que se registró
+        //ahora cuando registras fijate tu network que devuelve
+        return responseOk(["registros"=>$registros]);
     }
 
     function cargamasiva()
@@ -400,7 +452,7 @@ class DepositosController
                 $bankDetail = "SELECT * FROM FU_BANK_ACCOUNT WHERE BANK_ID=" . $bank . "";
                 $resultBank = $conn->get_row($bankDetail);  
                 
-                
+                $user_reg = $_SESSION["user"]->usuario;
                 
                 $dataToInsert = [
                     "DATE_OPERATION" => $newDate,
@@ -412,7 +464,7 @@ class DepositosController
                     "NAME_BANK" => utf8_encode($resultBank->NAME_BANK),
                     "NR_ACCOUNT" => strval($resultBank->NR_ACCOUNT),
                     "SALDO" => $importe,
-                    "USER_REG" => '',
+                    "USER_REG" => $user_reg,
                     "DATE_REG" => date(SQL_DATETIME_FORMAT),
                     "DATE_MOD" => '',
                 ];
@@ -529,17 +581,27 @@ class DepositosController
             Logger::error($conn->has_error());
             return false;
         }
+
+    }
+    function updateDeposito($data,$depositoId){
+        $conn = $this->app->getConnection("conn1");
+        $where = [
+            "DEPOSIT_ID"=>$depositoId
+        ];
+        $conn->update("FU_DEPOSIT", $data, $where);
     }
     function registroDepositoDet($data)
     {
         $conn = $this->app->getConnection("conn1");
 
-        $conn->insert("FU_DEPOSIT", $data);
+        $conn->insert("FU_DEPOSIT_DET", $data);
+
         //Id del registro insertado
         $last_insert_id = $conn->last_insert_id();
-        //si el last id es >0, es porque se registró
+        //si el last id es >0
         if ($last_insert_id > 0) {
-            return true;
+            //return true;
+            return $last_insert_id; 
         } else {
             Logger::error($conn->has_error());
             return false;
