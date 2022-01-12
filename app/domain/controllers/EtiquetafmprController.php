@@ -6,6 +6,7 @@ Use App\Libs\RPDF;
 class EtiquetafmprController{
 
     public $app = null;
+    
 
     function __construct($app)
     {
