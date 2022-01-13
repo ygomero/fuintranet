@@ -79,8 +79,9 @@ class ReportesController{
             }
 
             $invnum_r = $item->SVenta; 
+            $codItem = $item->ITEM; 
             //http://localhost:82/api/etiqueta?dep=algunvalor
-            $link = "/api/etiqueta?dep=".$invnum_r;
+            $link = "/api/etiqueta?dep=".$invnum_r."&codItem=".$codItem;
 
             if ($item->SKU === '24298' || $item->SKU === '24297' || $item->SKU === '24299' || $item->SKU === '24300' || $item->SKU === '25121')
             {

@@ -140,6 +140,7 @@ $querys = [
                                         END [TIPO],	
                                         LEFT(f.tdofac,1)+f.tdoidser+'-'+CONVERT(VARCHAR,f.facnum) [COMPROBANTE],
                                         vd.codpro [SKU],
+                                        vd.coditm [ITEM],
                                         vd.despro [PRODUCTO],
                                         vd.qtypro [UNIDADES],
                                         f.facnet [TOTAL],
@@ -163,6 +164,7 @@ $querys = [
     "etiquetasFMProd.Rec."  =>"SELECT 
                                 VC.invnum [SECUENCIA],
                                 f.pacnam [PACIENTE],
+                                vd.coditm [ITEM],
                                 vd.despro [PRODUCTO],
                                 f.facdat [FECHAE],
                                 CASE
@@ -185,7 +187,7 @@ $querys = [
                             FROM	LOLFAR9000.. fa_ventas_detalle vd WITH(NOLOCK)
                                 INNER JOIN LOLFAR9000.. fa_ventas_cabecera vc WITH(NOLOCK) on vd.invnum = vc.invnum
                                 INNER JOIN LOLFAR9000.. facturas f WITH(NOLOCK) ON vd.invnum = f.invnum_r
-                                WHERE VC.invnum = {{id}}",
+                                WHERE VC.invnum = {{id}} AND vd.coditm = {{item}}",
 
 
 
