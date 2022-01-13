@@ -14,13 +14,17 @@ class EtiquetafmprController{
     }
 
     function main(){
+
         //http://localhost:82/api/etiqueta?dep=987 // para GET dep es un parametro
         $dep = $_GET["dep"]; // = 987
+        $codItem = $_GET["codItem"];
 
+            
         $conn = $this->app->getConnection("conn2");
         $query = $this->app->getQuery("etiquetasFMProd.Rec.");
         $query = str_replace("{{id}}",intval($dep),$query);  
-   
+        $query = str_replace("{{item}}",intval($codItem),$query); 
+
         $results = $conn->get_row($query); 
         //print_r($results);exit; 
         
