@@ -189,6 +189,42 @@ $querys = [
                                 INNER JOIN LOLFAR9000.. facturas f WITH(NOLOCK) ON vd.invnum = f.invnum_r
                                 WHERE VC.invnum = {{id}} AND vd.coditm = {{item}}",
 
+    "searchRecetasControladasXDNI"  => "SELECT    
+                                        FT.destip [TIPO],   
+                                        FCP.conddes [CONDICION],   
+                                        CASE    
+                                            WHEN P.stacontr='s' and P.stanarcot='n' THEN 'IV B'    
+                                            WHEN P.condcod='6' AND P.stacontr='s' and P.stanarcot='s' THEN 'PSICOTROPICOS'    
+                                            WHEN P.condcod='7' AND P.stacontr='s' and P.stanarcot='s' THEN 'ESTUPEFACIENTES'   
+                                        END [CATEGORIA],   
+                                        REPLACE(d.despro,'+','') [PRODUCTO],     
+                                        L.deslab [LABORATORIO],   
+                                        d.qtypro [CAJAS],  
+                                        d.qtypro_m AS [UNIDADES],   
+                                        ISNULL(c.refnarcot,'NO ESPECIFICA') [RECETA],   
+                                        c.cusnam [PACIENTE],   
+                                        c.mednam [MEDICO],   
+                                        S.sisent [LOCAL],   
+                                        F.facdat [ATENCION],   
+                                        LEFT(F.tdofac,1) + F.tdoidser + ' - ' + CONVERT(varchar,F.facnum) [DOCUMENTO],   
+                                        U.usenam [ENCARGADO] 
+                                        
+                                        FROM fa_ventas_detalle D  WITH (NOLOCK)
+                                        INNER JOIN fa_ventas_cabecera C WITH (NOLOCK) on c.invnum = d.invnum 
+                                        INNER JOIN fa_productos P WITH (NOLOCK)  ON P.codpro = d.codpro 
+                                        INNER JOIN fa_tipos FT WITH (NOLOCK) ON FT.codtip = P.codtip 
+                                        INNER JOIN fa_condicion_producto FCP WITH (NOLOCK) ON P.condcod = FCP.condcod 
+                                        INNER JOIN fa_laboratorios L WITH (NOLOCK) ON L.codlab = P.codlab 
+                                        INNER JOIN sistema S WITH (NOLOCK) ON S.siscod = c.siscod 
+                                        INNER JOIN facturas F WITH (NOLOCK) ON F.invnum_r = c.invnum 
+                                        INNER JOIN usuarios U WITH (NOLOCK) ON U.usecod = c.usecod 
+                                        
+                                        WHERE c.codstd = 'FA' 
+                                        AND (D.despro LIKE '+%' OR  (P.stacontr='s' and P.stanarcot='n'))
+                                        AND c.invnum NOT IN (SELECT invnum_vta FROM co_notas_ventas_cabecera WITH(NOLOCK) WHERE ncosta = 'GE') 
+                                        AND C.doccli = RTRIM(LTRIM('{{dni}}')) 
+    "
+
 
 
 ];      
