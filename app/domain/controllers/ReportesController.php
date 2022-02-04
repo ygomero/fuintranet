@@ -116,7 +116,41 @@ class ReportesController{
     }
 
     function consultaRecetasControladas(){
-        
+        $conn = $this->app->getConnection("conn2");
+        $query = $this->app->getQuery("searchRecetasControladasXDNI");
+
+        $dni='';
+
+        if(isset($_POST["val_dni"]) && $_POST["val_dni"]!= ''){
+            $dni = $_POST["val_dni"];  
+        }
+
+        $query = str_replace("{{dni}}",$dni,$query);
+
+        $results = $conn->get_results($query); 
+        $docs = [];
+ 
+        foreach($results as  $item){
+            $docs[] = [
+                "0"  => $item->TIPO,
+                "1"  => utf8_encode($item->CONDICION),
+                "2"  => $item->CATEGORIA,
+                "3"  => utf8_encode($item->PRODUCTO),
+                "4"  => utf8_encode($item->LABORATORIO),
+                "5"  => $item->CAJAS,
+                "6"  => $item->UNIDADES,
+                "7"  => $item->RECETA,
+                "8"  => utf8_encode($item->PACIENTE),
+                "9"  => utf8_encode($item->MEDICO),
+                "10"  => utf8_encode($item->LOCAL),
+                "11"  => $item->ATENCION->format('d-m-Y'),
+                "12"  => $item->DOCUMENTO,
+                "13"  => utf8_encode($item->ENCARGADO),
+            ];
+     
+        }
+
+        return $docs;
     }
 
 }

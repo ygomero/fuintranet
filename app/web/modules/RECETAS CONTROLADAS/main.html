@@ -10,40 +10,30 @@
       <div class="card">
           <div class="card-body">
             <div class="form-validation">
-              <form class="form-valide" action="/api/login" method="post" id="formSeguimiento">
+              <form class="form-valide" action="/api/login" method="post" id="formRecetas">
                 <div class="row">
         
-                  <div class="col-xl-12">
+                  <div class="col-xl-10">
                     <div class="form-group row">
                       
-                      <label class="col-lg-2 col-form-label text-black" for="val-local">
-                        Fecha de Venta
-                      </label>
-                                             
-                      <div class="col-lg-3">
-                        <span>Desde:</span>
-                        <input type="date" class="form-control datepicker-default" id="val_fecha_desde" name="val_fecha_desde"/>
+                      <div class="col-lg-12">
+                      <input
+                          type="text"
+                          class="form-control"
+                          id="val-dni"
+                          name="val-dni"
+                          placeholder="Ingrese n° de DNI"
+                          style="margin-left: 35%;width: 450px;"/>
                       </div>
-                       
-                      <div class="col-lg-3">
-                        <span>Hasta:</span>
-                        <input type="date" class="form-control datepicker-default" id="val_fecha_hasta" name="val_fecha_hasta"/>
-                      </div>
-
-                      <div class="col-lg-4">
-                        <span>Local:</span>
-                        <select class="form-control default-select" id="select_local" name="val-local">
-                          <option value="">Seleccione local de Venta</option>
-                        </select>
-                      </div>
-
                     </div>
+                    
                   </div>
-        
+
+                  <div class="col-xl-2">
+                    <button type="button" class="btn btn-primary float-lg-left" id="search"><i class="fa fa-search pr-2" aria-hidden="true"></i>Buscar</button>
+                  </div>
                 </div>
-                <div class="row">
-                  <button type="button" class="btn btn-primary float-lg-left" id="search"><i class="fa fa-search pr-2" aria-hidden="true"></i>Buscar</button>
-                </div>
+
               </form>
             </div>
           </div>
@@ -56,20 +46,20 @@
             <table id="table_id" class="table table-sm mb-0 table-striped">
               <thead>
                 <tr>
-                  <th></th>
-                  <th>FECHA</th>
-                  <th>LOCAL</th>
-                  <th>PACIENTE</th>
-                  <th>TELEFONO</th>
-                  <th>MEDICO</th>
-                  <th>TIP DOC</th>
-                  <th>COMPROBANTE</th>
-                  <th>SKU</th>
+                  <th>TIPO</th>
+                  <th>CONDICION</th>
+                  <th>CATEGORIA</th>
                   <th>PRODUCTO</th>
+                  <th>LABORATORIO</th>
+                  <th>CAJAS</th>
                   <th>UNIDADES</th>
-                  <th>TOTAL</th>
-                  <th>S-VENTA</th>
-                  <th>DESCUENTO</th>
+                  <th>RECETA</t  h>
+                  <th>PACIENTE</th>
+                  <th>MEDICO</th>
+                  <th>LOCAL</th>
+                  <th>ATENCION</th>
+                  <th>DOCUMENTO</th>
+                  <th>ENCARGADO</th>
                 </tr>
               </thead>
             </table>
@@ -84,24 +74,7 @@
 <script type="text/javascript">
   let dataSet = [];
   document.addEventListener("DOMContentLoaded", function () {
-
-    $('.datepicker-default').pickadate({
-      format: 'dd/mm/yyyy',
-      formatSubmit: 'dd/mm/yyyy',
-      monthsFull: [ 'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Setiembre', 'Octubre', 'Noviembre', 'Diciembre' ],
-      weekdaysShort: [ 'Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab' ],
-      today: "Hoy",
-      clear: "Limpiar",
-      close: "Cerrar"
-    });
-
-
-    loadSelectLocal();
-    let today = new Date();
-    let todayFormat = ('0' + today.getDate()).slice(-2) + '/' + ('0' + (today.getMonth() + 1)).slice(-2) + '/' +  today.getFullYear();
-    document.getElementById('val_fecha_desde').value = todayFormat;
-    document.getElementById('val_fecha_hasta').value = todayFormat;
-
+   
     $(document).ready(function () { 
       table = $("#table_id").DataTable({
         "language": {
@@ -115,11 +88,7 @@
               className: 'btn btn-primary ml-auto',
               style: 'align:rigth;',
               text: 'Exportar Excel',
-              // exportOptions: {
-              //     modifier: {
-              //         page: 'current'
-              //     }
-              // }
+             
           }
         ],
         lengthChange: true,
@@ -145,29 +114,15 @@
 
   });
 
-  function loadSelectLocal(){
-    $.ajax({
-      url: "/api/reportes/local",
-      type: "GET",
-      dataType: "JSON",
-    }).done(function (res) {
-        res.forEach(element => {
-            $( "#select_local" ).append(  `<option value='${element.value}'> ${element.name} </option>` );
-        });
-        $("#select_local").selectpicker('refresh')
-    });
-  }
-
+  
   function searchData(){
     page_loading();
     table.clear();
     let dataToSend = {
       //solo se enb
-      val_local: $("#select_local").val(),
-      val_fecha_desde: $("#val_fecha_desde").val(),
-      val_fecha_hasta: $("#val_fecha_hasta").val(),
+      val_dni: $("#val-dni").val(),
     };
-    
+
     $.ajax({
       url: "/api/reportes/consultaRecetasControladas",
       type: "POST",
