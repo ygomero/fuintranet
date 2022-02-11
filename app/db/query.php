@@ -222,8 +222,46 @@ $querys = [
                                         WHERE c.codstd = 'FA' 
                                         AND (D.despro LIKE '+%' OR  (P.stacontr='s' and P.stanarcot='n'))
                                         AND c.invnum NOT IN (SELECT invnum_vta FROM co_notas_ventas_cabecera WITH(NOLOCK) WHERE ncosta = 'GE') 
-                                        AND C.doccli = RTRIM(LTRIM('{{dni}}')) 
-    "
+                                        AND C.doccli = RTRIM(LTRIM('{{dni}}')) ",
+
+    "evaluacionSegunProduccion"     => "SELECT 
+                                        s.sisent [LOCAL],
+                                        F.facdat [FECHA],
+                                        FMC.INVNUM [N_ORDEN],
+                                        fmc.pacman [PACIENTE],
+                                        FMC.MEDNAM [MEDICO],
+                                        CASE
+                                            WHEN FMC.codmod='IN' THEN 'INSUMO'
+                                            WHEN FMC.codmod='RE' THEN 'RECETADOS'
+                                            WHEN FMC.codmod='EN' THEN 'ENCAPSULADOS'
+                                            WHEN FMC.codmod='DS' THEN 'DOSIFICACION'
+                                        END [TIPO_PREPARADO],
+                                        FMC.qtypro [CANTIDAD],
+                                        U.usecod [COD_TEC],
+                                        U.usenam [TECNICO_RESPONSABLE],
+                                        CASE
+                                            WHEN FMC.codmod='RE' AND (SELECT invnum FROM fa_orden_fmagistral_detalle WHERE codpro IN (16006,15837,15681) AND invnum=FMC.invnum GROUP BY invnum)=FMC.invnum THEN 'ALTA'
+                                            WHEN FMC.codmod='RE' AND (SELECT COUNT(*) FROM fa_orden_fmagistral_detalle WHERE invnum=FMC.invnum AND staimp<>'N')>=6 THEN 'ALTA'
+                                            WHEN FMC.codmod='RE' AND (SELECT COUNT(*) FROM fa_orden_fmagistral_detalle WHERE invnum=FMC.invnum AND staimp<>'N')>=3 
+                                                                AND (SELECT COUNT(*) FROM fa_orden_fmagistral_detalle WHERE invnum=FMC.invnum AND staimp<>'N')<=5 THEN 'MEDIA'
+                                            WHEN FMC.codmod='RE' AND (SELECT COUNT(*) FROM fa_orden_fmagistral_detalle WHERE invnum=FMC.invnum AND staimp<>'N')<=2 THEN 'BAJA'
+                                        
+                                            WHEN FMC.codmod='IN' THEN 'BAJA'
+                                            WHEN FMC.codmod IN ('EN','DS') AND qtypro>=100 THEN 'ALTA'
+                                            WHEN FMC.codmod IN ('EN','DS') AND qtypro>=50 AND qtypro<100   THEN 'MEDIA'
+                                            WHEN FMC.codmod IN ('EN','DS') AND qtypro<50 THEN 'BAJA'
+                                        END [NIVEL_PREPARADO]
+                                        
+                                        
+                                        FROM FACTURAS F
+                                        INNER JOIN fa_orden_fmagistral_cabecera FMC  ON F.invnum_r = FMC.invnum_vta
+                                        LEFT JOIN co_notas_ventas_cabecera NC ON F.invnum = NC.invnum_caj
+                                        INNER JOIN sistema S ON F.siscod = S.siscod
+                                        INNER JOIN usuarios U ON U.usecod = FMC.useresp
+                                        WHERE nconum IS NULL
+                                        AND CONVERT(DATE,F.facdat) >= '{{fecha_desde}}'
+                                        AND CONVERT(DATE,F.facdat) <= '{{fecha_hasta}}'
+                                        ORDER BY F.invnum"
 
 
 

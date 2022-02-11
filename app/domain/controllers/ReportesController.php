@@ -153,4 +153,44 @@ class ReportesController{
         return $docs;
     }
 
+    function evaluacionProduccion(){
+        $conn = $this->app->getConnection("conn2");
+        $query = $this->app->getQuery("evaluacionSegunProduccion");
+
+        $fecha_desde='';
+        $fecha_hasta='';
+
+        //VALIDACIONES
+        if(isset($_POST["val_fecha_desde"]) && $_POST["val_fecha_desde"] != '' ){
+            $fecha_desde = $_POST["val_fecha_desde"];
+        }
+
+        if(isset($_POST["val_fecha_hasta"]) && $_POST["val_fecha_hasta"] != '' ){
+            $fecha_hasta = $_POST["val_fecha_hasta"];
+        }
+
+        $query = str_replace("{{fecha_desde}}",$fecha_desde,$query);
+        $query = str_replace("{{fecha_hasta}}",$fecha_hasta,$query);
+        
+        $results = $conn->get_results($query); 
+        $docs = [];
+ 
+        foreach($results as  $item){
+            $docs[] = [
+                "0"  => $item->LOCAL,
+                "1"  => $item->FECHA->format('d-m-Y'),
+                "2"  => $item->N_ORDEN,
+                "3"  => utf8_encode($item->PACIENTE),
+                "4"  => utf8_encode($item->MEDICO),
+                "5"  => $item->TIPO_PREPARADO,
+                "6"  => $item->CANTIDAD,
+                "7"  => $item->COD_TEC,
+                "8"  => utf8_encode($item->TECNICO_RESPONSABLE),
+                "9"  => utf8_encode($item->NIVEL_PREPARADO),
+            ];
+     
+        }
+
+        return $docs;
+    }
 }

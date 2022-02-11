@@ -122,6 +122,14 @@ $routes =  [
         ]
     ),
     array(
+        'path' =>"/evaluacion%20produccion",
+        'controller' =>"EVALUACIÓN SEGÚN PRODUCCIÓN",
+        'method' => "GET",
+        'guards' => [
+            "auth"
+        ]
+    ),
+    array(
         'path' => "/login",
         'controller' => "login",
         'method' => "GET",
@@ -147,6 +155,12 @@ $routes =  [
     ),
     array(
         'path' => "/api/reportes/consultaRecetasControladas",
+        'controller' => "reportes",
+        'method' => "POST",
+        'fullpage'=>false
+    ),
+    array(
+        'path' => "/api/reportes/evaluacionProduccion",
         'controller' => "reportes",
         'method' => "POST",
         'fullpage'=>false

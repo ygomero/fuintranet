@@ -12,7 +12,7 @@ require('../app/web/routes.php');
 require('../app/shared/core/Route.php');
 require('../app/db/conn.php');
 require('../app/db/query.php');
-/*print_r(password_hash('10123690',PASSWORD_BCRYPT));
+/*print_r(password_hash('41594916',PASSWORD_BCRYPT));
 /*var_dump(password_verify('YADIRA','$2y$10$Pz/NFAj5V9N6sEPONlzUQu/7l6mn2UcYyVwPNQ65UuCQpw0FLGjuq'));
 exit;*/
 date_default_timezone_set('America/Bogota');
