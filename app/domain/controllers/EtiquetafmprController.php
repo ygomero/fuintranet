@@ -41,21 +41,21 @@ class EtiquetafmprController{
         $pdf->Cell( 0, 0, $results->PRODUCTO, 0, 0, 'R' ); 
         $pdf->Ln(6);
         $pdf->Cell(10,0,utf8_decode('RP: '.$results->SECUENCIA.' - '.$results->TIPOUSO));
-        $pdf->Ln(2);
+        $pdf->Ln(2.8);
         $pdf->SetFont('Helvetica','B',8);
         $pdf->Cell(10,0,utf8_decode('PAC:  '.$results->PACIENTE));
-        $pdf->Ln(2.5);
+        $pdf->Ln(2.8);
         $pdf->SetFont('Helvetica','B',6);      
-        $pdf->Cell(10,0,utf8_decode('MED:  Q.F.: NATALY CARDENAS H.'));
+        $pdf->Cell(10,0,utf8_decode('MED: Q.F. NATALY CARDENAS H.'));
         $pdf->Ln(2);
         $pdf->Cell(10,0,utf8_decode('MANTENER ALEJADO DE LOS NIÑOS'));
         $pdf->Ln(2);
         $pdf->Cell(10,0,utf8_decode('USAR SEGUN INDICACION MEDICA'));
         $pdf->Ln(2);
-        $pdf->Cell(10,0,utf8_decode('Almacenese a temperatura no mayor de 25 °C '));
+        $pdf->SetFont('Helvetica','B',5);   
+        $pdf->Cell(10,0,utf8_decode('Almacenese a temperatura no mayor de 25 °C Elaborado en: Av. Emancipacion 799 - Lima'));
         $pdf->Ln(2);
-        $pdf->Cell(10,0,utf8_decode('Elaborado en: Av. Emancipacion 799 - Lima'));
-        
+        $pdf->SetFont('Helvetica','B',6);            
         $pdf->TextWithDirection(63,20,'E: '.$results->FECHAE->format('d/m/Y'),'U');
         $pdf->TextWithDirection(67,20,'V: '.$results->FECHAV->format('d/m/Y'),'U');
         $pdf->Ln(2);

@@ -130,6 +130,14 @@ $routes =  [
         ]
     ),
     array(
+        'path' =>"/faltantes%20-%20stock%20de%20productos",
+        'controller' =>"FALTANTE DE STOCK DE PRODUCTOS",
+        'method' => "GET",
+        'guards' => [
+            "auth"
+        ]
+    ),
+    array(
         'path' => "/login",
         'controller' => "login",
         'method' => "GET",
@@ -147,6 +155,14 @@ $routes =  [
         'method' => "POST",
         'fullpage'=>false
     ),
+
+    array(
+        'path' => "/api/reporteslogisticos/faltantesStockProductos",
+        'controller' => "reporteslogisticos",
+        'method' => "POST",
+        'fullpage'=>false
+    ),
+
     array(
         'path' => "/api/reportes/ventasProductosRecomendados",
         'controller' => "reportes",
@@ -267,6 +283,13 @@ $routes =  [
     array(
         'path' => "/api/reportes/local",
         'controller' => "reportes",
+        'method' => "GET",
+        'fullpage'=>false
+    ),
+
+    array(
+        'path' => "/api/reporteslogisticos/local",
+        'controller' => "reporteslogisticos",
         'method' => "GET",
         'fullpage'=>false
     ),
